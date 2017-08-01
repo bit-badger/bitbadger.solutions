@@ -193,9 +193,6 @@ import PageTitle from '@/components/PageTitle.vue'
 
 export default {
   name: 'averatec',
-  data: function () {
-    return {}
-  },
   components: {
     PageTitle
   }

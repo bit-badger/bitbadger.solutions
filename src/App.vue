@@ -1,22 +1,18 @@
-<template>
-  <div id="app">
-    <header>
-      <router-link to="/">
-        <img src="/static/djs-consulting.png" alt="DJS Consulting" title="DJS Consulting" />
-      </router-link>
-      <img src="/static/slogan.png" alt="Your Web Design, Hosting, and Application Solution Source"
-       title="Your web design, hosting, and application solution source!" />
-      <span>&nbsp;</span>
-    </header>
-    <div id="content">
-      <router-view></router-view>
-    </div>
-    <footer>
-      <span>A <strong><a href="/">DJS Consulting</a></strong> original design</span>
-      <span style="flex-grow:3;">&nbsp;</span>
-      <span>Secured by <strong><a href="//letsencrypt.org">Let's Encrypt</a></strong></span>
-    </footer>
-  </div>
+<template lang="pug">
+  #app
+    header
+      router-link(to="/"): img(src="/static/djs-consulting.png" alt="DJS Consulting" title="DJS Consulting")
+      img(src="/static/slogan.png" alt="Your Web Design, Hosting, and Application Solution Source"
+          title="Your web design, hosting, and application solution source!")
+      span &nbsp;
+    #content
+      router-view
+    footer
+      span.
+        A #[strong: router-link(to="/") DJS Consulting] original design
+      span(style="flex-grow:3;") &nbsp;
+      span.
+        Secured by #[strong: a(href="//letsencrypt.org") Let's Encrypt]
 </template>
 
 <script>

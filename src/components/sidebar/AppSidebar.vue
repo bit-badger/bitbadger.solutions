@@ -1,7 +1,6 @@
-<template>
-  <aside>
-    <sidebar-category v-for="category in cats" v-bind:category="category" v-bind:key="category.id" />
-  </aside>
+<template lang="pug">
+  aside
+    sidebar-category(v-for="category in cats" v-bind:category="category" v-bind:key="category.id")
 </template>
 
 <script>
@@ -10,7 +9,7 @@ import SidebarCategory from './SidebarCategory.vue'
 
 export default {
   name: 'app-sidebar',
-  data: function () {
+  data () {
     return { cats: AppData.categories }
   },
   components: {

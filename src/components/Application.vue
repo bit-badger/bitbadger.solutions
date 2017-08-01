@@ -1,25 +1,23 @@
-<template>
-  <article>
-    <page-title :title="pageTitle" />
-    <h1>{{ application.name }}<br>
+<template lang="pug">
+  article
+    page-title(:title="pageTitle")
+    h1.
+      {{ application.name }}
+      #[br]
       <small><small>
-        <a v-if="application.active || application.linkInactive" :href="application.url">{{ application.url }}</a>
-        <span v-if="!application.active && !application.linkInactive">{{ application.url }}</span>
+        #[a(v-if="application.active || application.linkInactive" :href="application.url") {{ application.url }}]
+        #[span(v-if="!application.active && !application.linkInactive") {{ application.url }}]
       </small></small>
-    </h1>
-    <aside>
-      <img :src="imageLink">
-    </aside>
-    <p v-for="(p, idx) in application.paragraphs" v-bind:key="idx" v-html="p"></p>
-    <p v-for="(act, idx) in application.activity" v-bind:key="idx" v-bind:act="act">
-      <strong>{{ act.heading }}</strong> &ndash; <span v-html="act.narrative"></span>
-    </p>
-    <p v-for="(p, idx) in application.footnotes" v-bind:key="idx" v-html="p"></p>
-    <p>
-      <br>
-      <router-link :to="{ name: 'ApplicationList' }">&laquo; Back to Web Sites and Applications</router-link>
-    </p>
-  </article>
+    aside: img(:src="imageLink")
+    p(v-for="(p, idx) in application.paragraphs" v-bind:key="idx" v-html="p")
+    p(v-for="(act, idx) in application.activity" v-bind:key="idx" v-bind:act="act")
+      strong {{ act.heading }}
+      | &nbsp;&ndash;&nbsp;
+      span(v-html="act.narrative")
+    p(v-for="(p, idx) in application.footnotes" v-bind:key="idx" v-html="p")
+    p
+      br
+      router-link(:to="{ name: 'ApplicationList' }") &laquo; Back to Web Sites and Applications
 </template>
 
 <script>
@@ -32,13 +30,13 @@ export default {
     return {}
   },
   computed: {
-    application: function () {
+    application () {
       return AppData.apps.find(app => app.id === this.$props.app)
     },
-    imageLink: function () {
+    imageLink () {
       return `/static/screenshots/${this.application.id}.png`
     },
-    pageTitle: function () {
+    pageTitle () {
       return `${this.application.name} « Applications`
     }
   },

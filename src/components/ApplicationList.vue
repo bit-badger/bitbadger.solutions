@@ -1,12 +1,11 @@
-<template>
-  <article>
-    <page-title title="Applications" />
-    <h1>Web Sites and Applications</h1>
-    <h2>Current Projects</h2>
-    <application-list-item v-for="app in current" v-bind:app="app" v-bind:key="app.id" />
-    <h2>Past Projects</h2>
-    <application-list-item v-for="app in past" v-bind:app="app" v-bind:key="app.id" />
-  </article>
+<template lang="pug">
+  article
+    page-title(title="Applications")
+    h1 Web Sites and Applications
+    h2 Current Projects
+    application-list-item(v-for="app in current" v-bind:app="app" v-bind:key="app.id")
+    h2 Past Projects
+    application-list-item(v-for="app in past" v-bind:app="app" v-bind:key="app.id")
 </template>
 
 <script>

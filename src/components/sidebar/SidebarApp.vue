@@ -1,23 +1,18 @@
-<template>
-  <div>
-    <p>
-      <strong class="sidebar-name">{{ app.name }}</strong><br>
-      <span v-if="!app.noAboutLink">
-        <router-link :to="{ name: 'Application', params: { app: app.id } }">About</router-link> &bull;
-      </span>
-      <a :title="app.name" :href="app.url">Visit</a>
-    </p>
-    <div class="sidebar-description" v-html="app.frontPageText"></div>
-  </div>
+<template lang="pug">
+  div
+    p
+      strong.sidebar-name {{ app.name }}
+      br
+      span(v-if="!app.noAboutLink").
+        #[router-link(:to="{ name: 'Application', params: { app: app.id } }") About] &bull; 
+      a(:title="app.name" :href="app.url") Visit
+    .sidebar-description(v-html="app.frontPageText")
 </template>
 
 <script>
 export default {
   name: 'sidebar-app',
-  props: ['app'],
-  data: function () {
-    return {}
-  }
+  props: ['app']
 }
 </script>
 

@@ -1,10 +1,7 @@
-<template>
-  <div>
-    <p class="sidebar-head">
-      {{ category.name }}
-    </p>
-    <sidebar-app v-for="app in appsForCat(category.id)" v-bind:app="app" v-bind:key="app.id" />
-  </div>
+<template lang="pug">
+  div
+    p.sidebar-head {{ category.name }}
+    sidebar-app(v-for="app in appsForCat(category.id)" v-bind:app="app" v-bind:key="app.id")
 </template>
 
 <script>
