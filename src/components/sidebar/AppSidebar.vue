@@ -1,5 +1,11 @@
 <template lang="pug">
   aside
+    p
+      strong.sidebar-name Connect with Us
+      br
+      a(href="https://twitter.com/DJS_Consulting" title="DJS_Consulting on Twitter") Twitter
+      | &nbsp;&bull;&nbsp;
+      a(href="https://www.facebook.com/pages/DJS-Consulting/262368048575" title="DJS Consulting on Facebook") Facebook
     sidebar-category(v-for="category in cats" v-bind:category="category" v-bind:key="category.id")
 </template>
 
