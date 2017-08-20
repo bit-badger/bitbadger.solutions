@@ -196,7 +196,23 @@ const APPS = [
         narrative: `DJS Consulting still hosts Futility Closet, ensuring that the underlying server receives performance
                    and security upgrades, monitoring site performance, and maintaining regular backups.`
       }
-    ]
+    ],
+    quotes: {
+      name: 'Greg Ross',
+      from: 'Futility Closet',
+      full: `DJS Consulting has been an absolute godsend for Futility Closet. We have been with them since 2010,
+            initially setting up and maintaining the site on a Rackspace VPS, and then hosting it completely.
+            Daniel&rsquo;s never failed in being friendly, knowledgeable, thoughtful, and farsighted. I&rsquo;ve
+            literally lost count of the number of times he&rsquo;s saved us from one emergency or another, always with
+            diligence and good humor, or recommended an improvement or a protection that saved us later. We would be
+            out of business many times over if it weren&rsquo;t for his reliability, expertise, and good judgment. And
+            he&rsquo;s a joy to work with.`,
+      pull: [
+        `Daniel&rsquo;s never failed in being friendly, knowledgeable, thoughtful, and farsighted&hellip;`,
+        `We would be out of business many times over if it weren&rsquo;t for his reliability, expertise, and good
+        judgment&hellip;`
+      ]
+    }
   },
   {
     id: 'hard-corps-wife',

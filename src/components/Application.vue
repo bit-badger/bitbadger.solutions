@@ -14,6 +14,13 @@
       strong {{ act.heading }}
       | &nbsp;&ndash;&nbsp;
       span(v-html="act.narrative")
+    template(v-if='application.quotes')
+      hr
+      strong What They Say
+      blockquote
+        p.quote(v-html="application.quotes.full")
+        p.source.
+          &mdash; #[strong {{ application.quotes.name }}], {{ application.quotes.from }}
     p(v-for="(p, idx) in application.footnotes" v-bind:key="idx" v-html="p")
     p
       br
@@ -61,5 +68,17 @@ aside img {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+blockquote {
+  border-left: solid 1px #3A1D00;
+  margin-left: 25px;
+  padding-left: 15px;
+}
+.quote {
+  font-style: italic;
+}
+.source {
+  text-align: right;
+  padding-right: 60px;
 }
 </style>
