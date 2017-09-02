@@ -279,7 +279,7 @@ const APPS = [
   {
     id: 'linux',
     name: 'Linux Resources',
-    url: '/linux',
+    url: '//techblog.djs-consulting.com/linux/',
     active: true,
     categoryId: 1,
     noAboutLink: true,

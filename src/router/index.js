@@ -6,10 +6,6 @@ import Application from '@/components/Application'
 import ApplicationList from '@/components/ApplicationList'
 import FourOhFour from '@/components/FourOhFour'
 
-import Linux from '@/components/linux/Linux'
-import Averatec from '@/components/linux/Averatec'
-import XineRPMs from '@/components/linux/XineRPMs'
-
 Vue.use(Router)
 
 export default new Router({
@@ -18,9 +14,6 @@ export default new Router({
     { path: '/', name: 'Home', component: Home },
     { path: '/applications/:app', name: 'Application', component: Application, props: true },
     { path: '/applications', name: 'ApplicationList', component: ApplicationList },
-    { path: '/linux/installing-wbel4-rhel4-on-an-averatec-6200-laptop', name: 'Averatec', component: Averatec },
-    { path: '/linux/xine-rpms-for-el-x86_64-architecture', name: 'XineRPMs', component: XineRPMs },
-    { path: '/linux', name: 'Linux', component: Linux },
     { path: '*', name: 'FourOhFour', component: FourOhFour }
   ]
 })
