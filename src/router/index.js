@@ -12,8 +12,8 @@ export default new Router({
   mode: 'history',
   routes: [
     { path: '/', name: 'Home', component: Home },
-    { path: '/applications/:app', name: 'Application', component: Application, props: true },
-    { path: '/applications', name: 'ApplicationList', component: ApplicationList },
+    { path: '/solutions/:app', name: 'Application', component: Application, props: true },
+    { path: '/solutions', name: 'ApplicationList', component: ApplicationList },
     { path: '*', name: 'FourOhFour', component: FourOhFour }
   ]
 })

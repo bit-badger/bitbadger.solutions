@@ -1,7 +1,7 @@
 {
-  "name": "djs-consulting",
+  "name": "bit-badger-solutions",
   "version": "1.0.0",
-  "description": "DJS Consulting Main Web Site",
+  "description": "Bit Badger Solutions Main Web Site",
   "author": "Daniel J. Summers <daniel@djs-consulting.com>",
   "private": true,
   "scripts": {

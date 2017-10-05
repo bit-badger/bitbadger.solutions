@@ -1,12 +1,10 @@
 <template lang="pug">
-  article
-    page-title(title="Welcome!")
-    h1 Welcome to DJS Consulting!
-    app-sidebar
+div.home
+  article.content
+    page-title(title='Welcome!')
     p.
       DJS Consulting can develop an interactive web application to fit almost any need.
-      <router-link to="/applications" title="Web Sites and Applications">View the complete list of our current web
-      sites and applications!</router-link>
+      #[router-link(to='/solutions' title='All Solutions') View the complete list of our solutions!]
     h2 Process Automation and User Engagement
     p.
       Computers can be used to augment or automate nearly any process; could you think of generating bank statements,
@@ -140,6 +138,7 @@
     p.
       We'd be happy to discuss your information technology needs, and how we may be able to help you. Just
       #[a(href="mailto:daniel@djs-consulting.com") e-mail us] and let us know what we can do for you!
+  app-sidebar
 </template>
 
 <script>
@@ -154,3 +153,16 @@ export default {
   }
 }
 </script>
+
+<style>
+article.content {
+  margin: auto;
+}
+@media all and (min-width: 80rem) {
+  .home {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+  }
+}
+</style>

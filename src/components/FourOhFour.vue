@@ -1,6 +1,6 @@
 <template lang="pug">
   article
-    page-title(title="Not Found (404)")
+    page-title(title='Not Found (404)')
     h1 Not Found (404)
     p.
       Looks like you've stumbled into the part of this site where we have no content to give you. Of course, you could
@@ -9,22 +9,22 @@
     ul
       li.
         The #[strong Linux Software Repository] used to be at #[tt /linux/software], but can now be found at
-        #[a(href="//hosted.djs-consulting.com/software") https://hosted.djs-consulting.com/software]. This
+        #[a(href='https://hosted.djs-consulting.com/software') https://hosted.djs-consulting.com/software]. This
         includes the OpenSUSE ISOs, SQLDeveloper .deb packages, and Xine RPMs.
       li.
         The #[strong My Linux Adventure] and #[strong DJS Consulting Tech Blog] blogs used to be at #[tt /linux/blog],
         but both have been combined into the latter, and can be found at
-        #[a(href="//techblog.djs-consulting.com") https://techblog.djs-consulting.com].
+        #[a(href='https://techblog.djs-consulting.com') https://techblog.djs-consulting.com].
       li.
         #[strong Kathie York]'s portfolio, formerly at #[tt /hosted/kathieyork], is now at
-        #[a(href="//hosted.djs-consulting.com/kathieyork") https://hosted.djs-consulting.com/kathieyork].
+        #[a(href='https://hosted.djs-consulting.com/kathieyork') https://hosted.djs-consulting.com/kathieyork].
       li.
         #[strong Daniel J. Summers]'s personal site, formerly at #[tt /personal] (and a really ancient copy at
-        #[tt /old_personal]), is now at #[a(href="//daniel.summershome.org") https://daniel.summershome.org].
+        #[tt /old_personal]), is now at #[a(href='https://daniel.summershome.org') https://daniel.summershome.org].
       li.
         The #[strong Not So Extreme Makeover: Community Edition] archive site, previously at
         #[tt /archived/notsoextreme_org], can now be found at
-        #[a(href="//hosted.djs-consulting.com/archive/notsoextreme_org") https://hosted.djs-consulting.com/archive/notsoextreme_org].
+        #[a(href='https://hosted.djs-consulting.com/archive/notsoextreme_org') https://hosted.djs-consulting.com/archive/notsoextreme_org].
 </template>
 
 <script>

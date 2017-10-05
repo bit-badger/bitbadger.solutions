@@ -3,11 +3,11 @@ export default {
   name: 'page-title',
   props: ['title'],
   created () {
-    document.title = `${this.title} « DJS Consulting`
+    document.title = `${this.title} « Bit Badger Solutions`
   },
   watch: {
     title () {
-      document.title = `${this.title} « DJS Consulting`
+      document.title = `${this.title} « Bit Badger Solutions`
     }
   },
   render () { }

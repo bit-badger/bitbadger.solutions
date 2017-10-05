@@ -1,30 +1,30 @@
 <template lang="pug">
-  article
-    page-title(:title="pageTitle")
+  article.content
+    page-title(:title='pageTitle')
     h1.
       {{ application.name }}
       #[br]
       <small><small>
-        #[a(v-if="application.active || application.linkInactive" :href="application.url") {{ application.url }}]
-        #[span(v-if="!application.active && !application.linkInactive") {{ application.url }}]
+        #[a(v-if='application.active || application.linkInactive' :href='application.url') {{ application.url }}]
+        #[span(v-if='!application.active && !application.linkInactive') {{ application.url }}]
       </small></small>
-    aside: img(:src="imageLink")
-    p(v-for="(p, idx) in application.paragraphs" v-bind:key="idx" v-html="p")
-    p(v-for="(act, idx) in application.activity" v-bind:key="idx" v-bind:act="act")
+    aside: img(:src='imageLink')
+    p(v-for='(p, idx) in application.paragraphs' :key='idx' v-html='p')
+    p(v-for='(act, idx) in application.activity' :key='idx' :act='act')
       strong {{ act.heading }}
       | &nbsp;&ndash;&nbsp;
-      span(v-html="act.narrative")
+      span(v-html='act.narrative')
     template(v-if='application.quotes')
       hr
       strong What They Say
       blockquote
-        p.quote(v-html="application.quotes.full")
+        p.quote(v-html='application.quotes.full')
         p.source.
           &mdash; #[strong {{ application.quotes.name }}], {{ application.quotes.from }}
-    p(v-for="(p, idx) in application.footnotes" v-bind:key="idx" v-html="p")
+    p(v-for='(p, idx) in application.footnotes' :key='idx' v-html='p')
     p
       br
-      router-link(:to="{ name: 'ApplicationList' }") &laquo; Back to Web Sites and Applications
+      router-link(:to="{ name: 'ApplicationList' }") &laquo; Back to All Solutions
 </template>
 
 <script>
@@ -33,9 +33,6 @@ import PageTitle from './PageTitle.vue'
 
 export default {
   props: ['app'],
-  data: function () {
-    return {}
-  },
   computed: {
     application () {
       return AppData.apps.find(app => app.id === this.$props.app)
@@ -44,7 +41,7 @@ export default {
       return `/static/screenshots/${this.application.id}.png`
     },
     pageTitle () {
-      return `${this.application.name} « Applications`
+      return `${this.application.name} « Solutions`
     }
   },
   components: {
@@ -55,7 +52,7 @@ export default {
 
 <style scoped>
 h1 {
-  line-height: .75em;
+  line-height: 1.6rem;
 }
 aside {
   float: right;

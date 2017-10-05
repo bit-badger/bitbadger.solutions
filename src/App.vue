@@ -1,18 +1,19 @@
 <template lang="pug">
   #app
     header
-      router-link(to="/"): img(src="/static/djs-consulting.png" alt="DJS Consulting" title="DJS Consulting")
-      img(src="/static/slogan.png" alt="Your Web Design, Hosting, and Application Solution Source"
-          title="Your web design, hosting, and application solution source!")
-      span &nbsp;
+      router-link(to='/')
+        img(src='/static/bitbadger.png'
+            alt='A cartoon badger looking at a computer screen, with his paw on a mouse'
+            title='Bit Badger Solutions')
+      router-link(to='/') Bit Badger Solutions
     #content
       router-view
     footer
       span.
-        A #[strong: router-link(to="/") DJS Consulting] original design
-      span(style="flex-grow:3;") &nbsp;
+        A #[strong: router-link(to='/') Bit Badger Solutions] original design
+      span(style='flex-grow:3;') &nbsp;
       span.
-        Secured by #[strong: a(href="//letsencrypt.org") Let's Encrypt]
+        Secured by #[strong: a(href='//letsencrypt.org') Let's Encrypt]
 </template>
 
 <script>
@@ -22,10 +23,13 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Play:400,700|Source+Sans+Pro:400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway');
+html {
+  background-color: lightgray;
+}
 body {
 	margin: 0px;
-	font-family: "Source Sans Pro", "Segoe UI", Ubuntu, Tahoma, "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
+	font-family: "Raleway", "Segoe UI", Ubuntu, Tahoma, "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
 	background-color: #FFFAFA;
 }
 a {
@@ -41,13 +45,13 @@ a img {
 acronym {
 	border-bottom:dotted 1px black;
 }
-h1, h2, h3, footer {
-	font-family: "Play", "Segoe UI", Ubuntu, "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
+header, h1, h2, h3, footer a {
+	font-family: "Oswald", "Segoe UI", Ubuntu, "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
 }
 h1 {
   text-align: center;
   margin: 21px 0;
-  font-size: 24pt;
+  font-size: 2rem;
 }
 h2 {
   margin: 19px 0;
@@ -55,37 +59,50 @@ h2 {
   border-bottom: solid 2px navy;
 }
 p {
-    margin: 16px 0;
+  margin: 16px 0;
 }
 #content {
-  margin: 0 15px;
-  font-size: 1.05em;
+  margin: 0 1rem;
+}
+.content {
+  font-size: 1.1rem;
+}
+@media all and (min-width: 68rem) {
+  .content {
+    width: 66rem;
+    justify-content: space-around;
+  }
 }
 .hdr {
 	font-size: 14pt;
 	font-weight: bold;
 }
-.valid_img {
-	width: 88px;
-	height: 31px;
-	border: 0;
-	vertical-align: middle;
-}
 header {
-	display: flex;
+	height: 100px;
+  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-	height: 70px;
-	border-bottom:solid 2px #3A1D00;
-	background: #FFE88E;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 100px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(lightgray), to(#FFFAFA));
+  background-image: -webkit-linear-gradient(top, lightgray, #FFFAFA);
+  background-image: -moz-linear-gradient(top, lightgray, #FFFAFA);
+  background-image: linear-gradient(to bottom, lightgray, #FFFAFA);
+}
+header a:link, header a:visited {
+  color: black;
 }
 header a:hover {
 	border-bottom:none;
 }
+header.name {
+  display: table-cell;
+  vertical-align: middle;
+}
 .content-item {
 	padding-left: 5px;
 	padding-right: 5px;
-	font-size: 12pt;
+	font-size: 1rem;
 }
 article.page .metadata {
     display: none;
@@ -94,25 +111,25 @@ article.page .metadata {
   text-decoration: line-through;
 }
 footer {
-	border-top: solid 5px #3A1D00;
-	border-bottom: solid 1px #3A1D00;
-	padding: 1px 15px 3px 15px;
+	padding: 20px 15px 10px 15px;
   display: flex;
   flex-direction: row;
   justify-content: center;
-	/*text-align: right; */
-	font-size: 1em;
-	background-color: #FFE88E;
+	font-size: 1rem;
 	color: black;
 	clear: both;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFAFA), to(lightgray));
+  background-image: -webkit-linear-gradient(top, #FFFAFA, lightgray);
+  background-image: -moz-linear-gradient(top, #FFFAFA, lightgray);
+  background-image: linear-gradient(to bottom, #FFFAFA, lightgray);
 }
 footer a:link, footer a:visited {
 	color: black;
 }
-footer a:hover {
+/*footer a:hover {
 	border-bottom: none;
 	color: maroon;
-}
+}*/
 .alignleft {
 	float:left;
 	padding-right: 5px;

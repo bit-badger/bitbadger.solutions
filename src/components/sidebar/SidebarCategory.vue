@@ -1,7 +1,7 @@
 <template lang="pug">
-  div
-    p.sidebar-head {{ category.name }}
-    sidebar-app(v-for="app in appsForCat(category.id)" v-bind:app="app" v-bind:key="app.id")
+div
+  div.app-sidebar-head {{ category.name }}
+  sidebar-app(v-for='app in appsForCat(category.id)' :app='app' :key='app.id')
 </template>
 
 <script>
@@ -11,7 +11,7 @@ import SidebarApp from './SidebarApp.vue'
 export default {
   name: 'sidebar-category',
   props: ['category'],
-  data: function () {
+  data () {
     return {
       appsForCat: function (catId) {
         return AppData.apps
@@ -25,16 +25,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.sidebar-head {
-	font-family: "Play", "Segoe UI", Ubuntu, "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
-  font-weight: bold;
-	color: maroon;
-	margin: 10px 0;
-	padding: 3px 0;
-	display:block;
-	border-top: solid 1px #3A1D00;
-	border-bottom: solid 1px #3A1D00;
-}
-</style>
