@@ -50,16 +50,21 @@ header, h1, h2, h3, footer a {
 }
 h1 {
   text-align: center;
-  margin: 21px 0;
+  margin: 1.4rem 0;
   font-size: 2rem;
 }
 h2 {
-  margin: 19px 0;
+  margin: 1.2rem 0;
+}
+h3 {
+  margin: 1rem 0;
+}
+h2, h3 {
   width: 80%;
   border-bottom: solid 2px navy;
 }
 p {
-  margin: 16px 0;
+  margin: 1rem 0;
 }
 #content {
   margin: 0 1rem;
@@ -70,7 +75,6 @@ p {
 @media all and (min-width: 68rem) {
   .content {
     width: 66rem;
-    justify-content: space-around;
   }
 }
 .hdr {
@@ -126,10 +130,6 @@ footer {
 footer a:link, footer a:visited {
 	color: black;
 }
-/*footer a:hover {
-	border-bottom: none;
-	color: maroon;
-}*/
 .alignleft {
 	float:left;
 	padding-right: 5px;

@@ -1,30 +1,30 @@
 <template lang="pug">
-  article.content
-    page-title(:title='pageTitle')
-    h1.
-      {{ application.name }}
-      #[br]
-      <small><small>
-        #[a(v-if='application.active || application.linkInactive' :href='application.url') {{ application.url }}]
-        #[span(v-if='!application.active && !application.linkInactive') {{ application.url }}]
-      </small></small>
+div
+  page-title(:title='pageTitle')
+  h1.
+    {{ application.name }}
+    #[br]
+    <small><small>
+      #[a(v-if='application.active || application.linkInactive' :href='application.url') {{ application.url }}]
+      #[span(v-if='!application.active && !application.linkInactive') {{ application.url }}]
+    </small></small>
+  div.app-info
     aside: img(:src='imageLink')
-    p(v-for='(p, idx) in application.paragraphs' :key='idx' v-html='p')
-    p(v-for='(act, idx) in application.activity' :key='idx' :act='act')
-      strong {{ act.heading }}
-      | &nbsp;&ndash;&nbsp;
-      span(v-html='act.narrative')
-    template(v-if='application.quotes')
-      hr
-      strong What They Say
-      blockquote
-        p.quote(v-html='application.quotes.full')
-        p.source.
-          &mdash; #[strong {{ application.quotes.name }}], {{ application.quotes.from }}
-    p(v-for='(p, idx) in application.footnotes' :key='idx' v-html='p')
-    p
-      br
-      router-link(:to="{ name: 'ApplicationList' }") &laquo; Back to All Solutions
+    article.content
+      p(v-for='(p, idx) in application.paragraphs' :key='idx' v-html='p')
+      div(v-for='(act, idx) in application.activity' :key='idx' :act='act')
+        h3 {{ act.heading }}
+        p(v-html='act.narrative')
+      div(v-if='application.quotes')
+        h3 What They Say
+        blockquote
+          p.quote(v-html='application.quotes.full')
+          p.source.
+            &mdash; #[strong.app-info-heading {{ application.quotes.name }}], {{ application.quotes.from }}
+      p(v-for='(p, idx) in application.footnotes' :key='idx' v-html='p')
+      p
+        br
+        router-link(:to="{ name: 'ApplicationList' }") &laquo; Back to All Solutions
 </template>
 
 <script>
@@ -54,20 +54,23 @@ export default {
 h1 {
   line-height: 1.6rem;
 }
+.app-info {
+  display: flex;
+  flex-flow: row-reverse wrap;
+  justify-content: center;
+}
 aside {
-  float: right;
-  width: auto;
   padding-left: 15px;
 }
 aside img {
-  border: solid 3px #3A1D00;
+  border: dotted 1px darkgray;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
 blockquote {
-  border-left: solid 1px #3A1D00;
+  border-left: solid 1px darkgray;
   margin-left: 25px;
   padding-left: 15px;
 }

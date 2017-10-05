@@ -155,7 +155,7 @@ export default {
 </script>
 
 <style>
-article.content {
+.home article.content {
   margin: auto;
 }
 @media all and (min-width: 80rem) {
