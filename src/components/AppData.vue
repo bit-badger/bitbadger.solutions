@@ -43,7 +43,7 @@ const APPS = [
       },
       {
         heading: 'What We Still Do',
-        narrative: 'DJS Consulting hosts this site; we also publish sermons to their podcast feed weekly.'
+        narrative: 'Bit Badger Solutions hosts this site; we also publish sermons to their podcast feed weekly.'
       }
     ]
   },
@@ -71,7 +71,7 @@ const APPS = [
         heading: 'What We Did (2012)',
         narrative: `In July 2012, we began hosting the site, as well as continuing support for theme updates. This
                    joined her military wife blog
-                   <a href="/applications/hard-corps-wife" title="Hard Corps Wife &bull; DJS Consulting">Hard Corps
+                   <a href="/solutions/hard-corps-wife" title="Hard Corps Wife &bull; DJS Consulting">Hard Corps
                    Wife</a>, which we had begun hosting in mid-2011.`
       },
       {
@@ -111,8 +111,8 @@ const APPS = [
     indexText: 'Politics, health, podcasts and more',
     paragraphs: [
       `Dr. Melissa Clouthier saw our work with
-      <a href="/applications/cassy-fiano" title="Cassy Fiano &bull; DJS Consulting">Cassy</a>&rsquo;s site, and asked
-      us to help her move off Blogger as well. Melissa blogs from the political right, but also covers health issues and
+      <a href="/solutions/cassy-fiano" title="Cassy Fiano | Bit Badger Solutions">Cassy</a>&rsquo;s site, and asked us
+      to help her move off Blogger as well. Melissa blogs from the political right, but also covers health issues and
       social media. She had been blogging for a several years, and wanted to bring her old content with her to her new
       site.`
     ],
@@ -125,12 +125,12 @@ const APPS = [
       },
       {
         heading: 'What We Still Do',
-        narrative: 'DJS Consulting continues to provide WordPress upgrades, backups, and theme tweaks.'
+        narrative: 'Bit Badger Solutions continues to provide WordPress upgrades, backups, and theme tweaks.'
       }
     ],
     footnotes: [
       `<em>(NOTE: The thumbnail of the site represents a new skin on the original theme; while the theme is the same,
-      DJS Consulting did not create the graphics.)</em>`
+      Bit Badger Solutions did not create the graphics.)</em>`
     ]
   },
   {
@@ -193,14 +193,14 @@ const APPS = [
       },
       {
         heading: 'What We Still Do',
-        narrative: `DJS Consulting still hosts Futility Closet, ensuring that the underlying server receives performance
-                   and security upgrades, monitoring site performance, and maintaining regular backups.`
+        narrative: `Bit Badger Solutions still hosts Futility Closet, ensuring that the underlying server receives
+                   performance and security upgrades, monitoring site performance, and maintaining regular backups.`
       }
     ],
     quotes: {
       name: 'Greg Ross',
       from: 'Futility Closet',
-      full: `DJS Consulting has been an absolute godsend for Futility Closet. We have been with them since 2010,
+      full: `Bit Badger Solutions has been an absolute godsend for Futility Closet. We have been with them since 2010,
             initially setting up and maintaining the site on a Rackspace VPS, and then hosting it completely.
             Daniel&rsquo;s never failed in being friendly, knowledgeable, thoughtful, and farsighted. I&rsquo;ve
             literally lost count of the number of times he&rsquo;s saved us from one emergency or another, always with
@@ -269,22 +269,22 @@ const APPS = [
       },
       {
         heading: 'What We Still Do',
-        narrative: `DJS Consulting maintained the server, keeping it current with performance and security upgrades. We
-                   also provided support to the primary 3 bloggers, when they had questions about WordPress or how the
-                   site was performing. The site closed in August of 2011, as the primary authors moved on to other
-                   endeavors.`
+        narrative: `Bit Badger Solutions maintained the server, keeping it current with performance and security
+                   upgrades. We also provided support to the primary 3 bloggers, when they had questions about WordPress
+                   or how the site was performing. The site closed in August of 2011, as the primary authors moved on to
+                   other endeavors.`
       }
     ]
   },
   {
     id: 'linux',
     name: 'Linux Resources',
-    url: '//techblog.djs-consulting.com/linux/',
+    url: 'https://blog.bitbadger.solutions/linux/',
     active: true,
     categoryId: 1,
     noAboutLink: true,
     frontPageText: 'Handy information for Linux folks',
-    frontPageOrder: 2
+    frontPageOrder: 3
   },
   {
     id: 'mindy-mackenzie',
@@ -313,6 +313,29 @@ const APPS = [
       {
         heading: 'What We Still Do',
         narrative: 'We continue to provide backups, WordPress support, and content updates for Mindy&rsquo;s site.'
+      }
+    ]
+  },
+  {
+    id: 'my-prayer-journal',
+    name: 'myPrayerJournal',
+    url: 'https://prayerjournal.me',
+    active: true,
+    categoryId: 1,
+    frontPageText: 'Minimalist personal prayer journal',
+    frontPageOrder: 2,
+    indexText: 'Minimalist personal prayer journal',
+    paragraphs: [
+      `to be written`
+    ],
+    activity: [
+      {
+        heading: 'What We Did',
+        narrative: 'Wrote it'
+      },
+      {
+        heading: 'What We Still Do',
+        narrative: 'Host it'
       }
     ]
   },
@@ -352,7 +375,7 @@ const APPS = [
                    generated schedules and reports that were used to track the execution of the project.<br><br>
                    After we recovered, Love INC expressed an interest in a version that would allow them to handle these
                    same areas on an ongoing basis; this was the genesis of
-                   <a href="/applications/tcms" title="The Clearinghouse Management System &bull; DJS Consulting">TCMS</a>.`
+                   <a href="/solutions/tcms" title="The Clearinghouse Management System | Bit Badger Solutions">TCMS</a>.`
       },
       {
         heading: 'What We Still Do',
@@ -373,7 +396,7 @@ const APPS = [
     indexText: 'Southern Baptist church in Gulfport, Mississippi',
     paragraphs: [
       `Olivet Baptist Church&rsquo;s pastor saw our work with
-      <a href="/applications/bay-vista" title="Bay Vista Baptist Church &bull; DJS Consulting">Bay Vista</a>, and asked
+      <a href="/solutions/bay-vista" title="Bay Vista Baptist Church | Bit Badger Solutions">Bay Vista</a>, and asked
       us what would be involved with setting up something similar for his church. Olivet did not currently have a
       website.`
     ],
@@ -392,7 +415,7 @@ const APPS = [
       },
       {
         heading: 'What We Still Do',
-        narrative: `DJS Consulting hosts this site; we also publish sermons to their podcast feed weekly.`
+        narrative: `Bit Badger Solutions hosts this site; we also publish sermons to their podcast feed weekly.`
       }
     ]
   },
@@ -405,10 +428,10 @@ const APPS = [
     categoryId: 1,
     indexText: 'Photography services in Albuquerque, New Mexico',
     paragraphs: [
-      `Michelle Summers (yes, Daniel&rsquo;s wife) had been photographing her children for years. When her sons were on
-      sports teams, she was disappointed with the cost of team photography, and felt that she could do a better job at a
-      lower cost. Thus was born Photography by Michelle. She specializes in outdoor photography of families, children,
-      and sports teams, as well as maternity photography and holiday cards.`
+      `Michelle Summers had been photographing her children for years. When her sons were on sports teams, she was
+      disappointed with the cost of team photography, and felt that she could do a better job at a lower cost. Thus was
+      born Photography by Michelle. She specializes in outdoor photography of families, children, and sports teams, as
+      well as maternity photography and holiday cards.`
     ],
     activity: [
       {
@@ -455,7 +478,7 @@ const APPS = [
         heading: 'What We Did (2011)',
         narrative: `We rewrote this application using ASP MVC 3 backed by a PostgreSQL database, building the security
                    additions from the ground up, and posturing it for an interface with
-                   <a href="/applications/virtual-prayer-room" title="Virtual Prayer Room &bull; DJS Consulting">Virtual
+                   <a href="/solutions/virtual-prayer-room" title="Virtual Prayer Room | Bit Badger Solutions">Virtual
                    Prayer Room</a>.`
       },
       {
@@ -493,7 +516,7 @@ const APPS = [
       },
       {
         heading: 'What We Still Do',
-        narrative: `DJS Consulting continues to provide backups and WordPress updates for Riehl World News.`
+        narrative: `Bit Badger Solutions continues to provide backups and WordPress updates for Riehl World News.`
       }
     ]
   },
@@ -510,40 +533,40 @@ const APPS = [
       must be tracked, along with their needs; these needs must be verified; resources for goods and services must be
       known; volunteers must be known and sent communications to keep them involved. All of this adds up to a
       significant recordkeeping (i.e., paperwork) burden.`,
-      `TCMS addresses these issues by providing a repository for all clearinghouse operation needs. It can eliminate
-      duplication of work, as well as link clients with goods and services. It also provides the means to communicate
-      with volunteers, either en masse or using selective criteria. This allows the recordkeeping requirement to be
-      smaller and quicker, giving more time for the actual helping of clients. It uses WordPress for its front end; this
-      can provide organizations with a web presence that they can maintain without having to employ a web guru, using
+      `TCMS addressed these issues by providing a repository for all clearinghouse operation needs. It helped eliminate
+      duplication of work, and also linke clients with goods and services. It also provided the means to communicate
+      with volunteers, either en masse or using selective criteria. This allowed the recordkeeping requirement to be
+      smaller and quicker, giving more time for the actual helping of clients. It used WordPress for its front end; this
+      provided organizations with a web presence that they could maintain without having to employ a web guru, using
       WordPress&rsquo;s <abbr title="What You See Is What You Get">WYSIWYG</abbr> editor and management tools.`,
       `TCMS was decommissioned in 2014.`
     ]
   },
   {
     id: 'tech-blog',
-    name: 'DJS Consulting Tech Blog',
-    url: 'https://techblog.djs-consulting.com',
+    name: 'The Bit Badger Blog',
+    url: 'https://blog.bitbadger.solutions',
     active: true,
     categoryId: 3,
-    frontPageText: 'Technical information (AKA &ldquo;geek stuff&rdquo;) from DJS Consulting',
+    frontPageText: 'Technical information (&ldquo;geek stuff&rdquo;) from Bit Badger Solutions',
     frontPageOrder: 3,
-    indexText: 'Geek stuff from DJS Consulting',
+    indexText: 'Geek stuff from Bit Badger Solutions',
     paragraphs: [
-      `The DJS Consulting Tech Blog grew from Daniel&rsquo;s personal experience with learning and using the Linux
-      operating system. His first experience with blogging consisted of pages that had to be edited every time a new
-      post was made. The initial posts were titled &ldquo;My Linux Adventure,&rdquo; and existed as a copy of this
-      home-grown blog. The DJS Consulting Tech Blog has that, plus tech tips regarding many different computer
-      products. It covers web servers, databases, programming languages (a lot of PHP), and open-source software. DJS
-      Consulting also hosts 64-bit RPM builds of xine, a Linux multimedia player; the tech blog, via the RSS feed for
-      that category, can deliver notices of updated versions directly to subscribed users. Finally, it also contains
-      notices of new versions of DJS Consulting-developed WordPress plug-ins (&ldquo;Daniel&rsquo;s Dropdowns&rdquo;
-      <em>(inactive, as its functionality is now part of the WordPress core)</em> and &ldquo;HCSB Verse of the Day
-      (Plus)&rdquo;).`,
+      `The Bit Badger Blog grew from Daniel&rsquo;s personal experience with learning and using the Linux operating
+      system. His first experience with blogging consisted of pages that had to be edited every time a new post was
+      made. The initial posts were titled &ldquo;My Linux Adventure,&rdquo; and existed as a copy of this home-grown
+      blog. The Bit Badger Blog has that, plus tech tips regarding many different computer products. It covers web
+      servers, databases, programming languages, and open-source software. Bit Badger Solutions also hosts 64-bit RPM
+      builds of xine, a Linux multimedia player; the blog, via the RSS feed for that category, can deliver notices of
+      updated versions directly to subscribed users. Finally, it also contains notices of new versions of Bit Badger
+      Solutions-developed WordPress plug-ins (&ldquo;Daniel&rsquo;s Dropdowns&rdquo; <em>(inactive, as its functionality
+      is now part of the WordPress core)</em> and &ldquo;HCSB Verse of the Day (Plus)&rdquo;).`,
       `The original theme, &ldquo;Almost Spring,&rdquo; started as a pastel green and orange theme for WordPress.
       However, it was customized to match the original look and feel of those initial static pages that served as the
       blog from 2004-2006, and was converted to a BlogEngine.NET theme when we changed blogging platforms. When we went
       back to WordPress, we changed to a simple theme called &ldquo;Mantra,&rdquo; which has unobtrusive social media
-      integration.`
+      integration. It is now a statically-generated site, utilizing <a href="https://hexo.io">Hexo</a>, and its code is
+      <a href="https://github.com/danieljsummers/blog.bitbadger.solutions">open source</a>.`
     ]
   },
   {
@@ -576,21 +599,21 @@ const APPS = [
     categoryId: 1,
     indexText: 'Gives prayer warriors access to requests from wherever they may be, and sends them daily updates',
     paragraphs: [
-      `Many churches have prayer rooms - rooms set aside for people to come in to pray. Hoffmantown Church in
+      `Many churches have prayer rooms &ndash; rooms set aside for people to come in to pray. Hoffmantown Church in
       Albuquerque, New Mexico was one of these churches. However, they had seen the use of this physical prayer room
       dwindling over the years. People had become less willing to drive to the church, especially at night, and security
       became an issue as well; either prayer warriors had to know how to disable the security system, or the church
       would have to remain unlocked.`,
       `Having seen our work with the
-      <a href="/applications/nsx/" title="Not So Extreme Makeover: Community Edition &bull; DJS Consulting">Not So
-      Extreme Makeover: Community Edition</a>, the church contacted us to see if something similar could be developed to
-      help their prayer ministry. The resulting application that was developed extends the prayer room to wherever the
-      prayer warrior can get an Internet connection! Prayer warriors can enlist right from the site, and must be
-      approved. Requests and updates are tracked by date/time, and warriors can record when they&rsquo;ve prayed for a
-      request from the site, or from clicking a link in the daily e-mail they receive with requests from their interest
-      areas. As many prayer needs are confidential, security and confidentiality are very important. Virtual Prayer Room
-      ensures these by providing varying security levels for prayer warriors and the ability to mark each request as
-      confidential.`,
+      <a href="/solutions/nsx/" title="Not So Extreme Makeover: Community Edition | Bit Badger Solutions">Not So Extreme
+      Makeover: Community Edition</a>, the church contacted us to see if something similar could be developed to help
+      their prayer ministry. The resulting application that was developed extended the prayer room to wherever the
+      prayer warrior can get an Internet connection! Prayer warriors could enlist right from the site, and had to be
+      approved. Requests and updates were tracked by date/time, and warriors could record when they&rsquo;ve prayed for
+      a request from the site, or from clicking a link in the daily e-mail they received with requests from their
+      interest areas. As many prayer needs are confidential, security and confidentiality were very important. Virtual
+      Prayer Room ensured these by providing varying security levels for prayer warriors and the ability to mark each
+      request as confidential.`,
       `In 2016, Hoffmantown Church elected to begin using another package for their prayer requests. While a few other
       churches had expressed interest in it, none ultimately decided to use it; so, in 2017, Virtual Prayer Room was
       officially decommissioned.`

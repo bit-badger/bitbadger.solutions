@@ -1,10 +1,13 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Home from '@/components/Home'
 import Application from '@/components/Application'
 import ApplicationList from '@/components/ApplicationList'
 import FourOhFour from '@/components/FourOhFour'
+import Home from '@/components/Home'
+import InformationPublicizing from '@/components/about/InformationPublicizing'
+import ProcessAutomation from '@/components/about/ProcessAutomation'
+import WebServices from '@/components/about/WebServices'
 
 Vue.use(Router)
 
@@ -12,6 +15,9 @@ export default new Router({
   mode: 'history',
   routes: [
     { path: '/', name: 'Home', component: Home },
+    { path: '/about/information-publicizing-solutions', name: 'InformationPublicizing', component: InformationPublicizing },
+    { path: '/about/process-automation-solutions', name: 'ProcessAutomation', component: ProcessAutomation },
+    { path: '/about/web-services-solutions', name: 'WebServices', component: WebServices },
     { path: '/solutions/:app', name: 'Application', component: Application, props: true },
     { path: '/solutions', name: 'ApplicationList', component: ApplicationList },
     { path: '*', name: 'FourOhFour', component: FourOhFour }

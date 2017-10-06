@@ -72,6 +72,9 @@ p {
 .content {
   font-size: 1.1rem;
 }
+.auto {
+  margin: 0 auto;
+}
 @media all and (min-width: 68rem) {
   .content {
     width: 66rem;

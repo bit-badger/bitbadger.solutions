@@ -1,11 +1,11 @@
 <template lang="pug">
-  article
-    page-title(title='All Solutions')
-    h1 All Solutions
-    h2 Active Solutions
-    application-list-item(v-for='app in current' :app='app' :key='app.id')
-    h2 Past Solutions
-    application-list-item(v-for='app in past' :app='app' :key='app.id')
+article.content.auto
+  page-title(title='All Solutions')
+  h1 All Solutions
+  h2 Active Solutions
+  application-list-item(v-for='app in current' :app='app' :key='app.id')
+  h2 Past Solutions
+  application-list-item(v-for='app in past' :app='app' :key='app.id')
 </template>
 
 <script>
