@@ -1,11 +1,19 @@
 <template lang="pug">
   #app
     header
-      router-link(to='/')
-        img(src='/static/bitbadger.png'
-            alt='A cartoon badger looking at a computer screen, with his paw on a mouse'
-            title='Bit Badger Solutions')
-      router-link(to='/') Bit Badger Solutions
+      .header-logo
+        router-link(to='/')
+          img(src='/static/bitbadger.png'
+              alt='A cartoon badger looking at a computer screen, with his paw on a mouse'
+              title='Bit Badger Solutions')
+      .header-title: router-link(to='/') Bit Badger Solutions
+      .header-spacer &nbsp;
+      .header-social
+        a(href='https://twitter.com/DJS_Consulting' title='DJS_Consulting on Twitter')
+          img(src='/static/twitter.png' alt='Twitter' )
+        | &nbsp; &nbsp;
+        a(href='https://www.facebook.com/pages/DJS-Consulting/262368048575' title='DJS Consulting on Facebook')
+          img(src='/static/facebook.png' alt='Facebook')
     #content
       router-view
     footer
@@ -88,9 +96,7 @@ header {
 	height: 100px;
   display: flex;
   flex-direction: row;
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 100px;
+  justify-content: space-between;
   background-image: -webkit-gradient(linear, left top, left bottom, from(lightgray), to(#FFFAFA));
   background-image: -webkit-linear-gradient(top, lightgray, #FFFAFA);
   background-image: -moz-linear-gradient(top, lightgray, #FFFAFA);
@@ -101,10 +107,6 @@ header a:link, header a:visited {
 }
 header a:hover {
 	border-bottom:none;
-}
-header.name {
-  display: table-cell;
-  vertical-align: middle;
 }
 .content-item {
 	padding-left: 5px;
@@ -142,5 +144,20 @@ ul {
 }
 li {
 	list-style-type: disc;
+}
+.header-title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 100px;
+}
+.header-spacer {
+  flex-grow: 3;
+}
+.header-social {
+  padding: 25px .8rem 0 0;
+}
+.header-social img {
+  width: 50px;
+  height: 50px;
 }
 </style>

@@ -23,7 +23,7 @@ div.home
       #[router-link(to='/about/web-services-solutions' title='Web Services and API Solutions') Learn about web services, along with examples of current solutions].
     h2 Legacy Data Sharing
     p.
-      Do you have data that's old &mdash; and by &ldquo;old,&rdquo; we aren&rsquo;t talking &ldquo;iPhone 6 old,&rdquo;
+      Do you have data that's old &mdash; and by &ldquo;old,&rdquo; we aren&rsquo;t talking &ldquo;iPhone 6&rdquo; old,
       we&rsquo;re talking &ldquo;this data
       #[a(href='https://en.wikipedia.org/wiki/Age_of_candidacy#United_States' title='Age of Candidacy (United States) | Wikipedia') could run for President]&rdquo;
       old? Just because the information is in an older &ldquo;legacy&rdquo; system doesn&rsquo;t mean it has to stay
@@ -31,23 +31,20 @@ div.home
       #[router-link(to='/about/legacy-data' title='Legacy Data Sharing Solutions') Learn how our solutions can help get this data where you and your customers can access it more easily].
     h2 Why Web-Based?
     p.
-      Developing a web-based solution has many advantages, whether that application can be used just on a local, private
-      network (an intranet), or on the Internet.
+      Web-based solutions have many advantages:
     ul
-      li.
-        The application is available from any computer connected to the network &mdash; your home computer, your mobile
-        phone or tablet, a shared comptuer in a library - wherever!
-      li.
-        There is no special software to install &mdash; every computer and mobile device has a web browser on it, and we
-        ensure our solutions work on today's most popular web browsers, including Microsoft&reg; Edge, Mozilla Firefox,
-        and Google Chrome.
-      li.
-        Web-based solutions are easy to implement in a step-by-step fashion, so your most critical needs can be
-        addressed and deployed first. Enhancements are generally easy to do as well.
-    h2 What's With the Name &ldquo;Bit Badger&rdquo;?
+      li: p.
+        They can be used just on a local, private network (an intranet) or on the public Internet.
+      li: p.
+        They are available to any device connected to the network.
+      li: p.
+        They require no special software; every device has a browser - which you're using to read this!)
+      li: p.
+        They can get your most critical needs met first, then evolved and improved over time.
+    h2 What Is a &ldquo;Bit Badger&rdquo;?
     p.
-      Link goes here
-    h2 What Next
+      #[router-link(to='/about/why-bit-badger' title='Why Bit Badger?') Read the Bit Badger&rsquo;s origin story].
+    h2 Solutions to Your Problems
     p.
       We&rsquo;d be happy to discuss your information technology needs, and which of our solutions are right for you.
       Just #[a(href='mailto:daniel@djs-consulting.com') e-mail us] and let us know what we can do for you! You can also

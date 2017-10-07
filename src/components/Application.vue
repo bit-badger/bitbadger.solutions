@@ -64,10 +64,7 @@ aside {
 }
 aside img {
   border: dotted 1px darkgray;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-radius: 10px;
 }
 blockquote {
   border-left: solid 1px darkgray;

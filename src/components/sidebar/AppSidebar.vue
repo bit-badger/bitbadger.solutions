@@ -1,12 +1,6 @@
 <template lang="pug">
 div
   aside.app-sidebar
-    div
-      div.app-sidebar-head Connect with Us
-      p
-        a(href='https://twitter.com/DJS_Consulting' title='DJS_Consulting on Twitter') Twitter
-        | &nbsp;&bull;&nbsp;
-        a(href='https://www.facebook.com/pages/DJS-Consulting/262368048575' title="DJS Consulting on Facebook") Facebook
     sidebar-category(v-for='category in cats' :category='category' :key='category.id')
 </template>
 
@@ -68,7 +62,7 @@ export default {
 	color: maroon;
 	margin-bottom: .8rem;
 	padding: 3px 12px;
-	border-bottom: solid 2px lightgray /* #3A1D00 */;
+	border-bottom: solid 2px lightgray;
   font-size: 1rem;
 }
 .app-sidebar-name, .app-sidebar-description {

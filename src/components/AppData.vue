@@ -326,16 +326,30 @@ const APPS = [
     frontPageOrder: 2,
     indexText: 'Minimalist personal prayer journal',
     paragraphs: [
-      `to be written`
+      `Daniel wanted to maintain a prayer journal, where he could record the prayer requests for which he had prayed,
+      and the answer that eventually came to that request. He didn't want to do that on paper for several reasons - it's
+      easy to lose, a long-running request can run out of space to make notes, etc. He believed that he was not the only
+      person who felt this way regarding prayer, and decided to use this as an opportunity to fill both a spiritual and
+      a learning need. Given <a href="https://auth0.com">Auth0</a>'s policy of offering free authentication services for
+      open-source applications, he decided to develop this as an open-source application.`,
+      `The goal of myPrayerJournal is to get out of the way, so that the user can focus on the requests and their
+      prayer; once requests have been entered, the journal provides a way to easily pray through these requests, helping
+      people not forget about active requests. It also provides a means of going back through answered requests, which
+      can be reviewed whenever the user desires.`
     ],
     activity: [
       {
         heading: 'What We Did',
-        narrative: 'Wrote it'
+        narrative: `We went through several iterations of front-end and back-end technologies before we settled on
+                   <a href="https://vuejs.org">Vue.js</a> for the front-end and <a href="https://nodejs.org">Node.js</a>
+                   for the back-end. This solution is still in active development, which can be tracked on
+                   <a href="https://github.com/danieljsummers/myprayerjournal">GitHub</a>; this is also where issues
+                   regarding it can be raised and resolved.`
       },
       {
         heading: 'What We Still Do',
-        narrative: 'Host it'
+        narrative: `Bit Badger Solutions hosts the instance of this at the URL linked above. We back up the data, and
+                   also continue to develop it. Anyone can use it by logging in with a Google or Microsoft account.`
       }
     ]
   },
