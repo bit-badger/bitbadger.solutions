@@ -12,7 +12,7 @@
         a(href='https://twitter.com/Bit_Badger' title='Bit_Badger on Twitter')
           img(src='/static/twitter.png' alt='Twitter' )
         | &nbsp; &nbsp;
-        a(href='https://www.facebook.com/pages/DJS-Consulting/262368048575' title='DJS Consulting on Facebook')
+        a(href='https://www.facebook.com/bitbadger.solutions' title='Bit Badger Solutions on Facebook')
           img(src='/static/facebook.png' alt='Facebook')
     #content
       router-view
