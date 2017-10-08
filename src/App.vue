@@ -9,7 +9,7 @@
       .header-title: router-link(to='/') Bit Badger Solutions
       .header-spacer &nbsp;
       .header-social
-        a(href='https://twitter.com/DJS_Consulting' title='DJS_Consulting on Twitter')
+        a(href='https://twitter.com/Bit_Badger' title='Bit_Badger on Twitter')
           img(src='/static/twitter.png' alt='Twitter' )
         | &nbsp; &nbsp;
         a(href='https://www.facebook.com/pages/DJS-Consulting/262368048575' title='DJS Consulting on Facebook')
