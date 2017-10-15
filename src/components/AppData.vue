@@ -7,6 +7,16 @@ const CATEGORIES = [
 ]
 const APPS = [
   {
+    id: 'a-word-from-the-word',
+    name: 'A Word from the Word',
+    url: 'https://devotions.summershome.org',
+    active: true,
+    categoryId: 4,
+    noAboutLink: true,
+    frontPageText: 'Devotions by Daniel',
+    frontPageOrder: 2
+  },
+  {
     id: 'bay-vista',
     name: 'Bay Vista Baptist Church',
     url: 'https://bayvista.org',
@@ -89,16 +99,6 @@ const APPS = [
     noAboutLink: true,
     frontPageText: 'Daniel&rsquo;s personal blog',
     frontPageOrder: 1
-  },
-  {
-    id: 'daniels-weekly-devotions',
-    name: 'Daniel\'s Weekly Devotions',
-    url: 'https://devotions.summershome.org',
-    active: true,
-    categoryId: 4,
-    noAboutLink: true,
-    frontPageText: 'A word from the Word each week',
-    frontPageOrder: 2
   },
   {
     id: 'dr-melissa-clouthier',

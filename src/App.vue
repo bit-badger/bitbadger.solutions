@@ -1,6 +1,6 @@
 <template lang="pug">
   #app
-    header
+    header.site-header
       .header-logo
         router-link(to='/')
           img(src='/static/bitbadger.png'
@@ -68,8 +68,12 @@ h3 {
   margin: 1rem 0;
 }
 h2, h3 {
-  width: 80%;
   border-bottom: solid 2px navy;
+}
+@media all and (min-width:40rem) {
+  h2, h3 {
+    width: 80%;
+  }
 }
 p {
   margin: 1rem 0;
@@ -92,7 +96,7 @@ p {
 	font-size: 14pt;
 	font-weight: bold;
 }
-header {
+.site-header {
 	height: 100px;
   display: flex;
   flex-direction: row;
@@ -102,11 +106,40 @@ header {
   background-image: -moz-linear-gradient(top, lightgray, #FFFAFA);
   background-image: linear-gradient(to bottom, lightgray, #FFFAFA);
 }
-header a:link, header a:visited {
+.site-header a:link, header a:visited {
   color: black;
 }
-header a:hover {
+.site-header a:hover {
 	border-bottom:none;
+}
+.header-title {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 100px;
+  text-align: center;
+}
+.header-spacer {
+  flex-grow: 3;
+}
+.header-social {
+  padding: 25px .8rem 0 0;
+}
+.header-social img {
+  width: 50px;
+  height: 50px;
+}
+@media all and (max-width:40rem) {
+  .site-header {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-title {
+    line-height: 3rem;
+  }
+  .header-spacer {
+    display: none;
+  }
 }
 .content-item {
 	padding-left: 5px;
@@ -144,20 +177,5 @@ ul {
 }
 li {
 	list-style-type: disc;
-}
-.header-title {
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 100px;
-}
-.header-spacer {
-  flex-grow: 3;
-}
-.header-social {
-  padding: 25px .8rem 0 0;
-}
-.header-social img {
-  width: 50px;
-  height: 50px;
 }
 </style>
