@@ -19,8 +19,10 @@ div
         h3 What They Say
         blockquote
           p.quote(v-html='application.quotes.full')
-          p.source.
-            &mdash; #[strong.app-info-heading {{ application.quotes.name }}], {{ application.quotes.from }}
+          p.source
+            != '&mdash; '
+            strong.app-info-heading {{ application.quotes.name }}
+            span(v-if='application.quotes.from') , {{ application.quotes.from }}
       p(v-for='(p, idx) in application.footnotes' :key='idx' v-html='p')
       p
         br

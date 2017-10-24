@@ -106,7 +106,7 @@ p {
   background-image: -moz-linear-gradient(top, lightgray, #FFFAFA);
   background-image: linear-gradient(to bottom, lightgray, #FFFAFA);
 }
-.site-header a:link, header a:visited {
+.site-header a:link, .site-header a:visited {
   color: black;
 }
 .site-header a:hover {

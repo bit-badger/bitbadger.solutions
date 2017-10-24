@@ -314,7 +314,20 @@ const APPS = [
         heading: 'What We Still Do',
         narrative: 'We continue to provide backups, WordPress support, and content updates for Mindy&rsquo;s site.'
       }
-    ]
+    ],
+    quotes: {
+      name: 'Mindy Mackenzie',
+      full: `Daniel is the best partner you could hope for in a web designer and for handling web maintenance! He is
+            smart, creative, resourceful and fast. Daniel is able to produce high quality work on short time frames and
+            with minimal creative direction and hit the mark over and over. The best part, is Daniel is a joy to work
+            with. He is smart, customer-centric and trustworthy. If he says he will get it done, he does. After having a
+            poor experience with another firm, I can highly recommend Daniel for all your website design and support
+            needs – he&rsquo;s terrific!`,
+      pull: [
+        `&hellip;Daniel is able to produce high quality work on short time frames&hellip;`,
+        `[Daniel] is smart, customer-centric and trustworthy.`
+      ]
+    }
   },
   {
     id: 'my-prayer-journal',
