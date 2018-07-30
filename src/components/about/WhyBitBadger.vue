@@ -16,7 +16,7 @@ article.content.auto
     them, making our computers work for us instead of the other way around. While he can't actually breathe out 1s and
     0s, they do flow from his fingers (in groups of 8, of course).
   p.
-    Do you have a problem that needs a solution? #[a(href='mailto:daniel@djs-consulting.com') Sic the Bit Badger on it]!
+    Do you have a problem that needs a solution? #[a(href='mailto:daniel@bitbadger.solutions') Sic the Bit Badger on it]!
   p
     br
     router-link(to='/' title='Home') &laquo; Home

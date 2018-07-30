@@ -3,7 +3,8 @@ const CATEGORIES = [
   { id: 1, name: 'Web Sites and Applications' },
   { id: 2, name: 'WordPress' },
   { id: 3, name: 'Static Sites' },
-  { id: 4, name: 'Personal' }
+  { id: 4, name: 'Open Source Libraries' },
+  { id: 99, name: 'Personal' }
 ]
 const APPS = [
   {
@@ -11,7 +12,7 @@ const APPS = [
     name: 'A Word from the Word',
     url: 'https://devotions.summershome.org',
     active: true,
-    categoryId: 4,
+    categoryId: 99,
     noAboutLink: true,
     frontPageText: 'Devotions by Daniel',
     frontPageOrder: 2
@@ -26,7 +27,7 @@ const APPS = [
     frontPageOrder: 1,
     indexText: 'Southern Baptist church in Biloxi, Mississippi',
     paragraphs: [
-      `Bay Vista Baptist Church has served the spiritual needs of Mississippi&lsquo;s Gulf Coast for decades. They
+      `Bay Vista Baptist Church has served the spiritual needs of Mississippi&rsquo;s Gulf Coast for decades. They
       emphasize serving their community as well; they were a hub for
       <abbr title="Federal Emergency Management Agency">FEMA</abbr> during Hurricane Katrina relief and recovery
       efforts, and they are a relay point for each year&rsquo;s
@@ -95,7 +96,7 @@ const APPS = [
     name: 'Daniel J. Summers',
     url: 'https://daniel.summershome.org',
     active: true,
-    categoryId: 4,
+    categoryId: 99,
     noAboutLink: true,
     frontPageText: 'Daniel&rsquo;s personal blog',
     frontPageOrder: 1
@@ -289,7 +290,7 @@ const APPS = [
   {
     id: 'mindy-mackenzie',
     name: 'Mindy Mackenzie',
-    url: 'http://mindymackenzie.com',
+    url: 'https://mindymackenzie.com',
     active: true,
     categoryId: 2,
     frontPageText: 'WSJ-best-selling author of The Courage Solution',
@@ -303,12 +304,17 @@ const APPS = [
     ],
     activity: [
       {
-        heading: 'What We Did',
-        narrative: `We assumed maintenance of her site in 2015, several months in advance of the book launch of <em>The
-                   Courage Solution</em>. We worked with her, and her publicists and other professionals, to ensure that
-                   the book launch went smoothly. We customized her WordPress installation to support her Media
-                   Appearances as a custom type, where they could be entered, tracked, and listed as of the date they
-                   occurred. We also implemented rotating videos on the front page of the site.`
+        heading: 'What We Did (2015)',
+        narrative: `We assumed maintenance of her site several months in advance of the book launch of <em>The Courage
+                   Solution</em>. We worked with her, and her publicists and other professionals, to ensure that the
+                   book launch went smoothly. We customized her WordPress installation to support her Media Appearances
+                   in a way that allowed them to be entered, tracked, and listed as of the date they occurred. We also
+                   implemented rotating videos on the front page of the site.`
+      },
+      {
+        heading: 'What We Did (2018)',
+        narrative: `We developed the pages for her <em>You First Integrative Leadership Summit</em>, with speaker bios,
+                   conference schedule, and an application form.`
       },
       {
         heading: 'What We Still Do',
@@ -441,6 +447,12 @@ const APPS = [
                    created a mobile-friendly site layout that looked similar to the one they had been using.`
       },
       {
+        heading: 'What We Did (2018)',
+        narrative: `We turned their site into a Progressive Web Application (PWA), which allows users to
+                   &ldquo;install&rdquo; the site, like an app, to their phone&rsquo;s home screen. The site is also
+                   still accessible from the web via a browser.`
+      },
+      {
         heading: 'What We Still Do',
         narrative: `Bit Badger Solutions hosts this site; we also publish sermons to their podcast feed weekly.`
       }
@@ -483,7 +495,7 @@ const APPS = [
   {
     id: 'prayer-tracker',
     name: 'PrayerTracker',
-    url: 'https://prayer.djs-consulting.com',
+    url: 'https://prayer.bitbadger.solutions',
     active: true,
     categoryId: 1,
     frontPageText: 'A prayer request tracking website (Free for any church or Sunday School class!)',
@@ -499,19 +511,24 @@ const APPS = [
     activity: [
       {
         heading: 'What We Did (2005)',
-        narrative: `Created the original site using PHP, storing the data in a MySQL database.`
+        narrative: `Created the original site.`
       },
       {
         heading: 'What We Did (2011)',
-        narrative: `We rewrote this application using ASP MVC 3 backed by a PostgreSQL database, building the security
-                   additions from the ground up, and posturing it for an interface with
+        narrative: `We rewrote this application using a more modern (at the time) framework (ASP MVC 3), building the
+                   security additions from the ground up, and posturing it for an interface with
                    <a href="/solutions/virtual-prayer-room" title="Virtual Prayer Room | Bit Badger Solutions">Virtual
                    Prayer Room</a>.`
       },
       {
         heading: 'What We Did (2012)',
-        narrative: `In April 2012, version 4.0 was released with support for Spanish - our first multi-lingual
+        narrative: `In April 2012, version 4 was released with support for Spanish - our first multi-lingual
                    application!`
+      },
+      {
+        heading: 'What We Did (2018)',
+        narrative: `Version 7 brought full mobile accessibility, along with an upgrade to a modern, ultra-fast web
+                   framework.`
       },
       {
         heading: 'What We Still Do',
@@ -536,10 +553,16 @@ const APPS = [
     ],
     activity: [
       {
-        heading: 'What We Did',
+        heading: 'What We Did (2012)',
         narrative: `We spoke with him regarding his ideal direction and assisted through the selection and customization
                    of his eventual chosen theme. We also did some work on the customization of that theme. Additionally,
                    we imported the large volume of posts from the Movable Type blog into his new WordPress blog.`
+      },
+      {
+        heading: 'What We Did (2018)',
+        narrative: `Dan wanted a fresh start for Riehl World View, so we generated flat files to preserve his prior
+                   archive. The post volume meant that none of the existing WordPress plugins that do that would work,
+                   so we built a custom converter to preserve that content.`
       },
       {
         heading: 'What We Still Do',

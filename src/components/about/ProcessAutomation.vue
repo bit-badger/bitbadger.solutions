@@ -7,9 +7,9 @@ article.content.auto
     processing mailing lists, or tracking orders without some form of automation? We develop web-based solutions to
     automate #[em your] processes, ensuring that your business constraints are satisfied; these systems can run on the
     Internet or your private network. For Internet-facing solutions, we engineer solutions that allow them to interact
-    with you securely, presented in an engaging manner. And, by "engagement," we are not describing intrusive page
-    pop-ups and other #[span.strike marketing gimmicks] web annoyances; we determine an optimal user experience for
-    #[em your] customers, and tailor the solution to work for both of you.
+    with you securely, presented in an engaging manner. And, by &ldquo;engagement,&rdquo; we are not describing
+    intrusive page pop-ups and other #[span.strike marketing gimmicks] web annoyances; we determine an optimal user
+    experience for #[em your] customers, and tailor the solution to work for both of you.
   p Several of our solutions fit this description.
   ul
     li: p.
