@@ -3,7 +3,6 @@ const CATEGORIES = [
   { id: 1, name: 'Web Sites and Applications' },
   { id: 2, name: 'WordPress' },
   { id: 3, name: 'Static Sites' },
-  { id: 4, name: 'Open Source Libraries' },
   { id: 99, name: 'Personal' }
 ]
 const APPS = [
@@ -54,7 +53,8 @@ const APPS = [
       },
       {
         heading: 'What We Still Do',
-        narrative: 'Bit Badger Solutions hosts this site; we also publish sermons to their podcast feed weekly.'
+        narrative: `Bit Badger Solutions hosts this site; we also host the church e-mail accounts, and publish sermons
+                   to their podcast feed weekly.`
       }
     ]
   },
@@ -359,9 +359,11 @@ const APPS = [
     activity: [
       {
         heading: 'What We Did',
-        narrative: `We went through several iterations of front-end and back-end technologies before we settled on
-                   <a href="https://vuejs.org">Vue.js</a> for the front-end and <a href="https://nodejs.org">Node.js</a>
-                   for the back-end. This solution is still in active development, which can be tracked on
+        narrative: `We went through several iterations of front-end and back-end technologies, trying to find one that
+                   would provide the optimal experience for praying through the list. The front end uses
+                   <a href="https://vuejs.org">Vue.js</a>, and the back end will soon use
+                   <a href="https://github.com/giraffe-fsharp/Giraffe">Giraffe</a> to serve the data. This solution is
+                   still in active development, which can be tracked on
                    <a href="https://github.com/danieljsummers/myprayerjournal">GitHub</a>; this is also where issues
                    regarding it can be raised and resolved.`
       },
@@ -611,12 +613,8 @@ const APPS = [
       updated versions directly to subscribed users. Finally, it also contains notices of new versions of Bit Badger
       Solutions-developed WordPress plug-ins (&ldquo;Daniel&rsquo;s Dropdowns&rdquo; <em>(inactive, as its functionality
       is now part of the WordPress core)</em> and &ldquo;HCSB Verse of the Day (Plus)&rdquo;).`,
-      `The original theme, &ldquo;Almost Spring,&rdquo; started as a pastel green and orange theme for WordPress.
-      However, it was customized to match the original look and feel of those initial static pages that served as the
-      blog from 2004-2006, and was converted to a BlogEngine.NET theme when we changed blogging platforms. When we went
-      back to WordPress, we changed to a simple theme called &ldquo;Mantra,&rdquo; which has unobtrusive social media
-      integration. It is now a statically-generated site, utilizing <a href="https://hexo.io">Hexo</a>, and its code is
-      <a href="https://github.com/danieljsummers/blog.bitbadger.solutions">open source</a>.`
+      `It is currently a statically-generated site, utilizing <a href="https://hexo.io">Hexo</a>, and its code is
+      <a href="https://github.com/bit-badger/blog.bitbadger.solutions">open source</a>.`
     ]
   },
   {
