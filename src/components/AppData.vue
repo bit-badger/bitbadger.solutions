@@ -47,7 +47,7 @@ const APPS = [
       {
         heading: 'What We Did (2016)',
         narrative: `In the nearly three years since we had set up the site, we were the only ones updating it. We had
-                   recently migrated some older blogs to use the static site generator Jekyll, were impressed with the
+                   recently migrated some older blogs to use a static site generator and were impressed with the
                    performance gains. We converted their site, to include writing a custom template to support the
                    podcast feed; it is now generated along with the rest of the site.`
       },
@@ -55,6 +55,16 @@ const APPS = [
         heading: 'What We Still Do',
         narrative: `Bit Badger Solutions hosts this site; we also host the church e-mail accounts, and publish sermons
                    to their podcast feed weekly.`
+      }
+    ],
+    techStack: [
+      {
+        name: 'Hexo',
+        for: 'static site generation'
+      },
+      {
+        name: 'Azure',
+        for: 'podcast file storage'
       }
     ]
   },
@@ -82,12 +92,18 @@ const APPS = [
         heading: 'What We Did (2012)',
         narrative: `In July 2012, we began hosting the site, as well as continuing support for theme updates. This
                    joined her military wife blog
-                   <a href="/solutions/hard-corps-wife" title="Hard Corps Wife &bull; DJS Consulting">Hard Corps
+                   <a href="/solutions/hard-corps-wife" title="Hard Corps Wife | Bit Badger Solutions">Hard Corps
                    Wife</a>, which we had begun hosting in mid-2011.`
       },
       {
         heading: 'What We Still Do',
         narrative: `Cassy formally decommissioned this site in early 2014.`
+      }
+    ],
+    techStack: [
+      {
+        name: 'WordPress',
+        for: 'blogging (with a custom theme)'
       }
     ]
   },
@@ -132,6 +148,12 @@ const APPS = [
     footnotes: [
       `<em>(NOTE: The thumbnail of the site represents a new skin on the original theme; while the theme is the same,
       Bit Badger Solutions did not create the graphics.)</em>`
+    ],
+    techStack: [
+      {
+        name: 'WordPress',
+        for: 'blogging (with a custom theme)'
+      }
     ]
   },
   {
@@ -168,6 +190,16 @@ const APPS = [
         narrative: `We passed off the content and hosting of the site to a new maintainer. They have since redesigned
                    it; it is accessible via the URL above, and at
                    <a href="http://emcspatriots.org" title="EMCS Patriots">EMCSpatriots.org</a>.`
+      }
+    ],
+    techStack: [
+      {
+        name: 'ASP.NET MVC',
+        for: 'page generation and interactivity'
+      },
+      {
+        name: 'PostgreSQL',
+        for: 'data storage'
       }
     ]
   },
@@ -213,7 +245,17 @@ const APPS = [
         `We would be out of business many times over if it weren&rsquo;t for his reliability, expertise, and good
         judgment&hellip;`
       ]
-    }
+    },
+    techStack: [
+      {
+        name: 'WordPress',
+        for: 'blogging'
+      },
+      {
+        name: 'nginx',
+        for: 'the web server'
+      }
+    ]
   },
   {
     id: 'hard-corps-wife',
@@ -235,6 +277,12 @@ const APPS = [
         heading: 'What We Still Do',
         narrative: `In 2013, Cassy shifted priorities and closed this site down. She can still be found at other places
                    around the web.`
+      }
+    ],
+    techStack: [
+      {
+        name: 'WordPress',
+        for: 'blogging'
       }
     ]
   },
@@ -274,6 +322,16 @@ const APPS = [
                    upgrades. We also provided support to the primary 3 bloggers, when they had questions about WordPress
                    or how the site was performing. The site closed in August of 2011, as the primary authors moved on to
                    other endeavors.`
+      }
+    ],
+    techStack: [
+      {
+        name: 'WordPress',
+        for: 'blogging'
+      },
+      {
+        name: 'Custom software',
+        for: 'data migration'
       }
     ]
   },
@@ -333,7 +391,17 @@ const APPS = [
         `&hellip;Daniel is able to produce high quality work on short time frames&hellip;`,
         `[Daniel] is smart, customer-centric and trustworthy.`
       ]
-    }
+    },
+    techStack: [
+      {
+        name: 'WordPress',
+        for: 'blogging'
+      },
+      {
+        name: 'nginx',
+        for: 'the web server'
+      }
+    ]
   },
   {
     id: 'my-prayer-journal',
@@ -354,23 +422,38 @@ const APPS = [
       `The goal of myPrayerJournal is to get out of the way, so that the user can focus on the requests and their
       prayer; once requests have been entered, the journal provides a way to easily pray through these requests, helping
       people not forget about active requests. It also provides a means of going back through answered requests, which
-      can be reviewed whenever the user desires.`
+      can be reviewed whenever the user desires. There is a
+      <a href="https://bit-badger.github.io/myPrayerJournal">documentation page</a> that fully describes all it can
+      do.`,
+      `As an open-source project, anyone can review the source code at
+      <a href="https://github.com/bit-badger/myPrayerJournal">GitHub</a>; we also track open issues there.`
     ],
     activity: [
       {
-        heading: 'What We Did',
+        heading: 'What We Did (2017-2018)',
         narrative: `We went through several iterations of front-end and back-end technologies, trying to find one that
                    would provide the optimal experience for praying through the list. The front end uses
-                   <a href="https://vuejs.org">Vue.js</a>, and the back end will soon use
-                   <a href="https://github.com/giraffe-fsharp/Giraffe">Giraffe</a> to serve the data. This solution is
-                   still in active development, which can be tracked on
-                   <a href="https://github.com/danieljsummers/myprayerjournal">GitHub</a>; this is also where issues
-                   regarding it can be raised and resolved.`
+                   <a href="https://vuejs.org">Vue.js</a>, and the back end uses
+                   <a href="https://github.com/giraffe-fsharp/Giraffe">Giraffe</a> to serve the data.`
       },
       {
         heading: 'What We Still Do',
         narrative: `Bit Badger Solutions hosts the instance of this at the URL linked above. We back up the data, and
                    also continue to develop it. Anyone can use it by logging in with a Google or Microsoft account.`
+      }
+    ],
+    techStack: [
+      {
+        name: 'Vue',
+        for: 'the front-end'
+      },
+      {
+        name: 'Giraffe',
+        for: 'the back-end data API'
+      },
+      {
+        name: 'PostgreSQL',
+        for: 'data storage'
       }
     ]
   },
@@ -418,6 +501,20 @@ const APPS = [
                    use it again.) A <a href="//hosted.djs-consulting.com/archive/notsoextreme_org"> snapshot of the NSX
                    public site</a> remains as a record of what happened those three months in 2008.`
       }
+    ],
+    techStack: [
+      {
+        name: 'WordPress',
+        for: 'content management'
+      },
+      {
+        name: 'Custom PHP code',
+        for: 'NSXapp'
+      },
+      {
+        name: 'PostgreSQL',
+        for: 'data storage'
+      }
     ]
   },
   {
@@ -458,6 +555,20 @@ const APPS = [
         heading: 'What We Still Do',
         narrative: `Bit Badger Solutions hosts this site; we also publish sermons to their podcast feed weekly.`
       }
+    ],
+    techStack: [
+      {
+        name: 'Vue',
+        for: 'the user interface for the PWA'
+      },
+      {
+        name: 'Hexo',
+        for: `generating the site's pages`
+      },
+      {
+        name: 'Azure',
+        for: 'podcast file storage'
+      }
     ]
   },
   {
@@ -491,6 +602,12 @@ const APPS = [
         heading: 'What We Still Do',
         narrative: `As Michelle is no longer doing professional photography, the current version of this site is a
                    simple thank-you to her customers over the years.`
+      }
+    ],
+    techStack: [
+      {
+        name: 'ASP.NET MVC',
+        for: 'content management'
       }
     ]
   },
@@ -536,6 +653,16 @@ const APPS = [
         heading: 'What We Still Do',
         narrative: `Host and maintain this application.`
       }
+    ],
+    techStack: [
+      {
+        name: 'Giraffe',
+        for: 'server-side logic and dynamic page generation'
+      },
+      {
+        name: 'PostgreSQL',
+        for: 'data storage'
+      }
     ]
   },
   {
@@ -570,6 +697,16 @@ const APPS = [
         heading: 'What We Still Do',
         narrative: `Bit Badger Solutions continues to provide backups and WordPress updates for Riehl World News.`
       }
+    ],
+    techStack: [
+      {
+        name: 'WordPress',
+        for: 'blogging'
+      },
+      {
+        name: 'Custom F# code',
+        for: 'archive static page generation'
+      }
     ]
   },
   {
@@ -592,6 +729,20 @@ const APPS = [
       provided organizations with a web presence that they could maintain without having to employ a web guru, using
       WordPress&rsquo;s <abbr title="What You See Is What You Get">WYSIWYG</abbr> editor and management tools.`,
       `TCMS was decommissioned in 2014.`
+    ],
+    techStack: [
+      {
+        name: 'Custom PHP code',
+        for: 'the application logic'
+      },
+      {
+        name: 'WordPress',
+        for: 'publicly-facing pages and authentication'
+      },
+      {
+        name: 'PostgreSQL',
+        for: 'application data storage'
+      }
     ]
   },
   {
@@ -615,6 +766,12 @@ const APPS = [
       is now part of the WordPress core)</em> and &ldquo;HCSB Verse of the Day (Plus)&rdquo;).`,
       `It is currently a statically-generated site, utilizing <a href="https://hexo.io">Hexo</a>, and its code is
       <a href="https://github.com/bit-badger/blog.bitbadger.solutions">open source</a>.`
+    ],
+    techStack: [
+      {
+        name: 'Hexo',
+        for: 'static site generation'
+      }
     ]
   },
   {
@@ -665,6 +822,16 @@ const APPS = [
       `In 2016, Hoffmantown Church elected to begin using another package for their prayer requests. While a few other
       churches had expressed interest in it, none ultimately decided to use it; so, in 2017, Virtual Prayer Room was
       officially decommissioned.`
+    ],
+    techStack: [
+      {
+        name: 'Custom PHP code',
+        for: 'the application'
+      },
+      {
+        name: 'PostgreSQL',
+        for: 'data storage'
+      }
     ]
   }
 ]
