@@ -3,17 +3,17 @@
     header.site-header
       .header-logo
         router-link(to='/')
-          img(src='/static/bitbadger.png'
+          img(src='/bitbadger.png'
               alt='A cartoon badger looking at a computer screen, with his paw on a mouse'
               title='Bit Badger Solutions')
       .header-title: router-link(to='/') Bit Badger Solutions
       .header-spacer &nbsp;
       .header-social
         a(href='https://twitter.com/Bit_Badger' title='Bit_Badger on Twitter')
-          img(src='/static/twitter.png' alt='Twitter' )
+          img(src='/twitter.png' alt='Twitter' )
         | &nbsp; &nbsp;
         a(href='https://www.facebook.com/bitbadger.solutions' title='Bit Badger Solutions on Facebook')
-          img(src='/static/facebook.png' alt='Facebook')
+          img(src='/facebook.png' alt='Facebook')
     #content
       router-view
     footer

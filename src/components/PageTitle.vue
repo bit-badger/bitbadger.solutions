@@ -10,6 +10,6 @@ export default {
       document.title = `${this.title} « Bit Badger Solutions`
     }
   },
-  render () { }
+  render () { return {} }
 }
 </script>

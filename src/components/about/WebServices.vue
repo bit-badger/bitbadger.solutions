@@ -27,7 +27,7 @@ div
         #[a(href='https://blog.bitbadger.solutions/2012/4040-web-service-for-2012.html' title='40/40 Web Service for 2012 | The Bit Badger Blog') wrote one for 2012]
         as well. #[i (As the ERLC does not host these any more, this service is no longer active.)]
       li: p.
-        #[a(href='https://prayerjournal.me') myPrayerJournal]
+        #[a(href='https://prayerjournal.me') myPrayerJournal ]
         #[small (#[router-link(:to="{ name: 'Application', params: { app: 'my-prayer-journal' } }" title='myPrayerJournal | Bit Badger Solutions') about])]
         is a #[abbr(title='Single Page Application') SPA] which only downloads the structure of the site the first time
         you go there, then utilizes a stateless API to access data from the browser. 

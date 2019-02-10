@@ -40,7 +40,7 @@ export default {
       return AppData.apps.find(app => app.id === this.$props.app)
     },
     imageLink () {
-      return `/static/screenshots/${this.application.id}.png`
+      return `/screenshots/${this.application.id}.png`
     },
     pageTitle () {
       return `${this.application.name} « Solutions`
