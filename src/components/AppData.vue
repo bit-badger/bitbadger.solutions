@@ -650,6 +650,11 @@ const APPS = [
                    framework.`
       },
       {
+        heading: 'What We Did (2019)',
+        narrative: `PrayerTracker became <a href="https://github.com/bit-badger/PrayerTracker">an open source
+                   project</a>.`
+      },
+      {
         heading: 'What We Still Do',
         narrative: `Host and maintain this application.`
       }
