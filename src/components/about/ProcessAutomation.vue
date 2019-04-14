@@ -22,12 +22,12 @@ article.content.auto
       was an application that helped organizations such as
       #[a(href='http://www.loveincabq.org') Love INC of South Albuquerque] connect people with needs to people who can
       help fulfill those needs. TCMS sprung from the
-      #[a(href='http://hosted.djs-consulting.com/archive/notsoextreme_org' title='Not So Extreme Makeover: Community Edition (Archive)') Not So Extreme Makeover: Community Edition]
+      #[a(href='https://nsx.archive.bitbadger.solutions' title='Not So Extreme Makeover: Community Edition (Archive)') Not So Extreme Makeover: Community Edition]
       in Albuquerque, New Mexico during spring break 2008; we not only developed the public presence, but a private
       system called #[router-link(:to="{ name: 'Application', params: { app: 'nsx' } }" title='NSXapp | Bit Badger Solutions') NSXapp]
       that enabled the management of the volunteers, families, and things for this massive effort.
     li: p.
-      We continue to offer #[a(href='https://prayer.djs-consulting.com' title='PrayerTracker') PrayerTracker]
+      We continue to offer #[a(href='https://prayer.djs-consulting.com' title='PrayerTracker') PrayerTracker ]
       #[small (#[router-link(:to="{ name: 'Application', params: { app: 'prayer-tracker' } }" title='PrayerTracker | Bit Badger Solutions') about])],
       a free-to-use web application that helps Sunday School classes (or other small groups) generate a prayer request
       list; it provides a central place for list management and continuity.

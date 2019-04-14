@@ -24,15 +24,12 @@ article.content.auto
       which had information, prices, and samples of the photographer's work, as well as the ability for customers to
       view proofs and make photo selections online.
     li: p.
-      The sites for #[a(href='https://bayvista.org' title='Bay Vista Baptist Church') Bay Vista Baptist Church ]
+      The site for #[a(href='https://bayvista.org' title='Bay Vista Baptist Church') Bay Vista Baptist Church ]
       #[small (#[router-link(:to="{ name: 'Application', params: { app: 'bay-vista' } }" title='Bay Vista Baptist Church | Bit Badger Solutions') about])]
-      and
-      #[a(href='https://olivet-baptist.org' title='Olivet Baptist Church') Olivet Baptist Church ]
-      #[small (#[router-link(:to="{ name: 'Application', params: { app: 'olivet-vista' } }" title='Olivet Baptist Church | Bit Badger Solutions') about])]
-      utilize a "static site generator," where the entire site is generated from source files, then served. It requires
-      no back-end database, which means that the server can send them as fast as its clients can take them. These two
-      sites even have a generated podcast feed! Adding content to these types of sites requires a bit more technical
-      knowledge beyond "typing text in a box," but it is a great way to build ultra-fast, scalable web sites.
+      utilizes a "static site generator," where the entire site is generated from source files, then served. It requires
+      no back-end database, which means that the server can send pages as fast as its clients can take them. This site
+      even has a generated podcast feed! Adding content to these types of sites requires a bit more technical knowledge
+      beyond "typing text in a box," but it is a great way to build ultra-fast, scalable web sites.
     li: p.
       This site is a single-page application (SPA) utilizing the #[a(href='https://vuejs.org') Vue.js] JavaScript
       framework. The application pages are generated based on an internal data set, and the other pages are simple text

@@ -121,7 +121,7 @@ const APPS = [
     id: 'dr-melissa-clouthier',
     name: 'Dr. Melissa Clouthier',
     url: 'http://melissablogs.com',
-    active: true,
+    active: false,
     categoryId: 2,
     frontPageText: 'Information Pollination',
     frontPageOrder: 1,
@@ -135,14 +135,15 @@ const APPS = [
     ],
     activity: [
       {
-        heading: 'What We Did',
+        heading: 'What We Did (2009)',
         narrative: `We created a custom theme based on another site, and developed graphics to complement that theme. We
                    also imported the content from her Blogger site into the WordPress site, and created a featured
                    content template for the front page.`
       },
       {
-        heading: 'What We Still Do',
-        narrative: 'Bit Badger Solutions continues to provide WordPress upgrades, backups, and theme tweaks.'
+        heading: 'What We Did (2018)',
+        narrative: `Melissa decommissioned her site; we took final snapshots of the information there, then assisted
+                   with shutting it down.`
       }
     ],
     footnotes: [
@@ -462,7 +463,7 @@ const APPS = [
     name: 'Not So Extreme Makeover: Community Edition',
     url: 'http://notsoextreme.org',
     active: false,
-    archiveUrl: 'https://hosted.djs-consulting.com/archive/notsoextreme_org',
+    archiveUrl: 'https://nsx.archive.bitbadger.solutions',
     categoryId: 1,
     indexText: 'Public site for the makeover; provides event-driven management of volunteers, donations, and families needing help',
     paragraphs: [
@@ -498,8 +499,8 @@ const APPS = [
       {
         heading: 'What We Still Do',
         narrative: `NSXapp was officially decommissioned in 2012. (It still exists in archived form, if a need arises to
-                   use it again.) A <a href="//hosted.djs-consulting.com/archive/notsoextreme_org"> snapshot of the NSX
-                   public site</a> remains as a record of what happened those three months in 2008.`
+                   use it again.) A <a href="https://nsx.archive.bitbadger.solutions"> snapshot of the NSX public
+                   site</a> remains as a record of what happened those three months in 2008.`
       }
     ],
     techStack: [
@@ -521,7 +522,8 @@ const APPS = [
     id: 'olivet-baptist',
     name: 'Olivet Baptist Church',
     url: 'https://olivet-baptist.org',
-    active: true,
+    active: false,
+    archiveUrl: 'https://olivet.archive.bitbadger.solutions',
     categoryId: 3,
     frontPageText: 'Gulfport, Mississippi',
     frontPageOrder: 2,
@@ -552,8 +554,10 @@ const APPS = [
                    still accessible from the web via a browser.`
       },
       {
-        heading: 'What We Still Do',
-        narrative: `Bit Badger Solutions hosts this site; we also publish sermons to their podcast feed weekly.`
+        heading: 'What We Did (2019)',
+        narrative: `The church closed its doors February 24th, 2019. We converted the PWA back to a static web site,
+                   set up a static archive site, and worked with their personnel to ensure that the podcast links are
+                   all still available. We continue to host that archive site and podcast content.`
       }
     ],
     techStack: [
