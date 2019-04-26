@@ -207,7 +207,7 @@ const APPS = [
   {
     id: 'futility-closet',
     name: 'Futility Closet',
-    url: 'https://futilitycloset.com',
+    url: 'https://www.futilitycloset.com',
     active: true,
     categoryId: 2,
     frontPageText: 'An idler&rsquo;s miscellany of compendious amusements',

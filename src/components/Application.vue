@@ -7,6 +7,8 @@ div
     <small><small>
       #[a(v-if='application.active || application.linkInactive' :href='application.url') {{ application.url }}]
       #[span(v-if='!application.active && !application.linkInactive') {{ application.url }}]
+      #[span(v-if='!application.active && !application.linkInactive && application.archiveUrl') &nbsp; &nbsp;]
+      #[a(v-if='!application.active && !application.linkInactive && application.archiveUrl' :href='application.archiveUrl') <small>(Archive)</small>]
     </small></small>
   div.app-info
     aside: img(:src='imageLink')
