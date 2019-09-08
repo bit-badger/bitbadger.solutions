@@ -4,24 +4,25 @@ div
   sidebar-app(v-for='app in appsForCat(category.id)' :app='app' :key='app.id')
 </template>
 
-<script>
-import AppData from '../AppData.vue'
+<script lang="ts">
+'use strict'
+
+import Vue from 'vue'
+import { Component, Prop } from 'vue-property-decorator'
+
+import Data, { Category } from '@/data'
 import SidebarApp from './SidebarApp.vue'
 
-export default {
-  name: 'sidebar-category',
-  props: ['category'],
-  data () {
-    return {
-      appsForCat: function (catId) {
-        return AppData.apps
-          .filter(app => app.active && app.categoryId === catId)
-          .sort((a, b) => a.frontPageOrder - b.frontPageOrder)
-      }
-    }
-  },
-  components: {
-    SidebarApp
+@Component({ components: { SidebarApp } })
+export default class SidebarCategory extends Vue {
+  
+  @Prop({ required: true })
+  category!: Category
+  
+  appsForCat (catId: number) {
+    return Data.apps
+      .filter(app => app.isActive && app.categoryId === catId)
+      .sort((a, b) => a.frontPageOrder - b.frontPageOrder)
   }
 }
 </script>

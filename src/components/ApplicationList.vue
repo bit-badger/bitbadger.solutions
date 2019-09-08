@@ -8,22 +8,23 @@ article.content.auto
   application-list-item(v-for='app in past' :app='app' :key='app.id')
 </template>
 
-<script>
-import AppData from './AppData.vue'
+<script lang="ts">
+'use strict'
+
+import Vue from 'vue'
+import { Component } from 'vue-property-decorator'
+
+import Data, { App } from '@/data'
 import ApplicationListItem from './ApplicationListItem.vue'
 import PageTitle from './PageTitle.vue'
 
-export default {
-  name: 'application-list',
-  data: function () {
-    return {
-      current: AppData.apps.filter(app => app.active && !app.noAboutLink),
-      past: AppData.apps.filter(app => !app.active && !app.noAboutLink)
-    }
-  },
-  components: {
-    ApplicationListItem,
-    PageTitle
-  }
+@Component({ components: { ApplicationListItem, PageTitle } })
+export default class ApplicationList extends Vue {
+  
+  /** The currently active applications */
+  current: App[] = Data.apps.filter(app => app.isActive && !app.noAboutLink)
+
+  /** The inactive applications */
+  past: App[] = Data.apps.filter(app => !app.isActive && !app.noAboutLink)
 }
 </script>

@@ -12,18 +12,26 @@
     span(v-html='app.indexText')
 </template>
 
-<script>
-export default {
-  name: 'application-list-item',
-  props: ['app']
+<script lang="ts">
+'use strict'
+
+import Vue from 'vue'
+import { Component, Prop } from 'vue-property-decorator'
+
+import { App } from '@/data'
+
+@Component
+export default class ApplicationListItem extends Vue {
+  
+  @Prop({ required: true })
+  app!: App
 }
 </script>
 
-<style scoped>
-.app-name {
-  font-family: "Oswald", "Segoe UI", Ubuntu, "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: maroon;
-}
+<style lang="sass" scoped>
+.app-name
+  font-family: "Oswald", "Segoe UI", Ubuntu, "DejaVu Sans", "Liberation Sans", Arial, sans-serif
+  font-size: 1.3rem
+  font-weight: bold
+  color: maroon
 </style>

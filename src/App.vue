@@ -24,158 +24,107 @@
         Secured by #[strong: a(href='//letsencrypt.org') Let's Encrypt]
 </template>
 
-<script>
-export default {
-  name: 'app'
-}
-</script>
-
-<style>
-@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway');
-html {
-  background-color: lightgray;
-}
-body {
-	margin: 0px;
-	font-family: "Raleway", "Segoe UI", Ubuntu, Tahoma, "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
-	background-color: #FFFAFA;
-}
-a {
-	color: navy;
-	text-decoration: none;
-}
-a:hover {
-	border-bottom: dotted 1px navy;
-}
-a img {
-	border:0;
-}
-acronym {
-	border-bottom:dotted 1px black;
-}
-header, h1, h2, h3, footer a {
-	font-family: "Oswald", "Segoe UI", Ubuntu, "DejaVu Sans", "Liberation Sans", Arial, sans-serif;
-}
-h1 {
-  text-align: center;
-  margin: 1.4rem 0;
-  font-size: 2rem;
-}
-h2 {
-  margin: 1.2rem 0;
-}
-h3 {
-  margin: 1rem 0;
-}
-h2, h3 {
-  border-bottom: solid 2px navy;
-}
-@media all and (min-width:40rem) {
-  h2, h3 {
-    width: 80%;
-  }
-}
-p {
-  margin: 1rem 0;
-}
-#content {
-  margin: 0 1rem;
-}
-.content {
-  font-size: 1.1rem;
-}
-.auto {
-  margin: 0 auto;
-}
-@media all and (min-width: 68rem) {
-  .content {
-    width: 66rem;
-  }
-}
-.hdr {
-	font-size: 14pt;
-	font-weight: bold;
-}
-.site-header {
-	height: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(lightgray), to(#FFFAFA));
-  background-image: -webkit-linear-gradient(top, lightgray, #FFFAFA);
-  background-image: -moz-linear-gradient(top, lightgray, #FFFAFA);
-  background-image: linear-gradient(to bottom, lightgray, #FFFAFA);
-}
-.site-header a:link, .site-header a:visited {
-  color: black;
-}
-.site-header a:hover {
-	border-bottom:none;
-}
-.header-title {
-  font-size: 3rem;
-  font-weight: bold;
-  line-height: 100px;
-  text-align: center;
-}
-.header-spacer {
-  flex-grow: 3;
-}
-.header-social {
-  padding: 25px .8rem 0 0;
-}
-.header-social img {
-  width: 50px;
-  height: 50px;
-}
-@media all and (max-width:40rem) {
-  .site-header {
-    height: auto;
-    flex-direction: column;
-    align-items: center;
-  }
-  .header-title {
-    line-height: 3rem;
-  }
-  .header-spacer {
-    display: none;
-  }
-}
-.content-item {
-	padding-left: 5px;
-	padding-right: 5px;
-	font-size: 1rem;
-}
-article.page .metadata {
-    display: none;
-}
-.strike {
-  text-decoration: line-through;
-}
-footer {
-	padding: 20px 15px 10px 15px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-	font-size: 1rem;
-	color: black;
-	clear: both;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFAFA), to(lightgray));
-  background-image: -webkit-linear-gradient(top, #FFFAFA, lightgray);
-  background-image: -moz-linear-gradient(top, #FFFAFA, lightgray);
-  background-image: linear-gradient(to bottom, #FFFAFA, lightgray);
-}
-footer a:link, footer a:visited {
-	color: black;
-}
-.alignleft {
-	float:left;
-	padding-right: 5px;
-}
-ul {
-	padding-left: 40px;
-}
-li {
-	list-style-type: disc;
-}
+<style lang="sass">
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway')
+html
+  background-color: lightgray
+body
+	margin: 0px
+	font-family: "Raleway", "Segoe UI", Ubuntu, Tahoma, "DejaVu Sans", "Liberation Sans", Arial, sans-serif
+	background-color: #FFFAFA
+a
+	color: navy
+	text-decoration: none
+a:hover
+	border-bottom: dotted 1px navy
+a img
+	border: 0
+acronym
+	border-bottom:dotted 1px black
+header, h1, h2, h3, footer a
+	font-family: "Oswald", "Segoe UI", Ubuntu, "DejaVu Sans", "Liberation Sans", Arial, sans-serif
+h1
+  text-align: center
+  margin: 1.4rem 0
+  font-size: 2rem
+h2
+  margin: 1.2rem 0
+h3
+  margin: 1rem 0
+h2, h3
+  border-bottom: solid 2px navy
+@media all and (min-width:40rem)
+  h2, h3
+    width: 80%
+p
+  margin: 1rem 0
+#content
+  margin: 0 1rem
+.content
+  font-size: 1.1rem
+.auto
+  margin: 0 auto
+@media all and (min-width: 68rem)
+  .content
+    width: 66rem
+.hdr
+	font-size: 14pt
+	font-weight: bold
+.site-header
+  height: 100px
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  background-image: linear-gradient(to bottom, lightgray, #FFFAFA)
+.site-header a:link, .site-header a:visited
+  color: black
+.site-header a:hover
+	border-bottom: none
+.header-title
+  font-size: 3rem
+  font-weight: bold
+  line-height: 100px
+  text-align: center
+.header-spacer
+  flex-grow: 3
+.header-social
+  padding: 25px .8rem 0 0
+.header-social img
+  width: 50px
+  height: 50px
+@media all and (max-width:40rem)
+  .site-header
+    height: auto
+    flex-direction: column
+    align-items: center
+  .header-title
+    line-height: 3rem
+  .header-spacer
+    display: none
+.content-item
+	padding-left: 5px
+	padding-right: 5px
+	font-size: 1rem
+article.page .metadata
+    display: none
+.strike
+  text-decoration: line-through
+footer
+  padding: 20px 15px 10px 15px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  font-size: 1rem
+  color: black
+  clear: both
+  background-image: linear-gradient(to bottom, #FFFAFA, lightgray)
+footer a:link, footer a:visited
+	color: black
+.alignleft
+	float: left
+	padding-right: 5px
+ul
+	padding-left: 40px
+li
+	list-style-type: disc
 </style>

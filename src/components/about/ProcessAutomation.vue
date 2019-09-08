@@ -35,9 +35,3 @@ article.content.auto
     br
     router-link(to='/' title='Home') &laquo; Home
 </template>
-
-<script>
-export default {
-  name: 'process-automation'
-}
-</script>

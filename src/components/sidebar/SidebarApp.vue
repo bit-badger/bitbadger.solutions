@@ -9,9 +9,17 @@
     p.app-sidebar-description(v-html='app.frontPageText')
 </template>
 
-<script>
-export default {
-  name: 'sidebar-app',
-  props: ['app']
+<script lang="ts">
+'use strict'
+
+import Vue from 'vue'
+import { Component, Prop } from 'vue-property-decorator'
+
+import { App } from '@/data'
+
+@Component
+export default class SidebarApp extends Vue {
+  @Prop()
+  app!: App
 }
 </script>

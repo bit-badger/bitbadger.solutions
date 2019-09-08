@@ -1,15 +1,17 @@
+'use strict'
+
 import Vue from 'vue'
 import Router from 'vue-router'
 
-import Application from '@/components/Application'
-import ApplicationList from '@/components/ApplicationList'
-import FourOhFour from '@/components/FourOhFour'
-import Home from '@/components/Home'
-import InformationPublicizing from '@/components/about/InformationPublicizing'
-import LegacyData from '@/components/about/LegacyData'
-import ProcessAutomation from '@/components/about/ProcessAutomation'
-import WebServices from '@/components/about/WebServices'
-import WhyBitBadger from '@/components/about/WhyBitBadger'
+import Application from '@/components/Application.vue'
+import ApplicationList from '@/components/ApplicationList.vue'
+import FourOhFour from '@/components/FourOhFour.vue'
+import Home from '@/components/Home.vue'
+import InformationPublicizing from '@/components/about/InformationPublicizing.vue'
+import LegacyData from '@/components/about/LegacyData.vue'
+import ProcessAutomation from '@/components/about/ProcessAutomation.vue'
+import WebServices from '@/components/about/WebServices.vue'
+import WhyBitBadger from '@/components/about/WhyBitBadger.vue'
 
 Vue.use(Router)
 

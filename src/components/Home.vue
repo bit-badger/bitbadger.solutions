@@ -47,35 +47,32 @@ div.home
     h2 Solutions to Your Problems
     p.
       We&rsquo;d be happy to discuss your information technology needs, and which of our solutions are right for you.
-      Just #[a(href='mailto:daniel@djs-consulting.com') e-mail us] and let us know what we can do for you! You can also
+      Just #[a(href='mailto:daniel@bitbadger.solutions') e-mail us] and let us know what we can do for you! You can also
       #[router-link(to='/solutions' title='All Solutions') browse a complete list of our current and previous solutions].
   app-sidebar
 </template>
 
-<script>
+<script lang="ts">
+'use strict'
+
+import Vue from 'vue'
+import { Component } from 'vue-property-decorator'
+
 import AppSidebar from './sidebar/AppSidebar.vue'
 import PageTitle from './PageTitle.vue'
 
-export default {
-  name: 'home',
-  components: {
-    AppSidebar,
-    PageTitle
-  }
-}
+@Component({ components: { AppSidebar, PageTitle }})
+export default class Home extends Vue { }
 </script>
 
-<style>
-@media all and (min-width: 80rem) {
-  .home {
-    display: flex;
-    flex-flow: row;
-    align-items: flex-start;
-    justify-content: space-around;
-  }
-}
-.home-lead {
-  font-size: 1.3rem;
-  text-align: center;
-}
+<style lang="sass">
+@media all and (min-width: 80rem)
+  .home
+    display: flex
+    flex-flow: row
+    align-items: flex-start
+    justify-content: space-around
+.home-lead
+  font-size: 1.3rem
+  text-align: center
 </style>

@@ -1,7 +1,9 @@
+'use strict'
+
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import PageTitle from './components/PageTitle'
+import PageTitle from './components/PageTitle.vue'
 
 Vue.config.productionTip = false
 

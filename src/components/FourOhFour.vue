@@ -24,11 +24,5 @@ article.content.auto
     li: p.
       The #[strong Not So Extreme Makeover: Community Edition] archive site, previously at
       #[tt /archived/notsoextreme_org], can now be found at
-      #[a(href='https://hosted.djs-consulting.com/archive/notsoextreme_org') https://hosted.djs-consulting.com/archive/notsoextreme_org].
+      #[a(href='https://nsx.archive.bitbadger.solutions') https://nsx.archive.bitbadger.solutions].
 </template>
-
-<script>
-export default {
-  name: 'four-oh-four'
-}
-</script>
