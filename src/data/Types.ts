@@ -3,38 +3,23 @@
 /** An activity performed for a customer */
 export class Activity {
 
-  /** The heading of the activity */
-  heading: string
-
-  /** A description of the activity */
-  narrative: string
-
   /**
    * Construct a new instance
    * @param heading The heading of the activity
    * @param narrative The description of the activity
    */
-  constructor(heading: string, narrative: string) {
-    this.heading = heading
-    this.narrative = narrative
-  }
+  constructor(public heading: string, public narrative: string) { }
 }
 
 /** A category of application */
 export class Category {
-
-  /** The ID of the category */
-  id: number
-
-  /** The name of the category */
-  name: string
 
   /**
    * Construct a new instance
    * @param id The ID of the category
    * @param name The name of the category
    */
-  constructor(id: number, name: string) {
+  constructor(public id: number, public name: string) {
     this.id = id
     this.name = name
   }
@@ -55,12 +40,6 @@ export class Category {
 /** A quote from an app */
 export class Quote {
   
-  /** The name of the person who provided the quote */
-  name: string
-  
-  /** What organization the person who provided the quote represents */
-  from: string
-
   /** The full text of the quote */
   full: string = ''
 
@@ -72,44 +51,23 @@ export class Quote {
    * @param name The name of the person who provided the quote
    * @param from What organization the person who provided the quote represents
    */
-  constructor(name: string, from: string) {
-    this.name = name
-    this.from = from
-  }
+  constructor(public name: string, public from: string) { }
 }
 
 /** A description of a part of the technology stack used */
 export class Technology {
-
-  /** The name of the technology */
-  name: string
-
-  /** What aspect was addressed by this technology */
-  usedFor: string
-
+    
   /**
    * Construct a new instace
    * @param name The name of the technology
    * @param usedFor What aspect was addressed by this technology
    */
-  constructor(name: string, usedFor: string) {
-    this.name = name
-    this.usedFor = usedFor
-  }
+  constructor(public name: string, public usedFor: string) { }
 }
 
 /** An application or web site */
 export class App {
   
-  /** The ID of the app */
-  id: string
-
-  /** The name of the app */
-  name: string
-
-  /** The URL of the app */
-  url: string
-
   /** Whether this app is active (default true) */
   isActive: boolean = true
 
@@ -155,9 +113,5 @@ export class App {
    * @param name The name of the app
    * @param url The URL of the app
    */
-  constructor(id: string, name: string, url: string) {
-    this.id = id
-    this.name = name
-    this.url = url
-  }
+  constructor(public id: string, public name: string, public url: string) { }
 }

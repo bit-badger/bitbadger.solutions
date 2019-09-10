@@ -4,7 +4,7 @@
       strong {{ app.name }}
       br
       span(v-if='!app.noAboutLink').
-        #[router-link(:to="{ name: 'Application', params: { app: app.id } }") About] &bull; 
+        #[router-link(:to="{ name: 'Application', params: { app: app.id } }" :title='aboutTitle') About] &bull; 
       a(:title='app.name' :href='app.url') Visit
     p.app-sidebar-description(v-html='app.frontPageText')
 </template>
@@ -21,5 +21,10 @@ import { App } from '@/data'
 export default class SidebarApp extends Vue {
   @Prop()
   app!: App
+
+  /** The title attribute for the About link */
+  get aboutTitle () {
+    return `About ${this.app.name} | Bit Badger Solutions`
+  }
 }
 </script>

@@ -3,9 +3,9 @@
     span.app-name(v-html='app.name')
     | &nbsp;~&nbsp;
     router-link(:to="{ name: 'Application', params: { app: app.id } }") About
-    span(v-if='app.active') &nbsp;~&nbsp;
+    span(v-if='app.isActive') &nbsp;~&nbsp;
       a(:href='app.url') Visit
-    span(v-if='!app.active && app.archiveUrl') &nbsp;~&nbsp;
+    span(v-if='!app.isActive && app.archiveUrl') &nbsp;~&nbsp;
       a(:href='app.archiveUrl') Visit
       em &nbsp;(archive)
     br
