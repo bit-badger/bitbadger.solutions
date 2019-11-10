@@ -14,21 +14,6 @@ export class ApplicationComponent implements OnInit {
   /** The app we're displaying */
   application: App
 
-  /** The page title based on this app */
-  pageTitle: string
-
-  /** Whether to link to the app's URL */
-  linkToApp: boolean
-
-  /** Whether to link to an archive URL */
-  linkToArchive: boolean
-
-  /** The link to the screenshot image */
-  imageLink: string
-
-  /** The alt text for the screenshot image */
-  imageAlt: string
-
   constructor(
     private appService: ApplicationService,
     private route: ActivatedRoute
@@ -37,14 +22,32 @@ export class ApplicationComponent implements OnInit {
   ngOnInit() {
     const appId = this.route.snapshot.paramMap.get('appId')
     this.appService.getApp(appId)
-      .subscribe(app => {
-        this.application = app
-        this.pageTitle = `${app.name} « Solutions`
-        this.linkToApp = app.isActive || app.linkInactive
-        this.linkToArchive = !app.isActive && !app.linkInactive && (app.archiveUrl > '')
-        this.imageLink = `/assets/screenshots/${app.id}.png`
-        this.imageAlt = `Screen shot for ${app.name}`
-       })
+      .subscribe(app => this.application = app)
+  }
+  
+  /** The page title based on this app */
+  get pageTitle () {
+     return `${this.application.name} « Solutions`
+  }
+
+  /** Whether to link to the app's URL */
+  get linkToApp () {
+    return this.application.isActive || this.application.linkInactive
+  }
+
+  /** Whether to link to an archive URL */
+  get linkToArchive () {
+    return !this.application.isActive && !this.application.linkInactive && (this.application.archiveUrl > '')
+  }
+
+  /** The link to the screenshot image */
+  get imageLink () {
+    return `/assets/screenshots/${this.application.id}.png`
+  }
+
+  /** The alt text for the screenshot image */
+  get imageAlt () {
+    return `Screen shot for ${this.application.name}`
   }
 
 }

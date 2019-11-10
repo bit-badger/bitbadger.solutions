@@ -1,0 +1,10 @@
+<div>
+  <p class="app-sidebar-name">
+    <strong>{{ app.name }}</strong><br>
+    <span *ngIf="!app.noAboutLink">
+      <a routerLink="/solutions/{{ app.id }}" [title]="aboutTitle">About</a> &bull;
+    </span>
+    <a [routerLink]="app.url" [title]="app.name">Visit</a>
+  </p>
+  <p class="app-sidebar-description" [innerHtml]="app.frontPageText"></p>
+</div>
