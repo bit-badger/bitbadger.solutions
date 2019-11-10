@@ -1,0 +1,35 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<div *ngIf="application">
+  <h1>
+    {{ application.name }}<br>
+    <small><small>
+      <a *ngIf="linkToApp" [href]="application.url">{{ application.url }}</a>
+      <span *ngIf="!linkToApp">{{ application.url }}</span>
+      <span *ngIf="linkToArchive">&nbsp; &nbsp;
+        <a [href]="application.archiveUrl"><small>(Archive)</small></a>
+      </span>
+    </small></small>
+  </h1>
+  <div class="app-info">
+    <aside><img [src]="imageLink" [alt]="imageAlt"></aside>
+    <article class="content">
+      <p *ngFor="let p of application.paragraphs" [innerHtml]="p"></p>
+      <div *ngFor="let act of application.activities">
+        <h3>{{ act.heading }}</h3>
+        <p [innerHtml]="act.narrative"></p>
+      </div>
+      <div *ngIf="application.quotes.length > 0">
+        <h3>What They Say</h3>
+        <blockquote *ngFor="let q of application.quotes">
+          <p class="quote" [innerHtml]="q.full"></p>
+          <p class="source">
+            &mdash; <strong class="app-info-heading">{{ q.name }}</strong>
+            <span *ngIf="q.from">, {{ q.from }}</span>
+          </p>
+        </blockquote>
+      </div>
+      <p *ngFor="let p of application.footnotes" [innerHtml]="p"></p>
+      <p><br><a routerLink="/solutions">&laquo; Back to All Solutions</a></p>
+    </article>
+  </div>
+</div>
