@@ -16,9 +16,11 @@ bayVista.indexText = 'Southern Baptist church in Biloxi, Mississippi'
 bayVista.techStack = [
   new Technology('Hugo', 'static site generation', true),
   new Technology('Azure', 'podcast file storage, automated builds, and static site hosting', true),
+  new Technology('GitHub', 'source code control', true),
   new Technology('Hexo', 'static site generation'),
   new Technology('Jekyll', 'static site generation'),
-  new Technology('WordPress', 'content management')
+  new Technology('WordPress', 'content management'),
+  new Technology('MySQL', 'data storage')
 ]
 
 /** The Bit Badger Blog */
@@ -27,14 +29,31 @@ techBlog.categoryId = Category.STATIC
 techBlog.frontPageText = 'Technical information (&ldquo;geek stuff&rdquo;) from Bit Badger Solutions'
 techBlog.frontPageOrder = 3
 techBlog.indexText = 'Geek stuff from Bit Badger Solutions'
-techBlog.techStack = [ new Technology('Hexo', 'static site generation', true) ]
+techBlog.techStack = [
+  new Technology('Hexo', 'static site generation', true),
+  new Technology('Azure', 'static site hosting', true),
+  new Technology('GitHub', 'source code control', true),
+  new Technology('Custom software', 'content management'),
+  new Technology('WordPress', 'content management'),
+  new Technology('BlogEngine.NET', 'content management'),
+  new Technology('Orchard', 'content management'),
+  new Technology('myWebLog', 'content management'),
+  new Technology('Jekyll', 'static site generation'),
+  new Technology('MySQL', 'data storage'),
+  new Technology('SQL Server', 'data storage'),
+  new Technology('RethinkDB', 'data storage')
+]
 
 /** Cassy Fiano */
 const cassyFiano = new App('cassy-fiano', 'Cassy Fiano', 'http://www.cassyfiano.com')
 cassyFiano.isActive = false
 cassyFiano.categoryId = Category.WORDPRESS
 cassyFiano.indexText = 'A &ldquo;rising star&rdquo; conservative blogger'
-cassyFiano.techStack = [ new Technology('WordPress', 'blogging (with a custom theme)') ]
+cassyFiano.techStack = [
+  new Technology('WordPress', 'blogging (with a custom theme)'),
+  new Technology('MySQL', 'data storage'),
+  new Technology('Azure', 'backup and recovery')
+]
 
 /** Daniel J. Summers */
 const danielJSummers = new App('daniel-j-summers', 'Daniel J. Summers', 'https://daniel.summershome.org')

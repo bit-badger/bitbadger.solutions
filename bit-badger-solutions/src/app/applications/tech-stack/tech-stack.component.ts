@@ -11,19 +11,9 @@ export class TechStackComponent implements OnInit {
 
   @Input() stack: Technology[]
   
-  /** External links to technology products */
-  private techLinks = {
-    'WordPress': 'https://wordpress.org'
-  }
-
   constructor() { }
 
   ngOnInit() { }
-
-  /** Whether there is a link for a given product */
-  hasLink(product: string) {
-    return this.techLinks[product] !== undefined
-  }
 
   /** The currently-used technologies */
   get currentStack() {

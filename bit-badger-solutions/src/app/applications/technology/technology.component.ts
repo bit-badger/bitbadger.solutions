@@ -13,11 +13,18 @@ export class TechnologyComponent implements OnInit {
 
   /** External links to technology products */
   private techLinks = {
-    'Azure': 'https://azure.microsoft.com/',
-    'Hexo': 'https://hexo.io/',
-    'Hugo': 'https://gohugo.io/',
-    'Jekyll': 'https://jekyllrb.com/',
-    'WordPress': 'https://wordpress.org'
+    Azure: 'https://azure.microsoft.com/',
+    'BlogEngine.NET': 'http://www.dotnetblogengine.net/',
+    GitHub: 'https://github.com/',
+    Hexo: 'https://hexo.io/',
+    Hugo: 'https://gohugo.io/',
+    Jekyll: 'https://jekyllrb.com/',
+    MySQL: 'https://www.mysql.com/',
+    myWebLog: 'https://github.com/bit-badger/myWebLog',
+    Orchard: 'https://orchardproject.net/',
+    RethinkDB: 'https://rethinkdb.com/',
+    'SQL Server': 'https://www.microsoft.com/en-us/sql-server/',
+    WordPress: 'https://wordpress.org'
   }
 
   constructor() { }
