@@ -1,14 +1,3 @@
-/** An activity performed for a customer */
-export class Activity {
-
-  /**
-   * Construct a new instance
-   * @param heading The heading of the activity
-   * @param narrative The description of the activity
-   */
-  constructor(public heading: string, public narrative: string) { }
-}
-
 /** A category of application */
 export class Category {
 
@@ -59,8 +48,9 @@ export class Technology {
    * Construct a new instace
    * @param name The name of the technology
    * @param usedFor What aspect was addressed by this technology
+   * @param current Whether this technology is currently in use in the solution
    */
-  constructor(public name: string, public usedFor: string) { }
+  constructor(public name: string, public usedFor: string, public current: boolean = false) { }
 }
 
 /** An application or web site */
@@ -89,15 +79,6 @@ export class App {
 
   /** The URL where an archived version of this app may be found */
   archiveUrl: string = ''
-
-  /** Paragraphs of text that describe the app */
-  paragraphs: string[] = []
-
-  /** Footnotes for the long description */
-  footnotes: string[] = []
-
-  /** Discrete activities performed for this app */
-  activities: Activity[] = []
 
   /** The technology used for this app */
   techStack: Technology[] = []

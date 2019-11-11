@@ -1,4 +1,4 @@
-import { App, Activity, Category, Quote, Technology } from './application.types'
+import { App, Category, Quote, Technology } from './application.types'
 
 /** A Word from the Word */
 const aWordFromTheWord = new App('a-word-from-the-word', 'A Word from the Word', 'https://devotions.summershome.org')
@@ -14,8 +14,11 @@ bayVista.frontPageText = 'Biloxi, Mississippi'
 bayVista.frontPageOrder = 1
 bayVista.indexText = 'Southern Baptist church in Biloxi, Mississippi'
 bayVista.techStack = [
+  new Technology('Hugo', 'static site generation', true),
+  new Technology('Azure', 'podcast file storage, automated builds, and static site hosting', true),
   new Technology('Hexo', 'static site generation'),
-  new Technology('Azure', 'podcast file storage and automated builds')
+  new Technology('Jekyll', 'static site generation'),
+  new Technology('WordPress', 'content management')
 ]
 
 /** The Bit Badger Blog */
@@ -24,7 +27,7 @@ techBlog.categoryId = Category.STATIC
 techBlog.frontPageText = 'Technical information (&ldquo;geek stuff&rdquo;) from Bit Badger Solutions'
 techBlog.frontPageOrder = 3
 techBlog.indexText = 'Geek stuff from Bit Badger Solutions'
-techBlog.techStack = [ new Technology('Hexo', 'static site generation') ]
+techBlog.techStack = [ new Technology('Hexo', 'static site generation', true) ]
 
 /** Cassy Fiano */
 const cassyFiano = new App('cassy-fiano', 'Cassy Fiano', 'http://www.cassyfiano.com')
@@ -160,11 +163,6 @@ olivet.isActive = false
 olivet.archiveUrl = 'https://olivet.archive.bitbadger.solutions'
 olivet.categoryId = Category.STATIC
 olivet.indexText = 'Southern Baptist church in Gulfport, Mississippi'
-olivet.paragraphs = [
-  `Olivet Baptist Church&rsquo;s pastor saw our work with <a href="/solutions/bay-vista"
-   title="Bay Vista Baptist Church | Bit Badger Solutions">Bay Vista</a>, and asked us what would be involved with
-   setting up something similar for his church. Olivet did not currently have a website.`
-]
 olivet.techStack = [
   new Technology('Vue', 'the user interface for the PWA'),
   new Technology('Hexo', `generating the site's pages`),

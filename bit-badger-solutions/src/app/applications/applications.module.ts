@@ -28,7 +28,9 @@ import { PhotographyByMichelleComponent } from './solutions/photography-by-miche
 import { RiehlWorldNewsComponent } from './solutions/riehl-world-news.component';
 import { TcmsComponent } from './solutions/tcms.component';
 import { BitBadgerBlogComponent } from './solutions/bit-badger-blog.component';
-import { SharkTankComponent } from './solutions/shark-tank.component'
+import { SharkTankComponent } from './solutions/shark-tank.component';
+import { TechStackComponent } from './tech-stack/tech-stack.component';
+import { TechnologyComponent } from './technology/technology.component'
 
 @NgModule({
   declarations: [
@@ -57,7 +59,9 @@ import { SharkTankComponent } from './solutions/shark-tank.component'
     RiehlWorldNewsComponent,
     SharkTankComponent,
     TcmsComponent,
-    VirtualPrayerRoomComponent
+    VirtualPrayerRoomComponent,
+    TechStackComponent,
+    TechnologyComponent
   ],
   entryComponents: [
     BayVistaComponent,

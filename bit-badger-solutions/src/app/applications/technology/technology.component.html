@@ -1,0 +1,5 @@
+<li>
+  <a *ngIf="hasLink(tech.name)" [href]="techLinks[tech.name]" target="_blank">{{ tech.name }}</a>
+  <span *ngIf="!hasLink(tech.name)">{{ tech.name }}</span>
+  for {{ tech.usedFor }}
+</li>
