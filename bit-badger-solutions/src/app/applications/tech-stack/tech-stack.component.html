@@ -1,15 +1,16 @@
 <div *ngIf="(stack || []).length > 0">
-  <h3>Technology Stack</h3>
-  <div *ngIf="currentStack.length > 0">
-    <p><small><strong>Current:</strong></small></p>
-    <ul>
-      <app-technology *ngFor="let tech of currentStack" [tech]="tech"></app-technology>
-    </ul>
-  </div>
-  <div *ngIf="priorStack.length > 0">
-    <p><small><strong>Previously:</strong></small></p>
-    <ul>
-      <app-technology *ngFor="let tech of priorStack" [tech]="tech"></app-technology>
-    </ul>
-  </div>
+  <app-hide-section heading="Technology Stack">
+    <div *ngIf="currentStack.length > 0">
+      <p><small><strong>Current:</strong></small></p>
+      <ul>
+        <app-technology *ngFor="let tech of currentStack" [tech]="tech"></app-technology>
+      </ul>
+    </div>
+    <div *ngIf="priorStack.length > 0">
+      <p><small><strong>Previously:</strong></small></p>
+      <ul>
+        <app-technology *ngFor="let tech of priorStack" [tech]="tech"></app-technology>
+      </ul>
+    </div>
+  </app-hide-section>
 </div>

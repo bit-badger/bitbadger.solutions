@@ -1,5 +1,6 @@
-import { BrowserModule } from '@angular/platform-browser'
 import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 import { AppRoutingModule } from './app-routing.module'
 import { ApplicationsModule } from './applications/applications.module'
@@ -26,6 +27,7 @@ import { WebServicesComponent } from './pages/about/web-services.component'
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     ApplicationsModule,
     SharedModule,

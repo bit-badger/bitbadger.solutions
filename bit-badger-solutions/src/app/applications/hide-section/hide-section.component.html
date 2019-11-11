@@ -1,0 +1,4 @@
+<h3 (click)="toggle()">{{ heading }}<span class="arrow" [innerHtml]="label"></span></h3>
+<div *ngIf="shown" [@slideInOut]>
+  <ng-content></ng-content>
+</div>

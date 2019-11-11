@@ -11,8 +11,16 @@ export class BayVistaComponent extends AppDetailComponent {
 
   @Input() app: App
 
+  process: boolean = false
+  
   constructor() {
     super()
+  }
+
+  showHide(what: string) {
+    if (what === 'process') {
+      this.process = !this.process
+    }
   }
 
 }

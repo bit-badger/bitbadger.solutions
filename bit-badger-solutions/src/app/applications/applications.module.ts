@@ -30,7 +30,8 @@ import { TcmsComponent } from './solutions/tcms.component';
 import { BitBadgerBlogComponent } from './solutions/bit-badger-blog.component';
 import { SharkTankComponent } from './solutions/shark-tank.component';
 import { TechStackComponent } from './tech-stack/tech-stack.component';
-import { TechnologyComponent } from './technology/technology.component'
+import { TechnologyComponent } from './technology/technology.component';
+import { HideSectionComponent } from './hide-section/hide-section.component'
 
 @NgModule({
   declarations: [
@@ -61,7 +62,8 @@ import { TechnologyComponent } from './technology/technology.component'
     TcmsComponent,
     VirtualPrayerRoomComponent,
     TechStackComponent,
-    TechnologyComponent
+    TechnologyComponent,
+    HideSectionComponent
   ],
   entryComponents: [
     BayVistaComponent,

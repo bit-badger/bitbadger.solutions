@@ -19,29 +19,28 @@
     </p>
     <h3>The Solution</h3>
     <p>
-      We set up a WordPress-based site, where multiple people could have the ability to maintain the site. We also set
-      up a sermon podcast feed, increasing the reach of their ministry.
+      We developed and continue to maintain a fast, static website that can be updated by multiple trained church
+      members. The site also has a repository for their sermons dating back to January 2014, and a podcast feed that
+      gives their ministry a global reach.
     </p>
-    <h3>The Process</h3>
-    <p>
-      We manually downloaded all the publically-accessible parts of their old site, and used that content to form the
-      basis for the new side, updating outdated information. We maintained the same look-and-feel, but soon moved to a
-      more mobile-friendly layout.
-    </p>
-    <p>
-      In 2016, we determined that we were the only ones updating the site, so we transformed the site to use a static
-      site generator; this resulted in fast page loads, with automation providing scheduled updates. We also wrote a
-      custom template for the podcast feed, which is also generated as a static file.
-    </p>
-    <p>
-      In 2019, we <a href="https://github.com/bayvistabc/www.bayvista.org">open sourced</a> the site's source code. We
-      also set up Azure Pipelines to automatically build and deploy the site both on demand and on a schedule.
-    </p>
-    <h3>The Epilogue</h3>
-    <p>
-      Bit Badger Solutions hosts this site; we also host the church e-mail accounts, and publish sermons to their
-      podcast feed weekly.
-    </p>
+    <app-hide-section heading="The Process">
+      <p>
+        Initially, we set up a WordPress-based site, where multiple people could have the ability to maintain the site.
+        We manually downloaded all the publically-accessible parts of their old site, and used that content to form the
+        basis for the new side, updating outdated information along the way. We maintained the same look-and-feel, but
+        soon moved to a more mobile-friendly layout.
+      </p>
+      <p>
+        In 2016, we determined that we were the only ones updating the site, so we transformed the site to use a static
+        site generator; this resulted in fast page loads, with automation providing scheduled updates. We also wrote a
+        custom template for the podcast feed, which is also generated as a static file.
+      </p>
+      <p>
+        In 2019, we <a href="https://github.com/bayvistabc/www.bayvista.org">open sourced</a> the site's source code.
+        We also set up Azure Pipelines to automatically build and deploy the site both on demand and on a schedule.
+        Finally, we trained other church members on updating the site's contents and the podcast feed.
+      </p>
+    </app-hide-section>
     <app-tech-stack [stack]="app.techStack"></app-tech-stack>
     <app-all-solutions-link></app-all-solutions-link>
   </article>
