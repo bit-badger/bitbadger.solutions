@@ -1,0 +1,44 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<app-application-header [app]="app"></app-application-header>
+<div class="app-info">
+  <app-application-image [app]="app"></app-application-image>
+  <article class="content">
+    <p>
+      Years ago, Daniel was responsible for keeping up with prayer requests for his Sunday School class. To help him
+      keep up with requests, automatically drop requests that were old, and track long-term requests, he wrote a custom
+      app made up of a few pages. Over time, he added security mechanisms and other options, arriving at the site that
+      exists today. It is provided free for the asking to any church, Sunday School class, or small group that desires
+      a tool to help them establish a continuous list of prayer requests.
+    </p>
+    <div>
+      <h3>What We Did (2005)</h3>
+      <p>Created the original site.</p>
+    </div>
+    <div>
+      <h3>What We Did (2011)</h3>
+      <p>
+        We rewrote this application using a more modern (at the time) framework (ASP MVC 3), building the security
+        additions from the ground up, and posturing it for an interface with
+        <a routerLink="/solutions/virtual-prayer-room" title="Virtual Prayer Room | Bit Badger Solutions">Virtual
+        Prayer Room</a>.
+      </p>
+    </div>
+    <div>
+      <h3>What We Did (2012)</h3>
+      <p>In April 2012, version 4 was released with support for Spanish - our first multi-lingual application!</p>
+    </div>
+    <div>
+      <h3>What We Did (2018)</h3>
+      <p>Version 7 brought full mobile accessibility, along with an upgrade to a modern, ultra-fast web framework.</p>
+    </div>
+    <div>
+      <h3>What We Did (2019)</h3>
+      <p>PrayerTracker became <a href="https://github.com/bit-badger/PrayerTracker">an open source project</a>.</p>
+    </div>
+    <div>
+      <h3>What We Still Do</h3>
+      <p>Host and maintain this application.</p>
+    </div>
+    <app-all-solutions-link></app-all-solutions-link>
+  </article>
+</div>

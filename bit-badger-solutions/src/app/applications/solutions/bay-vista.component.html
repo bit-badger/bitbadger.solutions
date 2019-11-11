@@ -1,0 +1,51 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<app-application-header [app]="app"></app-application-header>
+<div class="app-info">
+  <app-application-image [app]="app"></app-application-image>
+  <article class="content">
+    <p>
+      Bay Vista Baptist Church has served the spiritual needs of Mississippi&rsquo;s Gulf Coast for decades. They
+      emphasize serving their community as well; they were a hub for
+      <abbr title="Federal Emergency Management Agency">FEMA</abbr> during Hurricane Katrina relief and recovery
+      efforts, and they are a relay point for each year&rsquo;s
+      <a href="https://www.samaritanspurse.org/what-we-do/operation-christmas-child/">Operation Christmas Child</a>
+      campaign. As of late 2013, the authors of their current website were no longer around, and no one could get to
+      the site to update it. We proposed setting up a site based on WordPress, where multiple people could have the
+      ability to maintain the site, reducing the risk of that happening again. We also mentioned that such a site could
+      also serve a sermon podcast feed, increasing the reach of their ministry.
+    </p>
+    <div>
+      <h3>What We Did (2014)</h3>
+      <p>
+        We manually downloaded all the publically-accessible parts of their old site, and used that content to create a
+        WordPress-based site, updating a few outdated items along the way. We also established a podcast feed for their
+        sermons. A few months after initially setting up the site, we updated the theme to be more mobile-friendly.
+      </p>
+    </div>
+    <div>
+      <h3>What We Did (2016)</h3>
+      <p>
+        In the nearly three years since we had set up the site, we were the only ones updating it. We had recently
+        migrated some older blogs to use a static site generator and were impressed with the performance gains. We
+        converted their site, to include writing a custom template to support the podcast feed; it is now generated
+        along with the rest of the site.
+      </p>
+    </div>
+    <div>
+      <h3>What We Did (2019)</h3>
+      <p>
+        We <a href="https://github.com/bayvistabc/www.bayvista.org">open sourced</a> the site's source code, and set up
+        Azure Pipelines to automatically build and deploy the site on demand, as well as the regular podcast episode
+        release time.
+      </p>
+    </div>
+    <div>
+      <h3>What We Still Do</h3>
+      <p>
+        Bit Badger Solutions hosts this site; we also host the church e-mail accounts, and publish sermons to their
+        podcast feed weekly.
+      </p>
+    </div>
+    <app-all-solutions-link></app-all-solutions-link>
+  </article>
+</div>

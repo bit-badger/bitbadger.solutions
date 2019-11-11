@@ -1,0 +1,29 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<app-application-header [app]="app"></app-application-header>
+<div class="app-info">
+  <app-application-image [app]="app"></app-application-image>
+  <article class="content">
+    <p>
+      Futility Closet exists as a place to give people a break from the dullness of work, by providing puzzles,
+      anecdotes, and more. It began on a shared host, but was growing too large and popular for that platform.
+    </p>
+    <div>
+      <h3>What We Did</h3>
+      <p>
+        We determined what the traffic requirements and size of the blog were, then made some recommendations. Greg
+        Ross, the site author, decided on one of our recommendations. He had backups of the existing database, so we
+        were able to set up a server and restore the data onto that new server. We configured WordPress and locked down
+        the server, and this blog was moved quickly.
+      </p>
+    </div>
+    <div>
+      <h3>What We Still Do</h3>
+      <p>
+        Bit Badger Solutions still hosts Futility Closet, ensuring that the underlying server receives performance and
+        security upgrades, monitoring site performance, and maintaining regular backups.
+      </p>
+    </div>
+    <app-quotes [quotes]="app.quotes"></app-quotes>
+    <app-all-solutions-link></app-all-solutions-link>
+  </article>
+</div>

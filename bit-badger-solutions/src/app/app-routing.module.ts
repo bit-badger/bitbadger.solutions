@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core'
 import { Routes, RouterModule } from '@angular/router'
 
-import { ApplicationComponent } from './applications/application/application.component'
+import { ApplicationComponent } from './applications/application.component'
 import { ApplicationListComponent } from './applications/application-list/application-list.component'
 import { HomeComponent } from './pages/home/home.component'
 import { InformationPublicizingComponent } from './pages/about/information-publicizing.component'

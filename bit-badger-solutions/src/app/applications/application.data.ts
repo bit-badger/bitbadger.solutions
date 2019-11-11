@@ -13,33 +13,9 @@ bayVista.categoryId = Category.STATIC
 bayVista.frontPageText = 'Biloxi, Mississippi'
 bayVista.frontPageOrder = 1
 bayVista.indexText = 'Southern Baptist church in Biloxi, Mississippi'
-bayVista.paragraphs = [
-  `Bay Vista Baptist Church has served the spiritual needs of Mississippi&rsquo;s Gulf Coast for decades. They emphasize
-   serving their community as well; they were a hub for <abbr title="Federal Emergency Management Agency">FEMA</abbr>
-   during Hurricane Katrina relief and recovery efforts, and they are a relay point for each year&rsquo;s
-   <a href="https://www.samaritanspurse.org/what-we-do/operation-christmas-child/">Operation Christmas Child</a>
-   campaign. As of late 2013, the authors of their current website were no longer around, and no one could get to the
-   site to update it. We proposed setting up a site based on WordPress, where multiple people could have the ability to
-   maintain the site, reducing the risk of that happening again. We also mentioned that such a site could also serve a
-   sermon podcast feed, increasing the reach of their ministry.`
-]
-bayVista.activities = [
-  new Activity('What We Did (2014)',
-    `We manually downloaded all the publically-accessible parts of their old site, and used that content to create a
-     WordPress-based site, updating a few outdated items along the way. We also established a podcast feed for their
-     sermons. A few months after initially setting up the site, we updated the theme to be more mobile-friendly.`),
-  new Activity('What We Did (2016)',
-    `In the nearly three years since we had set up the site, we were the only ones updating it. We had recently migrated
-     some older blogs to use a static site generator and were impressed with the performance gains. We converted their
-     site, to include writing a custom template to support the podcast feed; it is now generated along with the rest of
-     the site.`),
-  new Activity('What We Still Do',
-    `Bit Badger Solutions hosts this site; we also host the church e-mail accounts, and publish sermons to their podcast
-     feed weekly.`)
-]
 bayVista.techStack = [
   new Technology('Hexo', 'static site generation'),
-  new Technology('Azure', 'podcast file storage')
+  new Technology('Azure', 'podcast file storage and automated builds')
 ]
 
 /** Cassy Fiano */
@@ -47,23 +23,6 @@ const cassyFiano = new App('cassy-fiano', 'Cassy Fiano', 'http://www.cassyfiano.
 cassyFiano.isActive = false
 cassyFiano.categoryId = Category.WORDPRESS
 cassyFiano.indexText = 'A &ldquo;rising star&rdquo; conservative blogger'
-cassyFiano.paragraphs = [
-  `Cassy Fiano (now Cassy Chesser) began blogging back in 2007 on Blogger. She worked hard to network with other
-   bloggers, and wrote prolifically. As she approached the end of her first year of blogging, she was about to outgrow
-   Blogger. She asked in a blog post if anyone had experience with Movable Type, the platform used by another blog to
-   which she contributed. I replied that I did not, but that I had experience with WordPress.`
-]
-cassyFiano.activities = [
-  new Activity('What We Did (2008)',
-    `We assisted her with finding a theme, and customized that theme to contain the same sidebar elements as her current
-     Blogger theme. We modified her old Blogger template to send people to her new blog (using redirection) after
-     displaying a note that the blog had moved.`),
-  new Activity('What We Did (2012)',
-    `In July 2012, we began hosting the site, as well as continuing support for theme updates. This joined her military
-     wife blog <a href="/solutions/hard-corps-wife" title="Hard Corps Wife | Bit Badger Solutions">Hard Corps Wife</a>,
-     which we had begun hosting in mid-2011.`),
-  new Activity('What We Still Do', 'Cassy formally decommissioned this site in early 2014.')
-]
 cassyFiano.techStack = [ new Technology('WordPress', 'blogging (with a custom theme)') ]
 
 /** Daniel J. Summers */
@@ -80,25 +39,6 @@ drMelissaClouthier.categoryId = Category.WORDPRESS
 drMelissaClouthier.frontPageText = 'Information Pollination'
 drMelissaClouthier.frontPageOrder = 1
 drMelissaClouthier.indexText = 'Politics, health, podcasts and more'
-drMelissaClouthier.paragraphs = [
-  `Dr. Melissa Clouthier saw our work with
-   <a href="/solutions/cassy-fiano" title="Cassy Fiano | Bit Badger Solutions">Cassy</a>&rsquo;s site, and asked us to
-   help her move off Blogger as well. Melissa blogs from the political right, but also covers health issues and social
-   media. She had been blogging for a several years, and wanted to bring her old content with her to her new site.`
-]
-drMelissaClouthier.activities = [
-  new Activity('What We Did (2009)',
-    `We created a custom theme based on another site, and developed graphics to complement that theme. We also imported
-     the content from her Blogger site into the WordPress site, and created a featured content template for the front
-     page.`),
-  new Activity('What We Did (2018)',
-    `Melissa decommissioned her site; we took final snapshots of the information there, then assisted with shutting it
-     down.`)
-]
-drMelissaClouthier.footnotes = [
-  `<em>(NOTE: The thumbnail of the site represents a new skin on the original theme; while the theme is the same, Bit
-   Badger Solutions did not create the graphics.)</em>`
-]
 drMelissaClouthier.techStack = [ new Technology('WordPress', 'blogging (with a custom theme)') ]
 
 /** Emerald Mountain Christian School */
@@ -107,28 +47,6 @@ const emcs = new App('emerald-mountain-christian-school', 'Emerald Mountain Chri
 emcs.isActive = false
 emcs.linkInactive = true
 emcs.indexText = 'Classical, Christ-centered education near Wetumpka, Alabama'
-emcs.paragraphs = [
-  `Emerald Mountain Christian School is a private Christian school founded over 50 years ago. They use the Principle
-   Approach&reg;, which emphasizes research, reasoning, relating, and recording to help students synthesize the
-   information they learn, rather than just requiring rote memorization. More information about the school&rsquo;s rich
-   history can be found on their site.`
-]
-emcs.activities = [
-  new Activity('What We Did (2004)',
-    `They had a website with very basic information and very little styling. We developed a theme (the one in the
-     thumbnail), based in large part on the design of their printed materials, and they approved the design. Initially,
-     the site only contained the content from their previous site. We then put their school calendar of events up on
-     the site, where parents could find the dates for upcoming events. Finally, we put all the material from their
-     Parent Information Packet online, which helped prospective families learn more about the school before visiting
-     it.`),
-  new Activity('What We Did (2011)',
-    `The underlying engine of the basic website was switched from PHP to an ASP MVC web application, and the back-end
-     database was switched from MySQL to a PostgreSQL database.`),
-  new Activity('What We Did (2013)',
-    `We passed off the content and hosting of the site to a new maintainer. They have since redesigned it; it is
-     accessible via the URL above, and at
-     <a href="http://emcspatriots.org" title="EMCS Patriots">EMCSpatriots.org</a>.`)
-]
 emcs.techStack = [
   new Technology('ASP.NET MVC', 'page generation and interactivity'),
   new Technology('PostgreSQL', 'data storage')
@@ -140,20 +58,6 @@ futilityCloset.categoryId = Category.WORDPRESS
 futilityCloset.frontPageText = 'An idler&rsquo;s miscellany of compendious amusements'
 futilityCloset.frontPageOrder = 2
 futilityCloset.indexText = 'An idler&rsquo;s miscellany of compendious amusements'
-futilityCloset.paragraphs = [
-  `Futility Closet exists as a place to give people a break from the dullness of work, by providing puzzles, anecdotes,
-   and more. It began on a shared host, but was growing too large and popular for that platform.`
-]
-futilityCloset.activities = [
-  new Activity('What We Did',
-    `We determined what the traffic requirements and size of the blog were, then made some recommendations. Greg Ross,
-     the site author, decided on one of our recommendations. He had backups of the existing database, so we were able to
-     set up a server and restore the data onto that new server. We configured WordPress and locked down the server, and
-     this blog was moved quickly.`),
-  new Activity('What We Still Do',
-    `Bit Badger Solutions still hosts Futility Closet, ensuring that the underlying server receives performance and
-     security upgrades, monitoring site performance, and maintaining regular backups.`)
-]
 const fcQuote = new Quote('Greg Ross', 'Futility Closet')
 fcQuote.full =
   `Bit Badger Solutions has been an absolute godsend for Futility Closet. We have been with them since 2010, initially
@@ -178,17 +82,6 @@ const hardCorpsWife = new App('hard-corps-wife', 'Hard Corps Wife', 'http://www.
 hardCorpsWife.isActive = false
 hardCorpsWife.categoryId = Category.WORDPRESS
 hardCorpsWife.indexText = 'Cassy&rsquo;s life as a Marine wife'
-hardCorpsWife.paragraphs = [
-  `Capitalizing on the growth from her Cassy Fiano blog, Cassy (now Chesser) began a separate blog in which she could
-   chronicle her experience as a military spouse.`
-]
-hardCorpsWife.activities = [
-  new Activity('What We Did',
-    'We customized the header and sidebar of the theme, and set up the hardcorpswife.com domain.'),
-  new Activity('What We Still Do',
-    `In 2013, Cassy shifted priorities and closed this site down. She can still be found at other places around the
-     web.`)
-]
 hardCorpsWife.techStack = [ new Technology('WordPress', 'blogging') ]
 
 /** Liberty Pundits */
@@ -196,30 +89,6 @@ const libertyPundits = new App('liberty-pundits', 'Liberty Pundits', 'http://lib
 libertyPundits.isActive = false
 libertyPundits.categoryId = Category.WORDPRESS
 libertyPundits.indexText = 'The home for conservatives'
-libertyPundits.paragraphs = [
-  `At its founding, Liberty Pundits was a joint venture by 3 established bloggers (Melissa Clouthier, Bill Dupray, and
-   Clyde Middleton) that, in their words, was aimed at becoming the new home for conservatives on the Internet. With the
-   three of them all being prolific bloggers in their own right, and the help of many contributors, Liberty Pundits was
-   a bustling hub of information.`
-]
-libertyPundits.activities = [
-  new Activity('What We Did',
-    `Bill and Clyde had been part of Patriot Room, an already-recognized powerhouse, and their desire was for Liberty
-     Pundits to contain the content that they had contributed to Patriot Room. The technical lead on that blog had moved
-     on, so we did some divining of what was there. Once we deduced the current setup, we obtained the data from that
-     site, determined how it would need to be manipulated to become part of a WordPress blog, then accomplished the data
-     migration. Initially, this was deployed on the same shared hosting account where LibertyPundits.com, their podcast
-     distribution site, already resided. The site&rsquo;s traffic quickly overwhelmed that solution. They then were
-     moved by their host to a <abbr title="Virtual Private Server">VPS</abbr>, which performed moderately better, but
-     still had quite a few issues, mostly related to the site&rsquo;s traffic volume. We recommended a new server
-     configuration, including migrating from a fully-featured web server to a more lightweight web server, along with
-     caching, and configured that server. This configuration eliminated the bottlenecks, and enabled them to have
-     several 100,000+ hit days with no appreciable slowdowns.`),
-  new Activity('What We Still Do',
-    `Bit Badger Solutions maintained the server, keeping it current with performance and security upgrades. We also
-     provided support to the primary 3 bloggers, when they had questions about WordPress or how the site was performing.
-     The site closed in August of 2011, as the primary authors moved on to other endeavors.`)
-]
 libertyPundits.techStack = [
   new Technology('WordPress', 'blogging'),
   new Technology('Custom software', 'data migration')
@@ -539,25 +408,6 @@ theSharkTank.activities = [
 const vpr = new App('virtual-prayer-room', 'Virtual Prayer Room', 'https://virtualprayerroom.us')
 vpr.isActive = false
 vpr.indexText = 'Gives prayer warriors access to requests from wherever they may be, and sends them daily updates'
-vpr.paragraphs = [
-  `Many churches have prayer rooms &ndash; rooms set aside for people to come in to pray. Hoffmantown Church in
-   Albuquerque, New Mexico was one of these churches. However, they had seen the use of this physical prayer room
-   dwindling over the years. People had become less willing to drive to the church, especially at night, and security
-   became an issue as well; either prayer warriors had to know how to disable the security system, or the church would
-   have to remain unlocked.`,
-  `Having seen our work with the <a href="/solutions/nsx/"
-   title="Not So Extreme Makeover: Community Edition | Bit Badger Solutions">Not So Extreme Makeover: Community
-   Edition</a>, the church contacted us to see if something similar could be developed to help their prayer ministry.
-   The resulting application that was developed extended the prayer room to wherever the prayer warrior can get an
-   Internet connection! Prayer warriors could enlist right from the site, and had to be approved. Requests and updates
-   were tracked by date/time, and warriors could record when they&rsquo;ve prayed for a request from the site, or from
-   clicking a link in the daily e-mail they received with requests from their interest areas. As many prayer needs are
-   confidential, security and confidentiality were very important. Virtual Prayer Room ensured these by providing
-   varying security levels for prayer warriors and the ability to mark each request as confidential.`,
-  `In 2016, Hoffmantown Church elected to begin using another package for their prayer requests. While a few other
-   churches had expressed interest in it, none ultimately decided to use it; so, in 2017, Virtual Prayer Room was
-   officially decommissioned.`
-]
 vpr.techStack = [
   new Technology('Custom PHP code', 'the application'),
   new Technology('PostgreSQL', 'data storage')

@@ -1,0 +1,10 @@
+<div *ngIf="(quotes || []).length > 0">
+  <h3>What They Say</h3>
+  <blockquote *ngFor="let quote of quotes">
+    <p class="quote" [innerHtml]="quote.full"></p>
+    <p class="source">
+      &mdash; <strong>{{ quote.name }}</strong>
+      <span *ngIf="quote.from">, {{ quote.from }}</span>
+    </p>
+  </blockquote>
+</div>
