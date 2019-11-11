@@ -19,37 +19,64 @@ import { EmeraldMountainChristianSchoolComponent } from './solutions/emerald-mou
 import { FutilityClosetComponent } from './solutions/futility-closet.component';
 import { QuotesComponent } from './quotes/quotes.component';
 import { HardCorpsWifeComponent } from './solutions/hard-corps-wife.component';
-import { LibertyPunditsComponent } from './solutions/liberty-pundits.component'
+import { LibertyPunditsComponent } from './solutions/liberty-pundits.component';
+import { MindyMackenzieComponent } from './solutions/mindy-mackenzie.component';
+import { MyPrayerJournalComponent } from './solutions/my-prayer-journal.component';
+import { NsxComponent } from './solutions/nsx.component';
+import { OlivetBaptistComponent } from './solutions/olivet-baptist.component';
+import { PhotographyByMichelleComponent } from './solutions/photography-by-michelle.component';
+import { RiehlWorldNewsComponent } from './solutions/riehl-world-news.component';
+import { TcmsComponent } from './solutions/tcms.component';
+import { BitBadgerBlogComponent } from './solutions/bit-badger-blog.component';
+import { SharkTankComponent } from './solutions/shark-tank.component'
 
 @NgModule({
   declarations: [
+    AllSolutionsLinkComponent,
     ApplicationComponent,
+    ApplicationDetailDirective,
+    ApplicationHeaderComponent,
+    ApplicationImageComponent,
     ApplicationListComponent,
     ApplicationListItemComponent,
-    PrayerTrackerComponent,
-    ApplicationHeaderComponent,
-    AllSolutionsLinkComponent,
-    ApplicationImageComponent,
-    VirtualPrayerRoomComponent,
-    ApplicationDetailDirective,
     BayVistaComponent,
-    CassyFianoComponent,
-    DrMelissaClouthierComponent,
-    EmeraldMountainChristianSchoolComponent,
-    FutilityClosetComponent,
-    QuotesComponent,
-    HardCorpsWifeComponent,
-    LibertyPunditsComponent
-  ],
-  entryComponents: [
-    BayVistaComponent,
+    BitBadgerBlogComponent,
     CassyFianoComponent,
     DrMelissaClouthierComponent,
     EmeraldMountainChristianSchoolComponent,
     FutilityClosetComponent,
     HardCorpsWifeComponent,
     LibertyPunditsComponent,
+    MindyMackenzieComponent,
+    MyPrayerJournalComponent,
+    NsxComponent,
+    OlivetBaptistComponent,
+    PhotographyByMichelleComponent,
     PrayerTrackerComponent,
+    QuotesComponent,
+    RiehlWorldNewsComponent,
+    SharkTankComponent,
+    TcmsComponent,
+    VirtualPrayerRoomComponent
+  ],
+  entryComponents: [
+    BayVistaComponent,
+    BitBadgerBlogComponent,
+    CassyFianoComponent,
+    DrMelissaClouthierComponent,
+    EmeraldMountainChristianSchoolComponent,
+    FutilityClosetComponent,
+    HardCorpsWifeComponent,
+    LibertyPunditsComponent,
+    MindyMackenzieComponent,
+    MyPrayerJournalComponent,
+    NsxComponent,
+    OlivetBaptistComponent,
+    PhotographyByMichelleComponent,
+    PrayerTrackerComponent,
+    RiehlWorldNewsComponent,
+    SharkTankComponent,
+    TcmsComponent,
     VirtualPrayerRoomComponent
   ],
   imports: [

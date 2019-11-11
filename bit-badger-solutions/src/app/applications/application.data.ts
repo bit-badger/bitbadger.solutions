@@ -18,6 +18,14 @@ bayVista.techStack = [
   new Technology('Azure', 'podcast file storage and automated builds')
 ]
 
+/** The Bit Badger Blog */
+const techBlog = new App('tech-blog', 'The Bit Badger Blog', 'https://blog.bitbadger.solutions')
+techBlog.categoryId = Category.STATIC
+techBlog.frontPageText = 'Technical information (&ldquo;geek stuff&rdquo;) from Bit Badger Solutions'
+techBlog.frontPageOrder = 3
+techBlog.indexText = 'Geek stuff from Bit Badger Solutions'
+techBlog.techStack = [ new Technology('Hexo', 'static site generation') ]
+
 /** Cassy Fiano */
 const cassyFiano = new App('cassy-fiano', 'Cassy Fiano', 'http://www.cassyfiano.com')
 cassyFiano.isActive = false
@@ -106,25 +114,6 @@ mindyMackenzie.categoryId = Category.WORDPRESS
 mindyMackenzie.frontPageText = 'WSJ-best-selling author of The Courage Solution'
 mindyMackenzie.frontPageOrder = 3
 mindyMackenzie.indexText = '<em>Wall Street Journal</em> best-selling author and C-suite advisor'
-mindyMackenzie.paragraphs = [
-  `Mindy Mackenzie, the prior Chief Performance Officer of Beam, Inc., is known as the &ldquo;Velvet Hammer&rdquo;
-   for her tough-yet-caring style of leadership. Her <em>Wall Street Journal</em> best-selling book <em>The Courage
-   Solution: The Power of Truth-Telling with Your Boss, Peers, and Team</em> details her spin-free approach to personal
-   and business success.`
-]
-mindyMackenzie.activities = [
-  new Activity('What We Did (2015)',
-    `We assumed maintenance of her site several months in advance of the book launch of <em>The Courage Solution</em>.
-     We worked with her, and her publicists and other professionals, to ensure that the book launch went smoothly. We
-     customized her WordPress installation to support her Media Appearances in a way that allowed them to be entered,
-     tracked, and listed as of the date they occurred. We also implemented rotating videos on the front page of the
-     site.`),
-  new Activity('What We Did (2018)',
-    `We developed the pages for her <em>You First Integrative Leadership Summit</em>, with speaker bios, conference
-     schedule, and an application form.`),
-  new Activity('What We Still Do',
-    'We continue to provide backups, WordPress support, and content updates for Mindy&rsquo;s site.')
-]
 const mmQuote = new Quote('Mindy Mackenzie', '')
 mmQuote.full =
   `Daniel is the best partner you could hope for in a web designer and for handling web maintenance! He is smart,
@@ -147,30 +136,6 @@ const myPrayerJournal = new App('my-prayer-journal', 'myPrayerJournal', 'https:/
 myPrayerJournal.frontPageText = 'Minimalist personal prayer journal'
 myPrayerJournal.frontPageOrder = 2
 myPrayerJournal.indexText = 'Minimalist personal prayer journal'
-myPrayerJournal.paragraphs = [
-  `Daniel wanted to maintain a prayer journal, where he could record the prayer requests for which he had prayed, and
-   the answer that eventually came to that request. He didn't want to do that on paper for several reasons - it's easy
-   to lose, a long-running request can run out of space to make notes, etc. He believed that he was not the only person
-   who felt this way regarding prayer, and decided to use this as an opportunity to fill both a spiritual and a learning
-   need. Given <a href="https://auth0.com">Auth0</a>'s policy of offering free authentication services for open-source
-   applications, he decided to develop this as an open-source application.`,
-  `The goal of myPrayerJournal is to get out of the way, so that the user can focus on the requests and their prayer;
-   once requests have been entered, the journal provides a way to easily pray through these requests, helping people not
-   forget about active requests. It also provides a means of going back through answered requests, which can be reviewed
-   whenever the user desires. There is a <a href="https://bit-badger.github.io/myPrayerJournal">documentation page</a>
-   that fully describes all it can do.`,
-  `As an open-source project, anyone can review the source code on
-   <a href="https://github.com/bit-badger/myPrayerJournal">GitHub</a>; we also track open issues there.`
-]
-myPrayerJournal.activities = [
-  new Activity('What We Did (2017-2018)',
-    `We went through several iterations of front-end and back-end technologies, trying to find one that would provide
-     the optimal experience for praying through the list. The front end uses <a href="https://vuejs.org">Vue.js</a>, and
-     the back end uses <a href="https://github.com/giraffe-fsharp/Giraffe">Giraffe</a> to serve the data.`),
-  new Activity('What We Still Do',
-    `Bit Badger Solutions hosts the instance of this at the URL linked above. We back up the data, and also continue to
-     develop it. Anyone can use it by logging in with a Google or Microsoft account.`)
-]
 myPrayerJournal.techStack = [
   new Technology('Vue', 'the front-end'),
   new Technology('Giraffe', 'the back-end data API'),
@@ -183,37 +148,6 @@ nsx.isActive = false
 nsx.archiveUrl = 'https://nsx.archive.bitbadger.solutions'
 nsx.indexText =
   'Public site for the makeover; provides event-driven management of volunteers, donations, and families needing help'
-nsx.paragraphs = [
-  `In January 2008, a few members of <a href="http://hoffmantown.org" title="Hoffmantown Church">Hoffmantown Church</a>
-   in Albuquerque, New Mexico had an idea. The ABC show
-   <em><a href="http://abc.go.com/shows/extreme-makeover-home-edition">Extreme Makeover: Home Edition</a></em> had just
-   done <a href="http://abc.go.com/shows/extreme-makeover-home-edition/episode-detail/martinez-family/224884"
-   title="Martinez Family &bull; Extreme Makeover: Home Edition">a build for a pastor in the &ldquo;war zone&rdquo; area
-   of town</a>, and this brought attention to Gerald Martinez and the work he had done to help clean up this area of
-   town. Through <a href="http://www.loveincabq.org/" title="Love INC of South Albuquerque">Love INC of South
-   Albuquerque</a>, they learned that there were many other homes in that area that could use the &ldquo;Ty Pennington
-   touch.&rdquo; While the goal was not to knock down homes and build new ones, the goal was no less extreme. The goal
-   of the &ldquo;Not So Extreme Makeover: Community Edition&rdquo; was to help 50 families in 5 days during spring break
-   week in 2008. From an idea in January to 57 families helped by March 29th, it was an amazing whirlwind.`
-]
-nsx.activities = [
-  new Activity('What We Did',
-    `The call went out for the need for &ldquo;everything from carpenters to computer nerds,&rdquo; and Daniel thought,
-     &ldquo;Hey, I&rsquo;m a computer nerd!&rdquo; We obtained the domain name and stood up the public website quickly
-     using WordPress, which also allowed the coordinators to put content up. We next began developing an application
-     (NSXapp) where volunteers could sign up for &ldquo;X Week&rdquo;, with over 80 different skill, talent, and ability
-     categories. We then created a way to identify families and their needs, and a place for people with donations to
-     let us know what they would be. From there, we created the ability to begin matching needs with goods (stuff) and
-     abilities (people), organizing the stuff into donated trailers and people into teams. During X Week, we generated
-     schedules and reports that were used to track the execution of the project.<br><br>After we recovered, Love INC
-     expressed an interest in a version that would allow them to handle these same areas on an ongoing basis; this was
-     the genesis of <a href="/solutions/tcms"
-     title="The Clearinghouse Management System | Bit Badger Solutions">TCMS</a>.`),
-  new Activity('What We Still Do',
-    `NSXapp was officially decommissioned in 2012. (It still exists in archived form, if a need arises to use it again.)
-     A <a href="https://nsx.archive.bitbadger.solutions"> snapshot of the NSX public site</a> remains as a record of
-     what happened those three months in 2008.`)
-]
 nsx.techStack = [
   new Technology('WordPress', 'content management'),
   new Technology('Custom PHP code', 'NSXapp'),
@@ -231,23 +165,6 @@ olivet.paragraphs = [
    title="Bay Vista Baptist Church | Bit Badger Solutions">Bay Vista</a>, and asked us what would be involved with
    setting up something similar for his church. Olivet did not currently have a website.`
 ]
-olivet.activities = [
-  new Activity('What We Did (2014)',
-    `We registered the domain name for the church, then set up a fresh WordPress install. They had expressed a desire to
-     do as much of the content of the site themselves, so we supported them as they worked through its initial setup. We
-     also, as with Bay Vista, established the framework for a sermon podcast feed.`),
-  new Activity('What We Did (2016)',
-    `As with Bay Vista&rsquo;s site, this was converted to be a statically-generated site. We also created a
-     mobile-friendly site layout that looked similar to the one they had been using.`),
-  new Activity('What We Did (2018)',
-    `We turned their site into a Progressive Web Application (PWA), which allows users to &ldquo;install&rdquo; the
-     site, like an app, to their phone&rsquo;s home screen. The site is also still accessible from the web via a
-     browser.`),
-  new Activity('What We Did (2019)',
-    `The church closed its doors February 24th, 2019. We converted the PWA back to a static web site, set up a static
-     archive site, and worked with their personnel to ensure that the podcast links are all still available. We continue
-     to host that archive site and podcast content.`)
-]
 olivet.techStack = [
   new Technology('Vue', 'the user interface for the PWA'),
   new Technology('Hexo', `generating the site's pages`),
@@ -260,24 +177,6 @@ const photographyByMichelle = new App('photography-by-michelle', 'Photography by
 photographyByMichelle.isActive = false
 photographyByMichelle.linkInactive = true
 photographyByMichelle.indexText = 'Photography services in Albuquerque, New Mexico'
-photographyByMichelle.paragraphs = [
-  `Michelle Summers had been photographing her children for years. When her sons were on sports teams, she was
-   disappointed with the cost of team photography, and felt that she could do a better job at a lower cost. Thus was
-   born Photography by Michelle. She specializes in outdoor photography of families, children, and sports teams, as well
-   as maternity photography and holiday cards.`
-]
-photographyByMichelle.activities = [
-  new Activity('What We Did (2007)',
-    `We created the site with a few custom pages, including a gallery page that would automatically display whatever
-     pictures were there. We also, using WordPress and a custom image plugin, set up a site where customers can view the
-     proofs from their photography session.`),
-  new Activity('What We Did (2012)',
-    `The custom PHP/WordPress site was replaced by a custom ASP MVC web application, which handles the front pages and
-    the proof set galleries. The proof display was also upgraded to allow cursor-key navigation of proofs.`),
-  new Activity('What We Still Do',
-    `As Michelle is no longer doing professional photography, the current version of this site is a simple thank-you to
-    her customers over the years.`)
-]
 photographyByMichelle.techStack = [ new Technology('ASP.NET MVC', 'content management') ]
 
 /** PrayerTracker */
@@ -285,27 +184,6 @@ const prayerTracker = new App('prayer-tracker', 'PrayerTracker', 'https://prayer
 prayerTracker.frontPageText = 'A prayer request tracking website (Free for any church or Sunday School class!)'
 prayerTracker.frontPageOrder = 1
 prayerTracker.indexText = 'Provides an ongoing, centralized prayer list for Sunday School classes and other groups'
-prayerTracker.paragraphs = [
-  `Years ago, Daniel was responsible for keeping up with prayer requests for his Sunday School class. To help him keep
-   up with requests, automatically drop requests that were old, and track long-term requests, he wrote a custom app made
-   up of a few pages. Over time, he added security mechanisms and other options, arriving at the site that exists today.
-   It is provided free for the asking to any church, Sunday School class, or small group that desires a tool to help
-   them establish a continuous list of prayer requests.`
-]
-prayerTracker.activities = [
-  new Activity('What We Did (2005)', 'Created the original site.'),
-  new Activity('What We Did (2011)',
-    `We rewrote this application using a more modern (at the time) framework (ASP MVC 3), building the security
-     additions from the ground up, and posturing it for an interface with <a href="/solutions/virtual-prayer-room"
-     title="Virtual Prayer Room | Bit Badger Solutions">Virtual Prayer Room</a>.`),
-  new Activity('What We Did (2012)',
-    'In April 2012, version 4 was released with support for Spanish - our first multi-lingual application!'),
-  new Activity('What We Did (2018)',
-    'Version 7 brought full mobile accessibility, along with an upgrade to a modern, ultra-fast web framework.'),
-  new Activity('What We Did (2019)',
-    'PrayerTracker became <a href="https://github.com/bit-badger/PrayerTracker">an open source project</a>.'),
-  new Activity('What We Still Do', 'Host and maintain this application.')
-]
 prayerTracker.techStack = [
   new Technology('Giraffe', 'server-side logic and dynamic page generation'),
   new Technology('PostgreSQL', 'data storage')
@@ -317,91 +195,26 @@ riehlWorldNews.categoryId = Category.WORDPRESS
 riehlWorldNews.frontPageText = 'Riehl news for real people'
 riehlWorldNews.frontPageOrder = 4
 riehlWorldNews.indexText = 'Riehl news for real people'
-riehlWorldNews.paragraphs = [
-  `Dan Riehl began blogging as &ldquo;The Carnivorous Conservative&rdquo; back in 2004, specializing in the areas of
-   crime and politics. He changed to &ldquo;Riehl World View&rdquo; a short time later, and writes both news and opinion
-   pieces. He was a prolific blogger, publishing over 15 posts a day on most days. He wanted to take his blog in a
-   different direction, and was having trouble getting his Movable Type blog do move with him.`
-]
-riehlWorldNews.activities = [
-  new Activity('What We Did (2012)',
-    `We spoke with him regarding his ideal direction and assisted through the selection and customization of his
-     eventual chosen theme. We also did some work on the customization of that theme. Additionally, we imported the
-     large volume of posts from the Movable Type blog into his new WordPress blog.`),
-  new Activity('What We Did (2018)',
-    `Dan wanted a fresh start for Riehl World View, so we generated flat files to preserve his prior archive. The post
-     volume meant that none of the existing WordPress plugins that do that would work, so we built a custom converter
-     to preserve that content.`),
-  new Activity('What We Still Do',
-    'Bit Badger Solutions continues to provide backups and WordPress updates for Riehl World News.')
-]
 riehlWorldNews.techStack = [
   new Technology('WordPress', 'blogging'),
   new Technology('Custom F# code', 'archive static page generation')
 ]
-
-/** The Clearinghouse Management System */
-var tcms = new App('tcms', 'The Clearinghouse Management System', 'http://tcms.us')
-tcms.isActive = false
-tcms.indexText =
-  'Assists a needs clearinghouse in connecting people with needs to people that can help meet those needs'
-tcms.paragraphs = [
-  `The TCMS motto, &ldquo;Putting People Over Paperwork,&rdquo; sums up the mission of this system. To successfully run
-   a needs clearinghouse, such as those run by Love INC affiliates, there is a lot of paperwork involved. Clients must
-   be tracked, along with their needs; these needs must be verified; resources for goods and services must be known;
-   volunteers must be known and sent communications to keep them involved. All of this adds up to a significant
-   recordkeeping (i.e., paperwork) burden.`,
-  `TCMS addressed these issues by providing a repository for all clearinghouse operation needs. It helped eliminate
-   duplication of work, and also linke clients with goods and services. It also provided the means to communicate with
-   volunteers, either en masse or using selective criteria. This allowed the recordkeeping requirement to be smaller
-   and quicker, giving more time for the actual helping of clients. It used WordPress for its front end; this provided
-   organizations with a web presence that they could maintain without having to employ a web guru, using
-   WordPress&rsquo;s <abbr title="What You See Is What You Get">WYSIWYG</abbr> editor and management tools.`,
-  `TCMS was decommissioned in 2014.`
-]
-tcms.techStack = [
-  new Technology('Custom PHP code', 'the application logic'),
-  new Technology('WordPress', 'publicly-facing pages and authentication'),
-  new Technology('PostgreSQL', 'application data storage')
-]
-
-/** The Bit Badger Blog */
-const techBlog = new App('tech-blog', 'The Bit Badger Blog', 'https://blog.bitbadger.solutions')
-techBlog.categoryId = Category.STATIC
-techBlog.frontPageText = 'Technical information (&ldquo;geek stuff&rdquo;) from Bit Badger Solutions'
-techBlog.frontPageOrder = 3
-techBlog.indexText = 'Geek stuff from Bit Badger Solutions'
-techBlog.paragraphs = [
-  `The Bit Badger Blog grew from Daniel&rsquo;s personal experience with learning and using the Linux operating system.
-   His first experience with blogging consisted of pages that had to be edited every time a new post was made. The
-   initial posts were titled &ldquo;My Linux Adventure,&rdquo; and existed as a copy of this home-grown blog. The Bit
-   Badger Blog has that, plus tech tips regarding many different computer products. It covers web servers, databases,
-   programming languages, and open-source software. Bit Badger Solutions also hosts 64-bit RPM builds of xine, a Linux
-   multimedia player; the blog, via the RSS feed for that category, can deliver notices of updated versions directly to
-   subscribed users. Finally, it also contains notices of new versions of Bit Badger Solutions-developed WordPress
-   plug-ins (&ldquo;Daniel&rsquo;s Dropdowns&rdquo; <em>(inactive, as its functionality is now part of the WordPress
-    core)</em> and &ldquo;HCSB Verse of the Day (Plus)&rdquo;).`,
-  `It is currently a statically-generated site, utilizing <a href="https://hexo.io">Hexo</a>, and its code is
-   <a href="https://github.com/bit-badger/blog.bitbadger.solutions">open source</a>.`
-]
-techBlog.techStack = [ new Technology('Hexo', 'static site generation') ]
 
 /** The Shark Tank */
 const theSharkTank = new App('the-shark-tank', 'The Shark Tank', 'http://shark-tank.net')
 theSharkTank.isActive = false
 theSharkTank.categoryId = Category.WORDPRESS
 theSharkTank.indexText = 'Florida’s political feeding frenzy'
-theSharkTank.paragraphs = [
-  `The Shark Tank is a news and opinion site centered on south Florida politics (and the state at large). They provided
-   extensive coverage of Rep. Allen West&rsquo;s winning campaign in 2010, and are continuing their focused news and
-   opinion to current political races.`
-]
-theSharkTank.activities = [
-  new Activity('What We Did',
-    `They were displeased with their current theme, and had found a theme (and a demo site) that they preferred. We set
-     up the theme, ensured that their content would fit in the new theme&rsquo;s requirements, and helped them turn off
-     parts that they didn&rsquo;t need. We also converted the social media connections from their old site to a style
-     that would work nicely in the new theme.`)
+
+/** The Clearinghouse Management System */
+var tcms = new App('tcms', 'The Clearinghouse Management System', 'http://tcms.us')
+tcms.isActive = false
+tcms.indexText =
+  'Assists a needs clearinghouse in connecting people with needs to people that can help meet those needs'
+tcms.techStack = [
+  new Technology('Custom PHP code', 'the application logic'),
+  new Technology('WordPress', 'publicly-facing pages and authentication'),
+  new Technology('PostgreSQL', 'application data storage')
 ]
 
 /** Virtual Prayer Room */
