@@ -52,6 +52,7 @@ cassyFiano.indexText = 'A &ldquo;rising star&rdquo; conservative blogger'
 cassyFiano.techStack = [
   new Technology('WordPress', 'blogging (with a custom theme)'),
   new Technology('MySQL', 'data storage'),
+  new Technology('Rackspace Cloud', 'backup and recovery'),
   new Technology('Azure', 'backup and recovery')
 ]
 
@@ -69,7 +70,12 @@ drMelissaClouthier.categoryId = Category.WORDPRESS
 drMelissaClouthier.frontPageText = 'Information Pollination'
 drMelissaClouthier.frontPageOrder = 1
 drMelissaClouthier.indexText = 'Politics, health, podcasts and more'
-drMelissaClouthier.techStack = [ new Technology('WordPress', 'blogging (with a custom theme)') ]
+drMelissaClouthier.techStack = [
+  new Technology('WordPress', 'blogging (with a custom theme)'),
+  new Technology('MySQL', 'data storage'),
+  new Technology('Rackspace Cloud', 'backup and recovery'),
+  new Technology('Azure', 'backup and recovery')
+]
 
 /** Emerald Mountain Christian School */
 const emcs = new App('emerald-mountain-christian-school', 'Emerald Mountain Christian School',
@@ -78,8 +84,11 @@ emcs.isActive = false
 emcs.linkInactive = true
 emcs.indexText = 'Classical, Christ-centered education near Wetumpka, Alabama'
 emcs.techStack = [
+  new Technology('PHP', 'page generation and interactivity'),
   new Technology('ASP.NET MVC', 'page generation and interactivity'),
-  new Technology('PostgreSQL', 'data storage')
+  new Technology('PostgreSQL', 'data storage'),
+  new Technology('Rackspace Cloud', 'hosting'),
+  new Technology('Azure', 'hosting')
 ]
 
 /** Futility Closet */

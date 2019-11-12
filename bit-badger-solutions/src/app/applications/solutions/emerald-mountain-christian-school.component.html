@@ -1,8 +1,9 @@
 <app-page-title [title]="pageTitle"></app-page-title>
 <app-application-header [app]="app"></app-application-header>
 <div class="app-info">
-  <app-application-image [app]="app"></app-application-image>
   <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
     <p>
       Emerald Mountain Christian School is a private Christian school founded over 50 years ago. They use the Principle
       Approach&reg;, which emphasizes research, reasoning, relating, and recording to help students synthesize the
@@ -27,14 +28,13 @@
         back-end database was switched from MySQL to a PostgreSQL database.
       </p>
     </div>
-    <div>
-      <h3>What We Did (2013)</h3>
-      <p>
-        We passed off the content and hosting of the site to a new maintainer. They have since redesigned it; it is
-        accessible via the URL above, and at <a href="http://emcspatriots.org"
-        title="EMCS Patriots">EMCSpatriots.org</a>.
-      </p>
-    </div>
+    <h3>The Epilogue</h3>
+    <p>
+      In 2013, we passed off the content and hosting of the site to a new maintainer. They have since redesigned it;
+      it is accessible via the URL above, and at <a href="http://emcspatriots.org"
+      title="EMCS Patriots">EMCSpatriots.org</a>.
+    </p>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
     <app-all-solutions-link></app-all-solutions-link>
   </article>
 </div>
