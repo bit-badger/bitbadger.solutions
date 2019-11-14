@@ -112,8 +112,11 @@ fcQuote.pull = [
   ]
 futilityCloset.quotes.push(fcQuote)
 futilityCloset.techStack = [
-  new Technology('WordPress', 'blogging'),
-  new Technology('nginx', 'the web server')
+  new Technology('WordPress', 'blogging', true),
+  new Technology('nginx', 'the web server', true),
+  new Technology('Digital Ocean', 'web site hosting', true),
+  new Technology('Azure', 'backup and recovery', true),
+  new Technology('Rackspace Cloud', 'web site hosting')
 ]
 
 /** Hard Corps Wife */
@@ -158,8 +161,10 @@ mmQuote.pull = [
 ]
 mindyMackenzie.quotes.push(mmQuote)
 mindyMackenzie.techStack = [
-  new Technology('WordPress', 'blogging'),
-  new Technology('nginx', 'the web server')
+  new Technology('WordPress', 'blogging', true),
+  new Technology('nginx', 'the web server', true),
+  new Technology('Digital Ocean', 'web site hosting', true),
+  new Technology('Azure', 'backup and recovery', true),
 ]
 
 /** myPrayerJournal */

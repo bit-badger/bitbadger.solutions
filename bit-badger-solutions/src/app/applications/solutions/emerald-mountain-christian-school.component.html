@@ -10,30 +10,34 @@
       information they learn, rather than just requiring rote memorization. More information about the school&rsquo;s
       rich history can be found on their site.
     </p>
-    <div>
-      <h3>What We Did (2004)</h3>
-      <p>
-        They had a website with very basic information and very little styling. We developed a theme (the one in the
-        thumbnail), based in large part on the design of their printed materials, and they approved the design.
-        Initially, the site only contained the content from their previous site. We then put their school calendar of
-        events up on the site, where parents could find the dates for upcoming events. Finally, we put all the material
-        from their Parent Information Packet online, which helped prospective families learn more about the school
-        before visiting it.
-      </p>
-    </div>
-    <div>
-      <h3>What We Did (2011)</h3>
-      <p>
-        The underlying engine of the basic website was switched from PHP to an ASP MVC web application, and the
-        back-end database was switched from MySQL to a PostgreSQL database.
-      </p>
-    </div>
+    <h3>The Problem</h3>
+    <p>
+      They had a website with very basic information and very little styling; they also had no way of updating it.
+    </p>
+    <h3>The Solution</h3>
+    <p>
+      In 2004, we developed a theme that brought it in line with the design of their printed materials, adding the
+      school calendar of events and the entirety of their Parent Information Packet, giving prospective families the
+      information the needed to determine if the school was a good fit for their students.
+    </p>
     <h3>The Epilogue</h3>
     <p>
       In 2013, we passed off the content and hosting of the site to a new maintainer. They have since redesigned it;
       it is accessible via the URL above, and at <a href="http://emcspatriots.org"
       title="EMCS Patriots">EMCSpatriots.org</a>.
     </p>
+    <app-hide-section heading="The Process">
+      <p>
+        Initially, we downloaded the content from their old site, and put it into a custom PHP-based framework. We
+        then added a database of events, and a calendar page that read that database, enabling us to display multiple
+        years, as well as future and past years. The design of the online information packet looked like a tabbed
+        notebook, with each page highlighting a different tab.
+      </p>
+      <p>
+        In 2011, we switched the site to use ASP.NET MVC instead of the custom PHP solution, and migrated the data from
+        MySQL to PostgreSQL; these efforts increased the performance of the site.
+      </p>
+    </app-hide-section>
     <app-tech-stack [stack]="app.techStack"></app-tech-stack>
     <app-all-solutions-link></app-all-solutions-link>
   </article>
