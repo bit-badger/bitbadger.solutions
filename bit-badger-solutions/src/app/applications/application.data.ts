@@ -114,6 +114,7 @@ futilityCloset.quotes.push(fcQuote)
 futilityCloset.techStack = [
   new Technology('WordPress', 'blogging', true),
   new Technology('nginx', 'the web server', true),
+  new Technology('MySQL', 'data storage', true),
   new Technology('Digital Ocean', 'web site hosting', true),
   new Technology('Azure', 'backup and recovery', true),
   new Technology('Rackspace Cloud', 'web site hosting')
@@ -124,7 +125,11 @@ const hardCorpsWife = new App('hard-corps-wife', 'Hard Corps Wife', 'http://www.
 hardCorpsWife.isActive = false
 hardCorpsWife.categoryId = Category.WORDPRESS
 hardCorpsWife.indexText = 'Cassy&rsquo;s life as a Marine wife'
-hardCorpsWife.techStack = [ new Technology('WordPress', 'blogging') ]
+hardCorpsWife.techStack = [
+  new Technology('WordPress', 'blogging'),
+  new Technology('MySQL', 'data storage'),
+  new Technology('Rackspace Cloud', 'web site hosting')
+]
 
 /** Liberty Pundits */
 const libertyPundits = new App('liberty-pundits', 'Liberty Pundits', 'http://libertypundits.net')
@@ -133,7 +138,8 @@ libertyPundits.categoryId = Category.WORDPRESS
 libertyPundits.indexText = 'The home for conservatives'
 libertyPundits.techStack = [
   new Technology('WordPress', 'blogging'),
-  new Technology('Custom software', 'data migration')
+  new Technology('PHP', 'custom data migration software'),
+  new Technology('MySQL', 'data storage')
 ]
 
 /** Linux Resources */
@@ -163,6 +169,7 @@ mindyMackenzie.quotes.push(mmQuote)
 mindyMackenzie.techStack = [
   new Technology('WordPress', 'blogging', true),
   new Technology('nginx', 'the web server', true),
+  new Technology('MySQL', 'data storage', true),
   new Technology('Digital Ocean', 'web site hosting', true),
   new Technology('Azure', 'backup and recovery', true),
 ]
@@ -173,8 +180,11 @@ myPrayerJournal.frontPageText = 'Minimalist personal prayer journal'
 myPrayerJournal.frontPageOrder = 2
 myPrayerJournal.indexText = 'Minimalist personal prayer journal'
 myPrayerJournal.techStack = [
-  new Technology('Vue', 'the front-end'),
-  new Technology('Giraffe', 'the back-end data API'),
+  new Technology('Vue.js', 'the front-end', true),
+  new Technology('Giraffe', 'the back-end data API', true),
+  new Technology('RavenDB', 'data storage', true),
+  new Technology('GitHub', 'source code control', true),
+  new Technology('GitHub Pages', 'documentation', true),
   new Technology('PostgreSQL', 'data storage')
 ]
 
@@ -186,8 +196,9 @@ nsx.indexText =
   'Public site for the makeover; provides event-driven management of volunteers, donations, and families needing help'
 nsx.techStack = [
   new Technology('WordPress', 'content management'),
-  new Technology('Custom PHP code', 'NSXapp'),
-  new Technology('PostgreSQL', 'data storage')
+  new Technology('PHP', 'NSXapp'),
+  new Technology('MySQL', 'WordPress data storage'),
+  new Technology('PostgreSQL', 'NSXapp data storage')
 ]
 
 /** Olivet Baptist Church */
@@ -197,9 +208,11 @@ olivet.archiveUrl = 'https://olivet.archive.bitbadger.solutions'
 olivet.categoryId = Category.STATIC
 olivet.indexText = 'Southern Baptist church in Gulfport, Mississippi'
 olivet.techStack = [
-  new Technology('Vue', 'the user interface for the PWA'),
+  new Technology('Vue.js', 'the user interface for the PWA'),
   new Technology('Hexo', `generating the site's pages`),
-  new Technology('Azure', 'podcast file storage')
+  new Technology('Azure', 'podcast file storage and archive site hosting'),
+  new Technology('WordPress', 'content management'),
+  new Technology('MySQL', 'data storage')
 ]
 
 /** Photography by Michelle */
@@ -208,7 +221,13 @@ const photographyByMichelle = new App('photography-by-michelle', 'Photography by
 photographyByMichelle.isActive = false
 photographyByMichelle.linkInactive = true
 photographyByMichelle.indexText = 'Photography services in Albuquerque, New Mexico'
-photographyByMichelle.techStack = [ new Technology('ASP.NET MVC', 'content management') ]
+photographyByMichelle.techStack = [
+  new Technology('ASP.NET MVC', 'content management / gallery creation API'),
+  new Technology('PostgreSQL', 'data storage'),
+  new Technology('C# / Windows Forms', 'desktop gallery application'),
+  new Technology('WordPress', 'content management'),
+  new Technology('MySQL', 'data storage')
+]
 
 /** PrayerTracker */
 const prayerTracker = new App('prayer-tracker', 'PrayerTracker', 'https://prayer.bitbadger.solutions')
@@ -216,8 +235,15 @@ prayerTracker.frontPageText = 'A prayer request tracking website (Free for any c
 prayerTracker.frontPageOrder = 1
 prayerTracker.indexText = 'Provides an ongoing, centralized prayer list for Sunday School classes and other groups'
 prayerTracker.techStack = [
-  new Technology('Giraffe', 'server-side logic and dynamic page generation'),
-  new Technology('PostgreSQL', 'data storage')
+  new Technology('Giraffe', 'server-side logic and dynamic page generation', true),
+  new Technology('PostgreSQL', 'data storage', true),
+  new Technology('GitHub', 'source code control', true),
+  new Technology('GitHub Pages', 'documentation hosting', true),
+  new Technology('MongoDB', 'data storage'),
+  new Technology('ASP.NET MVC', 'dynamic content generation'),
+  new Technology('Database Abstraction', 'data access'),
+  new Technology('MySQL', 'data storage'),
+  new Technology('PHP', 'dynamic content generation')
 ]
 
 /** Riehl World News */
@@ -227,8 +253,9 @@ riehlWorldNews.frontPageText = 'Riehl news for real people'
 riehlWorldNews.frontPageOrder = 4
 riehlWorldNews.indexText = 'Riehl news for real people'
 riehlWorldNews.techStack = [
-  new Technology('WordPress', 'blogging'),
-  new Technology('Custom F# code', 'archive static page generation')
+  new Technology('WordPress', 'blogging', true),
+  new Technology('MySQL', 'data storage', true),
+  new Technology('F#', 'custom archive static page generation')
 ]
 
 /** The Shark Tank */
@@ -236,6 +263,7 @@ const theSharkTank = new App('the-shark-tank', 'The Shark Tank', 'http://shark-t
 theSharkTank.isActive = false
 theSharkTank.categoryId = Category.WORDPRESS
 theSharkTank.indexText = 'Florida’s political feeding frenzy'
+theSharkTank.techStack = [ new Technology('WordPress', 'blogging') ]
 
 /** The Clearinghouse Management System */
 var tcms = new App('tcms', 'The Clearinghouse Management System', 'http://tcms.us')
@@ -243,9 +271,10 @@ tcms.isActive = false
 tcms.indexText =
   'Assists a needs clearinghouse in connecting people with needs to people that can help meet those needs'
 tcms.techStack = [
-  new Technology('Custom PHP code', 'the application logic'),
+  new Technology('PHP', 'the TCMS application logic'),
   new Technology('WordPress', 'publicly-facing pages and authentication'),
-  new Technology('PostgreSQL', 'application data storage')
+  new Technology('PostgreSQL', 'application data storage'),
+  new Technology('MySQL', 'WordPress data storage')
 ]
 
 /** Virtual Prayer Room */
@@ -253,7 +282,7 @@ const vpr = new App('virtual-prayer-room', 'Virtual Prayer Room', 'https://virtu
 vpr.isActive = false
 vpr.indexText = 'Gives prayer warriors access to requests from wherever they may be, and sends them daily updates'
 vpr.techStack = [
-  new Technology('Custom PHP code', 'the application'),
+  new Technology('PHP', 'the application logic'),
   new Technology('PostgreSQL', 'data storage')
 ]
 

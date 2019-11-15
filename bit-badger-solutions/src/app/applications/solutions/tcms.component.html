@@ -1,24 +1,35 @@
 <app-page-title [title]="pageTitle"></app-page-title>
 <app-application-header [app]="app"></app-application-header>
 <div class="app-info">
-  <app-application-image [app]="app"></app-application-image>
   <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
     <p>
-      The TCMS motto, &ldquo;Putting People Over Paperwork,&rdquo; sums up the mission of this system. To successfully
-      run a needs clearinghouse, such as those run by Love INC affiliates, there is a lot of paperwork involved.
-      Clients must be tracked, along with their needs; these needs must be verified; resources for goods and services
-      must be known; volunteers must be known and sent communications to keep them involved. All of this adds up to a
-      significant recordkeeping (i.e., paperwork) burden.
+      Love INC of South Albuquerque runs a &ldquo;needs clearinghouse&rdquo;; they have volunteers who accept
+      donations, and people contact them with their needs. They are then able to match the person who needs something
+      with that thing, or with someone who can assist them.
     </p>
+    <h3>The Problem</h3>
     <p>
-      TCMS addressed these issues by providing a repository for all clearinghouse operation needs. It helped eliminate
-      duplication of work, and also linke clients with goods and services. It also provided the means to communicate
-      with volunteers, either en masse or using selective criteria. This allowed the recordkeeping requirement to be
-      smaller and quicker, giving more time for the actual helping of clients. It used WordPress for its front end;
-      this provided organizations with a web presence that they could maintain without having to employ a web guru,
-      using WordPress&rsquo;s <abbr title="What You See Is What You Get">WYSIWYG</abbr> editor and management tools.
+      The files in their offices were multiplying; ensuring people&rsquo;s needs are not missed, while ensuring that
+      their clients were not taking advantage of their services, required a lot of paper. They were tracking volunteers
+      on a spreadsheet, but their contact info was in yet another file. Having worked with us on the
+      <a routerLink="/solutions/nsx"
+      title="Not So Extreme Makeover: Community Edition | Bit Badger Solutions">&ldquo;Not So Extreme Makeover:
+      Community Edition&rdquo;</a>, and thought that the solution we developed for that project would help them.
     </p>
-    <p>TCMS was decommissioned in 2014.</p>
+    <h3>The Solution</h3>
+    <p>
+      We adapted NSXapp to handle an ongoing stream of people, volunteers, and donations. This enabled them to spend
+      more time with the people who needed help. The WordPress front end also served as their public website, and
+      allowed them to manage the volunteers who were using the system.
+    </p>
+    <h3>The Epilogue</h3>
+    <p>
+      Love INC of South Albuquerque found a SalesForce system that would do things very similar to TCMS, and was able
+      to get in on a program that let them use it at no cost; TCMS was decommissioned in 2014.
+    </p>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
     <app-all-solutions-link></app-all-solutions-link>
   </article>
 </div>

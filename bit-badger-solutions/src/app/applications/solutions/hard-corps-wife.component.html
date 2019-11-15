@@ -1,23 +1,23 @@
 <app-page-title [title]="pageTitle"></app-page-title>
 <app-application-header [app]="app"></app-application-header>
 <div class="app-info">
-  <app-application-image [app]="app"></app-application-image>
   <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
     <p>
-      Capitalizing on the growth from her <a routerLink="/solutions/cassy-fiano">Cassy Fiano blog</a>, Cassy (now
-      Chesser) began a separate blog in which she could chronicle her experience as a military spouse.
+      Our existing client <a routerLink="/solutions/cassy-fiano"
+      title="Cassy Fiano | Bit Badger Solutions">Cassy Fiano</a>
     </p>
-    <div>
-      <h3>What We Did</h3>
-      <p>We customized the header and sidebar of the theme, and set up the hardcorpswife.com domain.</p>
-    </div>
-    <div>
-      <h3>What We Still Do</h3>
-      <p>
-        In 2013, Cassy shifted priorities and closed this site down. She can still be found at other places around the
-        web.
-      </p>
-    </div>
+    <h3>The Problem</h3>
+    <p>Cassy (now Chesser) wanted a separate place from which to chronicle her experience as a military spouse.</p>
+    <h3>The Solution</h3>
+    <p>
+      In mid-2010, we set up her domain name, created a WordPress site, and customized the header and sidebar for her
+      selected theme. We also hosted and maintained the site for the duration of its run.
+    </p>
+    <h3>The Epilogue</h3>
+    <p>In 2013, Cassy shifted priorities and closed this site down.</p>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
     <app-all-solutions-link></app-all-solutions-link>
   </article>
 </div>

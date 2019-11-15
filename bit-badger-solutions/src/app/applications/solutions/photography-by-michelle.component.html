@@ -1,36 +1,33 @@
 <app-page-title [title]="pageTitle"></app-page-title>
 <app-application-header [app]="app"></app-application-header>
 <div class="app-info">
-  <app-application-image [app]="app"></app-application-image>
   <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
     <p>
       Michelle Summers had been photographing her children for years. When her sons were on sports teams, she was
-      disappointed with the cost of team photography, and felt that she could do a better job at a lower cost. Thus was
-      born Photography by Michelle. She specializes in outdoor photography of families, children, and sports teams, as
-      well as maternity photography and holiday cards.
+      disappointed with the cost of team photography, and felt that she could do a better job at a lower cost. She
+      specialized in outdoor photography of families, children, and sports teams, as well as maternity photography and
+      holiday cards.
     </p>
-    <div>
-      <h3>What We Did (2007)</h3>
-      <p>
-        We created the site with a few custom pages, including a gallery page that would automatically display whatever
-        pictures were there. We also, using WordPress and a custom image plugin, set up a site where customers can view
-        the proofs from their photography session.
-      </p>
-    </div>
-    <div>
-      <h3>What We Did (2012)</h3>
-      <p>
-        The custom PHP/WordPress site was replaced by a custom ASP MVC web application, which handles the front pages
-        and the proof set galleries. The proof display was also upgraded to allow cursor-key navigation of proofs.
-      </p>
-    </div>
-    <div>
-      <h3>What We Still Do</h3>
-      <p>
-        As Michelle is no longer doing professional photography, the current version of this site is a simple thank-you
-        to her customers over the years.
-      </p>
-    </div>
+    <h3>The Problem</h3>
+    <p>
+      Michelle needed a site to showcase her previous work, as well as a place to allow her customers to view their
+      proofs before selecting prints.
+    </p>
+    <h3>The Solution</h3>
+    <p>
+      We created a WordPress site with image galleries for her existing work, and utilized a custom plug-in to support
+      online proofs. This site was eventually replaced with one that had a matching Windows application; this
+      application took a set of photos, resized them, applied a watermark, and created the proof gallery without having
+      to even go to the site.
+    </p>
+    <h3>The Epilogue</h3>
+    <p>
+      As Michelle is no longer doing professional photography, the current version of this site is a simple thank-you
+      to her customers from 2007-2014.
+    </p>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
     <app-all-solutions-link></app-all-solutions-link>
   </article>
 </div>

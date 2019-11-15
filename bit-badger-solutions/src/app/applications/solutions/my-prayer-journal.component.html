@@ -1,43 +1,36 @@
 <app-page-title [title]="pageTitle"></app-page-title>
 <app-application-header [app]="app"></app-application-header>
 <div class="app-info">
-  <app-application-image [app]="app"></app-application-image>
   <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Problem</h3>
     <p>
       Daniel wanted to maintain a prayer journal, where he could record the prayer requests for which he had prayed,
       and the answer that eventually came to that request. He didn't want to do that on paper for several reasons
-      &ndash; it's easy to lose, a long-running request can run out of space to make notes, etc. He believed that he
-      was not the only person who felt this way regarding prayer, and decided to use this as an opportunity to fill
-      both a spiritual and a learning need. Given <a href="https://auth0.com">Auth0</a>'s policy of offering free
-      authentication services for open-source applications, he decided to develop this as an open-source application.
+      &ndash; it's easy to lose, a long-running request can run out of space to make notes, etc.
     </p>
+    <h3>The Solution</h3>
     <p>
-      The goal of myPrayerJournal is to get out of the way, so that the user can focus on the requests and their
-      prayer; once requests have been entered, the journal provides a way to easily pray through these requests,
-      helping people not forget about active requests. It also provides a means of going back through answered
-      requests, which can be reviewed whenever the user desires. There is a
-      <a href="https://bit-badger.github.io/myPrayerJournal">documentation page</a> that fully describes all it can do.
+      We created a site where users can enter requests, pray through lists of these requests, make notes on them, and
+      follow them through until they are answered. The site stores no identifying information, and works well on both
+      desktop and mobile. Bit Badger Solutions hosts and maintains the instance of the site linked above.
     </p>
-    <p>
-      As an open-source project, anyone can review the source code on
-      <a href="https://github.com/bit-badger/myPrayerJournal">GitHub</a>; we also track open issues there.
-    </p>
-    <div>
-      <h3>What We Did (2017-2018)</h3>
+    <app-hide-section heading="The Process">
       <p>
-        We went through several iterations of front-end and back-end technologies, trying to find one that would
-        provide the optimal experience for praying through the list. The front end uses
-        <a href="https://vuejs.org">Vue.js</a>, and the back end uses
-        <a href="https://github.com/giraffe-fsharp/Giraffe">Giraffe</a> to serve the data.
+        Development of myPrayerJournal began in earnest in early 2017. As we were using this to learn new techniques,
+        we ended up trying a host of different front and back end technologies before settling on Vue.js for the front
+        end and Giraffe for the back end. This combination works well, and we wrote up an 8-post series entitled
+        <a href="https://blog.bitbadger.solutions/2018/a-tour-of-myprayerjournal/introduction.html">"A Tour of
+        myPrayerJournal"</a> over on the <em>Bit Badger Blog</em> that steps through all aspects of version 1 of this
+        application.
       </p>
-    </div>
-    <div>
-      <h3>What We Still Do</h3>
       <p>
-        Bit Badger Solutions hosts the instance of this at the URL linked above. We back up the data, and also continue
-        to develop it. Anyone can use it by logging in with a Google or Microsoft account.
+        Version 2 changed to a Material Design interface, and we changed the data store from PostgreSQL to RavenDB, an
+        excellent document database. As this is an open-source project, anyone can review the source code on
+        <a href="https://github.com/bit-badger/myPrayerJournal">GitHub</a>; we also track open issues there.
       </p>
-    </div>
+    </app-hide-section>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
     <app-all-solutions-link></app-all-solutions-link>
   </article>
 </div>

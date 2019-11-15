@@ -1,39 +1,43 @@
 <app-page-title [title]="pageTitle"></app-page-title>
 <app-application-header [app]="app"></app-application-header>
 <div class="app-info">
-  <app-application-image [app]="app"></app-application-image>
   <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
     <p>
-      At its founding, Liberty Pundits was a joint venture by 3 established bloggers (Melissa Clouthier, Bill Dupray,
-      and Clyde Middleton) that, in their words, was aimed at becoming the new home for conservatives on the Internet.
-      With the three of them all being prolific bloggers in their own right, and the help of many contributors, Liberty
-      Pundits was a bustling hub of information.
+      <a routerLink="/solutions/dr-melissa-clouthier">Melissa Clouthier</a>, Bill Dupray, and Clyde Middleton, all
+      established conservative bloggers, started a joint venture called <em>Liberty Pundits</em>.
     </p>
-    <div>
-      <h3>What We Did</h3>
+    <h3>The Problem</h3>
+    <p>
+      Bill and Clyde had a significant amount of content on a prior site. As they were starting this with established
+      authors, they needed a site that would handle their expected traffic spikes on popular posts.
+    </p>
+    <h3>The Solution</h3>
+    <p>
+      In early 2010, we migrated their content from a custom solution into WordPress's database; we then set them up on
+      the same host where their podcast was being distributed. However, the combination of theme complexity and traffic
+      overwhelmed that server, so we configured a standalone server with more memory and more efficient software; this
+      allowed them to routinely eclipse 100,000 views per day, most of those coming on posts within the first few
+      hours.
+    </p>
+    <h3>The Epilogue</h3>
+    <p>
+      The site closed in late 2011, as its authors closed their joint venture and moved on to other sites and topics.
+    </p>
+    <app-hide-section heading="The Process">
       <p>
-        Bill and Clyde had been part of Patriot Room, an already-recognized powerhouse, and their desire was for
-        Liberty Pundits to contain the content that they had contributed to Patriot Room. The technical lead on that
-        blog had moved on, so we did some divining of what was there. Once we deduced the current setup, we obtained
-        the data from that site, determined how it would need to be manipulated to become part of a WordPress blog,
-        then accomplished the data migration. Initially, this was deployed on the same shared hosting account where
-        LibertyPundits.com, their podcast distribution site, already resided. The site&rsquo;s traffic quickly
-        overwhelmed that solution. They then were moved by their host to a
-        <abbr title="Virtual Private Server">VPS</abbr>, which performed moderately better, but still had quite a few
-        issues, mostly related to the site&rsquo;s traffic volume. We recommended a new server configuration, including
-        migrating from a fully-featured web server to a more lightweight web server, along with caching, and configured
-        that server. This configuration eliminated the bottlenecks, and enabled them to have several 100,000+ hit days
-        with no appreciable slowdowns.
+        Before we could migrate the data from <em>Patriot Room</em>, Bill and Clyde's prior home, we had to get into
+        the server and determine how data was stored in the custom solution. Once we identified where all the data was,
+        we wrote a custom migration script to shape the data the way WordPress needed it.
       </p>
-    </div>
-    <div>
-      <h3>What We Still Do</h3>
       <p>
         Bit Badger Solutions maintained the server, keeping it current with performance and security upgrades. We also
         provided support to the primary 3 bloggers, when they had questions about WordPress or how the site was
-        performing. The site closed in August of 2011, as the primary authors moved on to other endeavors.
+        performing.
       </p>
-    </div>
+    </app-hide-section>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
     <app-all-solutions-link></app-all-solutions-link>
   </article>
 </div>

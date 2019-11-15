@@ -1,22 +1,27 @@
 <app-page-title [title]="pageTitle"></app-page-title>
 <app-application-header [app]="app"></app-application-header>
 <div class="app-info">
-  <app-application-image [app]="app"></app-application-image>
   <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
     <p>
-      The Shark Tank is a news and opinion site centered on south Florida politics (and the state at large). They
-      provided extensive coverage of Rep. Allen West&rsquo;s winning campaign in 2010, and are continuing their focused
-      news and opinion to current political races.
+      <em>The Shark Tank</em> is a news and opinion site centered on south Florida politics (and the state at large).
+      They provided extensive coverage of Rep. Allen West&rsquo;s winning campaign in 2010, and continue their focused
+      news and opinion on current political races.
     </p>
-    <div>
-      <h3>What We Did</h3>
-      <p>
-        They were displeased with their current theme, and had found a theme (and a demo site) that they preferred. We
-        set up the theme, ensured that their content would fit in the new theme&rsquo;s requirements, and helped them
-        turn off parts that they didn&rsquo;t need. We also converted the social media connections from their old site
-        to a style that would work nicely in the new theme.
-      </p>
-    </div>
+    <h3>The Problem</h3>
+    <p>
+      They were displeased with their current theme; it was struggling with the amount of content they were producing.
+    </p>
+    <h3>The Solution</h3>
+    <p>
+      They had identified a theme that would better suit their needs. We set it up, ensuring that their content would
+      fit in the new theme&rsquo;s requirements, and helped them turn off parts that they didn&rsquo;t need. We also
+      converted the social media connections from their old site to a style that would work nicely in the new theme.
+    </p>
+    <h3>The Epilogue</h3>
+    <p>This was all they needed; they returned their focus to their writing.</p>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
     <app-all-solutions-link></app-all-solutions-link>
   </article>
 </div>
