@@ -1,0 +1,39 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<app-application-header [app]="app"></app-application-header>
+<div class="app-info">
+  <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
+    <p>
+      Cassy Fiano (now Cassy Chesser) began blogging back in 2007 on Blogger. She worked hard to network with other
+      bloggers, wrote prolifically, and gained a large audience with her coverage of life issues and of Sarah Palin as
+      the first female Republican vice-presidential nominee.
+    </p>
+    <h3>The Problem</h3>
+    <p>
+      With her success, Cassy was quickly outgrowing Blogger. She was interested in moving to a different platform;
+      specifically, Movable Type, as she had some authoring experience with that platform.
+    </p>
+    <h3>The Solution</h3>
+    <p>
+      We migrated her content to a WordPress site, and customized a theme to look very similar to her Blogger theme
+      (which she liked). We maintained the site, and began hosting it a few years later.
+    </p>
+    <h3>The Epilogue</h3>
+    <p>Cassy formally decommissioned this site in early 2014.</p>
+    <app-hide-section heading="The Process">
+      <p>
+        Initially, we assisted her with finding a theme, and customized it. We also modified her old Blogger template
+        to send redirect users to her new blog after displaying a note that the blog had moved. A few years later, we
+        developed an advertising banner to generate income from her writing.
+      </p>
+      <p>
+        In July 2012, we began hosting the site, as we were already hosting her military wife blog
+        <a routerLink="/solutions/hard-corps-wife" title="Hard Corps Wife | Bit Badger Solutions">Hard Corps Wife</a>.
+        When the time came to decommission the site, we backed up the data and ensured she had it.
+      </p>
+    </app-hide-section>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
+    <app-all-solutions-link></app-all-solutions-link>
+  </article>
+</div>

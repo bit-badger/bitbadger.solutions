@@ -1,0 +1,36 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<app-application-header [app]="app"></app-application-header>
+<div class="app-info">
+  <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Problem</h3>
+    <p>
+      Daniel wanted to maintain a prayer journal, where he could record the prayer requests for which he had prayed,
+      and the answer that eventually came to that request. He didn't want to do that on paper for several reasons
+      &ndash; it's easy to lose, a long-running request can run out of space to make notes, etc.
+    </p>
+    <h3>The Solution</h3>
+    <p>
+      We created a site where users can enter requests, pray through lists of these requests, make notes on them, and
+      follow them through until they are answered. The site stores no identifying information, and works well on both
+      desktop and mobile. Bit Badger Solutions hosts and maintains the instance of the site linked above.
+    </p>
+    <app-hide-section heading="The Process">
+      <p>
+        Development of myPrayerJournal began in earnest in early 2017. As we were using this to learn new techniques,
+        we ended up trying a host of different front and back end technologies before settling on Vue.js for the front
+        end and Giraffe for the back end. This combination works well, and we wrote up an 8-post series entitled
+        <a href="https://blog.bitbadger.solutions/2018/a-tour-of-myprayerjournal/introduction.html">"A Tour of
+        myPrayerJournal"</a> over on the <em>Bit Badger Blog</em> that steps through all aspects of version 1 of this
+        application.
+      </p>
+      <p>
+        Version 2 changed to a Material Design interface, and we changed the data store from PostgreSQL to RavenDB, an
+        excellent document database. As this is an open-source project, anyone can review the source code on
+        <a href="https://github.com/bit-badger/myPrayerJournal">GitHub</a>; we also track open issues there.
+      </p>
+    </app-hide-section>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
+    <app-all-solutions-link></app-all-solutions-link>
+  </article>
+</div>

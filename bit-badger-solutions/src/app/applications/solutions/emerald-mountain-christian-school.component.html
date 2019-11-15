@@ -1,0 +1,44 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<app-application-header [app]="app"></app-application-header>
+<div class="app-info">
+  <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
+    <p>
+      Emerald Mountain Christian School is a private Christian school founded over 50 years ago. They use the Principle
+      Approach&reg;, which emphasizes research, reasoning, relating, and recording to help students synthesize the
+      information they learn, rather than just requiring rote memorization. More information about the school&rsquo;s
+      rich history can be found on their site.
+    </p>
+    <h3>The Problem</h3>
+    <p>
+      They had a website with very basic information and very little styling; they also had no way of updating it.
+    </p>
+    <h3>The Solution</h3>
+    <p>
+      In 2004, we developed a theme that brought it in line with the design of their printed materials, adding the
+      school calendar of events and the entirety of their Parent Information Packet, giving prospective families the
+      information the needed to determine if the school was a good fit for their students.
+    </p>
+    <h3>The Epilogue</h3>
+    <p>
+      In 2013, we passed off the content and hosting of the site to a new maintainer. They have since redesigned it;
+      it is accessible via the URL above, and at <a href="http://emcspatriots.org"
+      title="EMCS Patriots">EMCSpatriots.org</a>.
+    </p>
+    <app-hide-section heading="The Process">
+      <p>
+        Initially, we downloaded the content from their old site, and put it into a custom PHP-based framework. We
+        then added a database of events, and a calendar page that read that database, enabling us to display multiple
+        years, as well as future and past years. The design of the online information packet looked like a tabbed
+        notebook, with each page highlighting a different tab.
+      </p>
+      <p>
+        In 2011, we switched the site to use ASP.NET MVC instead of the custom PHP solution, and migrated the data from
+        MySQL to PostgreSQL; these efforts increased the performance of the site.
+      </p>
+    </app-hide-section>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
+    <app-all-solutions-link></app-all-solutions-link>
+  </article>
+</div>

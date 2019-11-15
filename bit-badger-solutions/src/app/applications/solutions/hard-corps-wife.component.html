@@ -1,0 +1,23 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<app-application-header [app]="app"></app-application-header>
+<div class="app-info">
+  <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
+    <p>
+      Our existing client <a routerLink="/solutions/cassy-fiano"
+      title="Cassy Fiano | Bit Badger Solutions">Cassy Fiano</a>
+    </p>
+    <h3>The Problem</h3>
+    <p>Cassy (now Chesser) wanted a separate place from which to chronicle her experience as a military spouse.</p>
+    <h3>The Solution</h3>
+    <p>
+      In mid-2010, we set up her domain name, created a WordPress site, and customized the header and sidebar for her
+      selected theme. We also hosted and maintained the site for the duration of its run.
+    </p>
+    <h3>The Epilogue</h3>
+    <p>In 2013, Cassy shifted priorities and closed this site down.</p>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
+    <app-all-solutions-link></app-all-solutions-link>
+  </article>
+</div>

@@ -1,0 +1,39 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<app-application-header [app]="app"></app-application-header>
+<div class="app-info">
+  <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
+    <p>
+      Futility Closet exists as a place to give people a break from the dullness of work, by providing puzzles,
+      anecdotes, and more. They also publish a weekly podcast highlighting &ldquo;forgotten stories from the pages of
+      history,&rdquo; along with story updates and lateral thinking puzzles.
+    </p>
+    <h3>The Problem</h3>
+    <p>
+      The site was running on a shared host, but was growing too large for that platform. The site had also suffered
+      regular security breaches.
+    </p>
+    <h3>The Solution</h3>
+    <p>
+      We architected an environment that would support a Reddit or Slashdot deluge of requests, and moved the site to
+      an implementation of that environment. We continue to maintain that environment and back up data and files for
+      the over 10,000 posts.
+    </p>
+    <app-quotes [quotes]="app.quotes"></app-quotes>
+    <app-hide-section heading="The Process">
+      <p>
+        In mid-2010, we obtained a backup of the previous site, and looked through it to ensure that none of the
+        breaches had made any permanent changes to the site's structure and data. We also locked down the new server
+        (hosted on Rackspace Cloud) to only required protocols, training the client on SSH so that they could have
+        access. We also stood up nginx as the front-end server, boosting performance significantly while requiring a
+        much smaller server.
+      </p>
+      <p>
+        In 2015, we began hosting Futility Closet (using Digital Ocean).
+      </p>
+    </app-hide-section>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
+    <app-all-solutions-link></app-all-solutions-link>
+  </article>
+</div>

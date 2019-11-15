@@ -1,0 +1,27 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<app-application-header [app]="app"></app-application-header>
+<div class="app-info">
+  <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
+    <p>
+      Dan Riehl began blogging as <em>The Carnivorous Conservative</em> back in 2004, specializing in the areas of
+      crime and politics. He changed to <em>Riehl World View</em> a short time later, and writes both news and opinion
+      pieces. He was a prolific blogger, publishing over 15 posts a day on most days.
+    </p>
+    <h3>The Problem</h3>
+    <p>
+      He wanted to take his blog in a different direction, and was having trouble getting his Movable Type blog do move
+      with him.
+    </p>
+    <h3>The Solution</h3>
+    <p>
+      We stood up a WordPress site on a server he procured. We then assisted him in selecting a theme and customized it
+      to his liking. Finally, we wrote custom migration code to get his past body of work into the new site. In 2018,
+      we generated static files for most of his prior posts, to give him a clean slate for a new direction. We continue
+      to maintain and support <em>Riehl World News</em>.
+    </p>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
+    <app-all-solutions-link></app-all-solutions-link>
+  </article>
+</div>

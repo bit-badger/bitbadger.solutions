@@ -1,0 +1,47 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<app-application-header [app]="app"></app-application-header>
+<div class="app-info">
+  <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
+    <p>
+      In January 2008, a few members of <a href="http://hoffmantown.org" title="Hoffmantown Church">Hoffmantown
+      Church</a> in Albuquerque, New Mexico had an idea. The ABC show
+      <em><a href="http://abc.go.com/shows/extreme-makeover-home-edition">Extreme Makeover: Home Edition</a></em> had
+      just done <a href="http://abc.go.com/shows/extreme-makeover-home-edition/episode-detail/martinez-family/224884"
+      title="Martinez Family &bull; Extreme Makeover: Home Edition">a build for a pastor in the &ldquo;war zone&rdquo;
+      area of town</a>, and this brought attention to Gerald Martinez and the work he had done to help clean up this
+      area of town. Through <a href="http://www.loveincabq.org/" title="Love INC of South Albuquerque">Love INC of
+      South Albuquerque</a>, they learned that there were many other homes in that area that could use the &ldquo;Ty
+      Pennington touch.&rdquo; While the goal was not to knock down homes and build new ones, the goal was no less
+      extreme. The goal of the &ldquo;Not So Extreme Makeover: Community Edition&rdquo; was to help 50 families in 5
+      days during spring break week in 2008.
+    </p>
+    <h3>The Problem</h3>
+    <p>
+      An effort of this magnitude, happening this quickly, would be unmanageable without software support. It would
+      also require a lot of paperwork, and a lot of people processing that paperwork.
+    </p>
+    <h3>The Solution</h3>
+    <p>
+      We obtained the domain name and stood up the public website quickly using WordPress, which also allowed the
+      coordinators to put content up. We then developed an application (NSXapp) where volunteers could sign up for
+      &ldquo;X Week&rdquo;, with over 80 different skill, talent, and ability categories. We then created a way to
+      identify families and their needs, and a place for people with donations to let us know what they would be. From
+      there, we created the ability to begin matching needs with goods (stuff) and abilities (people), organizing the
+      stuff into donated trailers and people into teams. During X Week, NSXapp generated schedules and reports that
+      were used to help guide the teams as they executed their projects.
+    </p>
+    <h3>The Epilogue</h3>
+    <p>
+      From an idea in January, &ldquo;Not So Extreme Makeover: Community Edition&rdquo; was able to help 57 families
+      by the end of X Week on March 29th. When Love INC saw how NSXapp worked, they expressed an interest in a version
+      that would allow them to handle these same areas on an ongoing basis; this became
+      <a routerLink="/solutions/tcms" title="The Clearinghouse Management System | Bit Badger Solutions">TCMS</a>.
+      Finally, there is a <a href="https://nsx.archive.bitbadger.solutions">snapshot of the NSX public site</a> that
+      serves as a record of those three months in 2008.
+    </p>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
+    <app-all-solutions-link></app-all-solutions-link>
+  </article>
+</div>

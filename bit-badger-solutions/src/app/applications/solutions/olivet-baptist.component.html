@@ -1,0 +1,42 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<app-application-header [app]="app"></app-application-header>
+<div class="app-info">
+  <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
+    <p>
+      Olivet Baptist Church was a Southern Baptist church in Gulfport, Mississippi, who had seen our work with
+      <a routerLink="/solutions/bay-vista" title="Bay Vista Baptist Church | Bit Badger Solutions">Bay Vista</a> and
+      wanted something similar.
+    </p>
+    <h3>The Problem</h3>
+    <p>Olivet had no online presence.</p>
+    <h3>The Solution</h3>
+    <p>
+      Initially, we set up a WordPress site, configured it, and established a podcast feed; we also advised them on how
+      to register that feed in iTunes. A few years later, we converted the site to behave like an app, where it could
+      be installed as an icon, allowing quick access.
+    </p>
+    <h3>The Epilogue</h3>
+    <p>
+      When the church closed its doors on February 24th, 2019, we converted the app-behaving site back to a static web
+      site, set up an archive site, and worked with their personnel to ensure that the podcast links are all still
+      available. We continue to host that archive site and podcast content.
+    </p>
+    <app-hide-section heading="The Process">
+      <p>
+        In 2014, we registered the domain name for the church. They had expressed a desire to do as much of the content
+        of the site themselves, so we supported them as they worked through its initial setup. After the site was
+        originally set up, though, updates were rare (apart from the weekly podcast episodes), so we converted it to be
+        a statically-generated site.
+      <p>
+        In 2018, we modified the site to be a Progressive Web Application (PWA), which allows users to
+        &ldquo;install&rdquo; the site, like an app, to their phone&rsquo;s home screen. The site was also still
+        accessible from the web via a browser. We converted the static content to generate page fragments that the PWA
+        would load, providing the same navigation experience as before.
+    </p>
+    </app-hide-section>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
+    <app-all-solutions-link></app-all-solutions-link>
+  </article>
+</div>

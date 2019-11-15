@@ -1,0 +1,43 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<app-application-header [app]="app"></app-application-header>
+<div class="app-info">
+  <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
+    <p>
+      Mindy Mackenzie, the prior Chief Performance Officer of Beam, Inc., is known as the &ldquo;Velvet Hammer&rdquo;
+      for her tough-yet-caring style of leadership. She is a <em>Wall Street Journal</em> best-selling author of the
+      book <em>The Courage Solution: The Power of Truth-Telling with Your Boss, Peers, and Team</em>, and the creator
+      and host of the annual <em>You First Integrative Leadership Summit</em>, equipping women of influence to reach
+      even greater heights.
+    </p>
+    <h3>The Problem</h3>
+    <p>
+      Mindy was dissatisfied with the value she was receiving with her current web designer and host; in advance of
+      her book launch, she needed a more 
+    </p>
+    <h3>The Solution</h3>
+    <p>
+      We took over hosting her site, updating it regularly for the book launch, and highlighting her media appearances
+      in conjunction with that launch. We also created and continue to maintain the pages for her <em>You First
+      Integrative Leadership Summit</em>, including online registration.
+    </p>
+    <app-quotes [quotes]="app.quotes"></app-quotes>
+    <app-hide-section heading="The Process">
+      <p>
+        In late 2015, We assumed maintenance of her site several months in advance of the book launch. We created a
+        custom WordPress type to highlight her Media Appearances, automatically ordered from most recent to older. She
+        had a lot of short video content, and we implemented code that displays a different video each week on the
+        front page.
+      </p>
+      <p>
+        In early 2018, we developed the pages for her <em>You First Integrative Leadership Summit</em>, with speaker
+        bios, conference schedule, and an application form. We have continued to maintain these pages across the 2019
+        and 2020 summits.
+      </p>
+      <p>We continue to provide backups, WordPress support, and content updates for Mindy&rsquo;s site.</p>
+    </app-hide-section>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
+    <app-all-solutions-link></app-all-solutions-link>
+  </article>
+</div>

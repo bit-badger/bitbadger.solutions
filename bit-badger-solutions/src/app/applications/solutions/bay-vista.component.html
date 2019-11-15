@@ -1,0 +1,47 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<app-application-header [app]="app"></app-application-header>
+<div class="app-info">
+  <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
+    <p>
+      Bay Vista Baptist Church has served the spiritual needs of Mississippi&rsquo;s Gulf Coast for decades. They
+      emphasize serving their community as well; they were a hub for
+      <abbr title="Federal Emergency Management Agency">FEMA</abbr> during Hurricane Katrina relief and recovery
+      efforts, and they are a relay point for each year&rsquo;s
+      <a href="https://www.samaritanspurse.org/what-we-do/operation-christmas-child/">Operation Christmas Child</a>
+      campaign.
+    </p>
+    <h3>The Problem</h3>
+    <p>
+      In late 2013, the authors of their current website were no longer around, and no one could get to the site to
+      update it.
+    </p>
+    <h3>The Solution</h3>
+    <p>
+      We developed and continue to maintain a fast, static website that can be updated by multiple trained church
+      members. The site also has a repository for their sermons dating back to January 2014, and a podcast feed that
+      gives their ministry a global reach.
+    </p>
+    <app-hide-section heading="The Process">
+      <p>
+        Initially, we set up a WordPress-based site, where multiple people could have the ability to maintain the site.
+        We manually downloaded all the publically-accessible parts of their old site, and used that content to form the
+        basis for the new side, updating outdated information along the way. We maintained the same look-and-feel, but
+        soon moved to a more mobile-friendly layout.
+      </p>
+      <p>
+        In 2016, we determined that we were the only ones updating the site, so we transformed the site to use a static
+        site generator; this resulted in fast page loads, with automation providing scheduled updates. We also wrote a
+        custom template for the podcast feed, which is also generated as a static file.
+      </p>
+      <p>
+        In 2019, we <a href="https://github.com/bayvistabc/www.bayvista.org">open sourced</a> the site's source code.
+        We also set up Azure Pipelines to automatically build and deploy the site both on demand and on a schedule.
+        Finally, we trained other church members on updating the site's contents and the podcast feed.
+      </p>
+    </app-hide-section>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
+    <app-all-solutions-link></app-all-solutions-link>
+  </article>
+</div>

@@ -1,0 +1,38 @@
+<app-page-title [title]="pageTitle"></app-page-title>
+<app-application-header [app]="app"></app-application-header>
+<div class="app-info">
+  <article class="content">
+    <app-application-image [app]="app"></app-application-image>
+    <h3>The Client</h3>
+    <p>
+      Dr. Melissa Clouthier (now Mackenzie) blogged from the political right; she also covered health issues and social
+      media techniques and utilization.
+    </p>
+    <h3>The Problem</h3>
+    <p>
+      She had seen our work with <a routerLink="/solutions/cassy-fiano"
+      title="Cassy Fiano | Bit Badger Solutions">Cassy</a>&rsquo;s site, also wanted to move off Blogger; however, she
+      did not want to lose her years of posts up to that point.
+    </p>
+    <h3>The Solution</h3>
+    <p>
+      We created a custom theme for her site, imported the content into a WordPress site, and created a specialized
+      front-page template. She obtained hosting elsewhere; Bit Badger Solutions maintained it there.
+    </p>
+    <p>
+      <small><em>(NOTE: The thumbnail of the site represents a new skin on the original theme; while the theme is the
+      same, Bit Badger Solutions did not create the graphics.)</em></small>
+    </p>
+    <h3>The Epilogue</h3>
+    <p>Melissa decommissioned this site in 2018; we took final snapshots of the data before shutting it down.</p>
+    <app-hide-section heading="The Process">
+      <p>
+        Initially, we created the theme based off another well-known blogger's site, which had been developed by one of
+        WordPress's core contributors. We also advised on the type of hosting she would need for her site, and moved
+        seveal domains there. We also took care of regular backups of her data.
+      </p>
+    </app-hide-section>
+    <app-tech-stack [stack]="app.techStack"></app-tech-stack>
+    <app-all-solutions-link></app-all-solutions-link>
+  </article>
+</div>
