@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "bit-badger-solutions"
+    }
+  },
+  "defaultProject": "bit-badger-solutions",
+  "cli": {
+    "analytics": "bfe12c8e-b3a2-47cb-abee-7380fe1d1fed"
+  }
 }
