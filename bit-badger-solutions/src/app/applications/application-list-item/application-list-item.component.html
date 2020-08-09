@@ -1,9 +1,0 @@
-<p>
-  <span class="app-name" [innerHtml]="app.name"></span>&nbsp;~&nbsp;<a routerLink="/solutions/{{ app.id }}">About</a>
-  <span *ngIf="app.isActive">&nbsp;~&nbsp;<a [href]="app.url">Visit</a></span>
-  <span *ngIf="!app.isActive && app.archiveUrl">
-    ~&nbsp;<a [href]="app.archiveUrl">Visit</a><em> (archive)</em>
-  </span>
-  <br>
-  <span [innerHtml]="app.indexText"></span>
-</p>

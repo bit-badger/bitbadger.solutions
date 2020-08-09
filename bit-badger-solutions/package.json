@@ -1,48 +1,28 @@
 {
   "name": "bit-badger-solutions",
   "version": "3.0.0",
-  "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
-  },
   "private": true,
+  "scripts": {
+    "dev": "nuxt-ts",
+    "build": "nuxt-ts build",
+    "start": "nuxt-ts start",
+    "generate": "nuxt-ts generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
+  },
   "dependencies": {
-    "@angular/animations": "~10.0.5",
-    "@angular/common": "~10.0.5",
-    "@angular/compiler": "~10.0.5",
-    "@angular/core": "~10.0.5",
-    "@angular/forms": "~10.0.5",
-    "@angular/platform-browser": "~10.0.5",
-    "@angular/platform-browser-dynamic": "~10.0.5",
-    "@angular/router": "~10.0.5",
-    "rxjs": "~6.5.5",
-    "tslib": "^2.0.0",
-    "zone.js": "~0.10.2"
+    "@nuxt/content": "^1.5.0",
+    "@nuxt/typescript-runtime": "^1.0.0",
+    "nuxt": "^2.14.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1000.4",
-    "@angular-devkit/schematics": "^10.0.4",
-    "@angular/cli": "~10.0.4",
-    "@angular/compiler-cli": "~10.0.5",
-    "@angular/language-service": "~10.0.5",
-    "@types/jasmine": "~3.3.8",
-    "@types/jasminewd2": "~2.0.3",
-    "@types/node": "^12.11.1",
-    "codelyzer": "^6.0.0",
-    "jasmine-core": "~3.5.0",
-    "jasmine-spec-reporter": "~5.0.0",
-    "karma": "~5.0.0",
-    "karma-chrome-launcher": "~3.1.0",
-    "karma-coverage-istanbul-reporter": "~3.0.2",
-    "karma-jasmine": "~3.3.0",
-    "karma-jasmine-html-reporter": "^1.5.0",
-    "protractor": "~7.0.0",
-    "ts-node": "~7.0.0",
-    "tslint": "~6.1.0",
-    "typescript": "~3.9.7"
+    "@nuxt/types": "^2.14.0",
+    "@nuxt/typescript-build": "^2.0.2",
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-config-typescript": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.5.0",
+    "eslint-plugin-nuxt": "^1.0.0"
   }
 }
