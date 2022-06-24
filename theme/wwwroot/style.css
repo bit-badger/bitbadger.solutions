@@ -76,6 +76,8 @@ pre {
 }
 pre > code {
   background-color: unset;
+  padding: unset;
+  font-size: 100%;
 }
 div[style="color:#DADADA;background-color:#1E1E1E;"] {
   background-color: unset !important;
