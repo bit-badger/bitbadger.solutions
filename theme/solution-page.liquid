@@ -92,7 +92,7 @@
       </section>
     {%- endif %}
     <p><br><a href="{{ "solutions" | relative_link }}">&laquo; Back to All Solutions</a></p>
-    {% if logged_on -%}
+    {% if is_logged_on -%}
       <p><small><a hx-boost="false" href="{{ page | edit_page_link }}">Edit This Page</a></small></p>
     {% endif %}
   </article>

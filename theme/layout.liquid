@@ -32,7 +32,7 @@
     <footer hx-boost="false">
       <div>
         <small>
-          {% if logged_on -%}
+          {% if is_logged_on -%}
             <a href="{{ "admin/dashboard" | relative_link }}">Dashboard</a> ~
             <a href="{{ "user/log-off" | relative_link }}">Log Off</a>
           {% else %}
