@@ -1,9 +1,11 @@
+{% assign tech_with_links = "ASP.NET MVC|Azure|BlogEngine.NET|Database Abstraction|Digital Ocean|Giraffe|GitHub|GitHub Pages|Hexo|Hugo|htmx|Jekyll|LiteDB|MongoDB|MySQL|myWebLog|nginx|Orchard|PHP|PostgreSQL|Rackspace Cloud|RavenDB|RethinkDB|SQL Server|Vue.js|WordPress" | split: "|" %}
+{% assign tech_links = "https://dotnet.microsoft.com/apps/aspnet/mvc|https://azure.microsoft.com/|http://www.dotnetblogengine.net/|https://github.com/danieljsummers/DatabaseAbstraction|https://www.digitalocean.com/|https://giraffe.wiki|https://github.com/|https://pages.github.com/|https://hexo.io/|https://gohugo.io/|https://htmx.org/|https://jekyllrb.com/|https://www.litedb.org/|https://www.mongodb.com/|https://www.mysql.com/|https://bitbadger.solutions/open-source/myweblog/|http://nginx.org/|https://orchardproject.net/|https://www.php.net/|https://www.postgresql.org/|https://www.rackspace.com/cloud|https://ravendb.net/|https://rethinkdb.com/|https://www.microsoft.com/en-us/sql-server/|https://vuejs.org/|https://wordpress.org" | split: "|" %}
 <h1 class="solution-header">
   {{ page.title }}<br>
   <small><small>
     {%- assign url     = page.metadata | value: "url" -%}
     {%- assign no_link = page.metadata | value: "no_link" -%}
-    {%- assign archive = page.metadata | where: "name", "archive_url" | size -%}
+    {%- assign archive = page.metadata | where: "Name", "archive_url" | size -%}
     {% if no_link == "true" -%}
       {{ url }}
     {%- else -%}
@@ -22,40 +24,12 @@
       <img src="{{ screen_url | theme_asset }}" alt="Screen shot of {{ page.title | escape }}">
     </aside>
     {{ page.text }}
-    {%- assign curr_tech  = page.metadata | where: "name", "tech" -%}
-    {%- assign past_tech  = page.metadata | where: "name", "past_tech" -%}
+    {%- assign curr_tech  = page.metadata | where: "Name", "tech" -%}
+    {%- assign past_tech  = page.metadata | where: "Name", "past_tech" -%}
     {%- assign curr_count = curr_tech | size -%}
     {%- assign past_count = past_tech | size -%}
     {% if curr_count > 0 or past_count > 0 -%}
-      {% comment %} TODO / WIP
-      {% capture all_links -%}
-        ASP.NET MVC|https://dotnet.microsoft.com/apps/aspnet/mvc,
-        Azure|https://azure.microsoft.com/,
-        BlogEngine.NET|http://www.dotnetblogengine.net/,
-        Database Abstraction|https://github.com/danieljsummers/DatabaseAbstraction,
-        Digital Ocean|https://www.digitalocean.com/,
-        Giraffe|https://github.com/giraffe-fsharp/Giraffe,
-        GitHub|https://github.com/,
-        GitHub Pages|https://pages.github.com/,
-        Hexo|https://hexo.io/,
-        Hugo|https://gohugo.io/,
-        Jekyll|https://jekyllrb.com/,
-        MongoDB|https://www.mongodb.com/,
-        MySQL|https://www.mysql.com/,
-        myWebLog|https://github.com/bit-badger/myWebLog,
-        nginx|http://nginx.org/,
-        Orchard|https://orchardproject.net/,
-        PHP|https://www.php.net/,
-        PostgreSQL|https://www.postgresql.org/,
-        Rackspace Cloud|https://www.rackspace.com/cloud,
-        RavenDB|https://ravendb.net/,
-        RethinkDB|https://rethinkdb.com/,
-        SQL Server|https://www.microsoft.com/en-us/sql-server/,
-        Vue.js|https://vuejs.org/,
-        WordPress|https://wordpress.org
-      {%- endcapture %}
-      {% endcomment %}
-      <section>
+      <section aria-label="The Technology Stack">
         <h3 onclick="toggle('techStack')">
           The Technology Stack<span id="techStackArrow" class="arrow">&#x25BC;</span>
         </h3>
@@ -67,9 +41,16 @@
             <ul>
               {% for curr in curr_tech -%}
                 {%- assign tech = curr.value | split: "|" -%}
+                {%- assign link_idx = -1 -%}
+                {%- for tech_name in tech_with_links -%}
+                  {%- if tech_name == tech[0] %}{% assign link_idx = forloop.index0 %}{% endif -%}
+                {%- endfor -%}
                 <li>
-                  {% comment %} <a v-if="hasLink(tech[0])" :href="techLinks[tech[0]]" target="_blank">{{ tech[0] }}</a> {% endcomment %}
-                  {{ tech[0] }} for {{ tech[1] }}
+                  {% if link_idx >= 0 -%}
+                    <a href="{{ tech_links[link_idx] }}" target="_blank" rel="noopener">{{ tech[0] }}</a>
+                  {% else %}
+                    {{ tech[0] }}
+                  {%- endif %} for {{ tech[1] }}
                 </li>
               {%- endfor %}
             </ul>
@@ -81,9 +62,16 @@
             <ul>
               {% for past in past_tech -%}
                 {%- assign tech = past.value | split: "|" -%}
+                {%- assign link_idx = -1 -%}
+                {%- for tech_name in tech_with_links -%}
+                  {%- if tech_name == tech[0] %}{% assign link_idx = forloop.index0 %}{% endif -%}
+                {%- endfor -%}
                 <li>
-                  {% comment %} <a v-if="hasLink(tech[0])" :href="techLinks[tech[0]]" target="_blank">{{ tech[0] }}</a> {% endcomment %}
-                  {{ tech[0] }} for {{ tech[1] }}
+                  {% if link_idx >= 0 %}
+                    <a href="{{ tech_links[link_idx] }}" target="_blank" rel="noopener">{{ tech[0] }}</a>
+                  {% else %}
+                    {{ tech[0] }}
+                  {%- endif %} for {{ tech[1] }}
                 </li>
               {%- endfor %}
             </ul>
